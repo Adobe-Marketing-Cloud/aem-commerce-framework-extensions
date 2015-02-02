@@ -2,12 +2,17 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>FileVault Package Properties</comment>
+<entry key="createdBy">admin</entry>
+<entry key="name">Summit2015-Ex1</entry>
+<entry key="lastModified">2015-02-02T21:35:34.062+11:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2015-02-02T21:35:34.370+11:00</entry>
 <entry key="buildCount">1</entry>
-<entry key="version">1.0-SNAPSHOT</entry>
-<entry key="dependencies" />
+<entry key="version">1.0.0</entry>
+<entry key="dependencies"/>
 <entry key="packageFormatVersion">2</entry>
-<entry key="description">aem-commerce-framework-extensions Package</entry>
-<entry key="group">pom</entry>
-<entry key="name">aem-commerce-framework-extensions-content</entry>
-<entry key="path">/etc/packages/pom/aem-commerce-framework-extensions-content-1.0-SNAPSHOT.zip</entry>
+<entry key="group">L716-Summit2015</entry>
+<entry key="lastWrapped">2015-02-02T21:35:34.062+11:00</entry>
+<entry key="description"/>
+<entry key="lastWrappedBy">admin</entry>
 </properties>

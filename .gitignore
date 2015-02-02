@@ -1,0 +1,6 @@
+content/target
+bundle/target
+content/.classpath
+content/.project
+bundle/.classpath
+bundle/.project

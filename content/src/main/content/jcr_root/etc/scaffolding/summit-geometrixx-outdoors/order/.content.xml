@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:commerceProvider="geometrixx"
+        cq:targetPath="/etc/commerce/orders"
+        jcr:description="Summit 2015 - Example scaffolding that is used to create and update Geometrixx Outdoors orders."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Order Data"
+        sling:resourceType="wcm/scaffolding/components/scaffolding">
+        <cq:dialog
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Geometrixx Outdoors Order Properties"
+            sling:resourceType="cq/gui/components/authoring/dialog">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+            <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                            type="nav"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <basic
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Basic"
+                                sling:resourceType="granite/ui/components/foundation/section">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column-set
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                            margin="false"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <col1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <order-id
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="Order ID *"
+                                                        name="orderId"
+                                                        renderReadOnly="{Boolean}true"
+                                                        required="{Boolean}true"/>
+                                                    <order-placed
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/datepicker"
+                                                        displayedFormat="MMMM DD, YYYY hh:mm a"
+                                                        fieldLabel="Placed"
+                                                        name="orderPlaced"
+                                                        renderReadOnly="{Boolean}true"
+                                                        type="datetime"/>
+                                                    <order-status
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldLabel="Status"
+                                                        name="orderStatus"
+                                                        renderReadOnly="{Boolean}true"/>
+                                                </items>
+                                            </col1>
+                                            <col2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <currency-code
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        emptyText="USD"
+                                                        fieldLabel="Currency *"
+                                                        name="currencyCode"
+                                                        renderReadOnly="{Boolean}true"
+                                                        required="{Boolean}true"
+                                                        validation="geometrixx.currencyCode"/>
+                                                </items>
+                                            </col2>
+                                        </items>
+                                    </column-set>
+                                </items>
+                            </basic>
+                            <order-contents
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Content"
+                                sling:resourceType="granite/ui/components/foundation/section">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <cart-items
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="geometrixx-outdoors/gui/components/admin/orders/cartitems"
+                                        renderReadOnly="{Boolean}true"
+                                        showPrice="false"/>
+                                    <column-set
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <col1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                class="cq-order-details-pricing">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <subtotal
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="commerce/gui/components/admin/orders/pricefield"
+                                                        fieldLabel="Subtotal"
+                                                        name="cartSubtotal"
+                                                        renderReadOnly="{Boolean}true"
+                                                        validation="geometrixx.price"/>
+                                                    <tax
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="commerce/gui/components/admin/orders/pricefield"
+                                                        fieldLabel="Tax"
+                                                        name="orderTotalTax"
+                                                        renderReadOnly="{Boolean}true"
+                                                        validation="geometrixx.price"/>
+                                                    <shipping
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="commerce/gui/components/admin/orders/pricefield"
+                                                        fieldLabel="Shipping"
+                                                        name="orderShipping"
+                                                        renderReadOnly="{Boolean}true"
+                                                        validation="geometrixx.price"/>
+                                                    <total
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="commerce/gui/components/admin/orders/pricefield"
+                                                        fieldLabel="Total"
+                                                        name="orderTotalPrice"
+                                                        renderReadOnly="{Boolean}true"
+                                                        validation="geometrixx.price"/>
+                                                </items>
+                                            </col1>
+                                            <col2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container"/>
+                                        </items>
+                                    </column-set>
+                                </items>
+                            </order-contents>
+                            <payment
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Payment"
+                                sling:resourceType="granite/ui/components/foundation/section">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column-set
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                            margin="false"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <col1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <billing-address
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                        class="cq-order-details-address"
+                                                        text="Billing Address">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <first-name
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.firstname"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <last-name
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.lastname"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <street1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.street1"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <city
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.city"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <state
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.state"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <zip
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.zip"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <country
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/billing.country"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                        </items>
+                                                    </billing-address>
+                                                </items>
+                                            </col1>
+                                            <col2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <payment-instrument
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                        text="Payment Info">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <payment-token
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                fieldLabel="Payment Token"
+                                                                name="order-details/payment-token"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <payment-status
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                fieldLabel="Payment Status"
+                                                                name="payment-status"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                        </items>
+                                                    </payment-instrument>
+                                                </items>
+                                            </col2>
+                                        </items>
+                                    </column-set>
+                                </items>
+                            </payment>
+                            <fulfilment
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Fulfilment"
+                                sling:resourceType="granite/ui/components/foundation/section">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column-set
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                            margin="false"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <col1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <shipping-address
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                        class="cq-order-details-address"
+                                                        text="Shipping Address">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <first-name
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.firstname"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <last-name
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.lastname"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <street1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.street1"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <city
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.city"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <state
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.state"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <zip
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.zip"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <country
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                name="order-details/shipping.country"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                        </items>
+                                                    </shipping-address>
+                                                </items>
+                                            </col1>
+                                            <col2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <shipping-details
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                        text="Shipping Details">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <shipping-method
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                fieldLabel="Shipping Method"
+                                                                name="order-details/shipping-option"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <tracking-number
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                fieldLabel="Tracking Number"
+                                                                name="order-details/trackingNumber"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                            <tracking-url
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                fieldLabel="Tracking Link"
+                                                                name="order-details/trackingUrl"
+                                                                renderReadOnly="{Boolean}true"/>
+                                                        </items>
+                                                    </shipping-details>
+                                                </items>
+                                            </col2>
+                                        </items>
+                                    </column-set>
+                                </items>
+                            </fulfilment>
+                        </items>
+                    </tabs>
+                </items>
+            </content>
+        </cq:dialog>
+    </jcr:content>
+</jcr:root>
