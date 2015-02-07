@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:commerceType="product"
+    cq:productSkuCode="wmapsp"
+    cq:productVariantAxes="[geo-color,size]"
+    cq:tags="[geometrixx-outdoors:gender/women,geometrixx-outdoors:activity/skiing,geometrixx-outdoors:season/winter,geometrixx-outdoors:apparel/coat]"
+    jcr:lastModified="{Date}2014-12-09T15:04:52.357-08:00"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Saskatoon Parka"
+    sling:resourceType="commerce/components/product"
+    description="Women's Coat"
+    features="&lt;ul>&#xd;&#xa;&lt;li>Storm shell provides wind and rain protection while allowing moisture to escape, keeping you warm and dry&lt;/li>&#xd;&#xa;&lt;li>High loft goose down provides the best lightweight insulation.&lt;/li>&#xd;&#xa;&lt;li>Fur-lined hood for great protection in high wind conditions&lt;/li>&#xd;&#xa;&lt;li>Two high hand warmer pockets with fleece lining and two lower fleece lined pockets to keep your hands warm&lt;/li>&#xd;&#xa;&lt;li>Heavy duty rib knit cuffs and waistband to keep out cold winds and drafts&lt;/li>&#xd;&#xa;&lt;li>Inset sleeve design for comfort and improved fit&lt;/li>&#xd;&#xa;&lt;/ul>"
+    identifier="wmapsp"
+    summary="&lt;p>The Saskatoon parka provides maximum protection in the coldest of weather. A storm shell combined with high-loft goose down ensures excellent protection from the elements, with the fur-lined hood keeping the wind and snow from your face.&lt;/p>">
+    <image
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product/image"
+        fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+    <purple
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:52.419-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="purple">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapsp.p-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.419-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapsp.p-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+        </L>
+        <XL
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapsp.p-XL"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.441-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapsp.p-XL"
+            size="XL">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+        </XL>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapsp.p-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.442-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapsp.p-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+        </M>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapsp.p-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.443-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapsp.p-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+        </S>
+        <XS
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapsp.p-XS"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.444-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapsp.p-XS"
+            size="XS">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Saskatoon Purple.jpg"/>
+        </XS>
+    </purple>
+    <blue
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:52.420-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="blue">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/coat/Saskatoon Blue.jpg"/>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapsp.b-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.441-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapsp.b-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Saskatoon Blue.jpg"/>
+        </M>
+    </blue>
+</jcr:root>

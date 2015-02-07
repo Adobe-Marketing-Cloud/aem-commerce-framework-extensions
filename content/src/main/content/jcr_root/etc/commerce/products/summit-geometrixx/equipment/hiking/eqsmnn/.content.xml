@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:commerceType="product"
+    cq:productSkuCode="eqsmnn"
+    cq:productVariantAxes="[geo-color,size]"
+    cq:tags="[geometrixx-outdoors:activity/hiking,geometrixx-outdoors:season/summer,geometrixx-outdoors:apparel/coat]"
+    jcr:lastModified="{Date}2014-12-09T15:04:51.295-08:00"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Nunavut Fleece"
+    sling:resourceType="commerce/components/product"
+    description="Coat"
+    features="..."
+    identifier="eqsmnn"
+    summary="...">
+    <image
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product/image"
+        fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+    <orange
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:51.343-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="orange">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.o-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.343-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.o-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+        </S>
+        <XL
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.o-XL"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.371-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.o-XL"
+            size="XL">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+        </XL>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.o-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.372-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.o-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+        </M>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.o-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.381-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.o-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+        </L>
+    </orange>
+    <geo-black
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:51.344-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="geo-black">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+        <XL
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.b-XL"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.370-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.b-XL"
+            size="XL">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+        </XL>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.b-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.372-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.b-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+        </S>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.b-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.382-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.b-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+        </M>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="eqsmnn.b-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.383-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="eqsmnn.b-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+        </L>
+    </geo-black>
+</jcr:root>

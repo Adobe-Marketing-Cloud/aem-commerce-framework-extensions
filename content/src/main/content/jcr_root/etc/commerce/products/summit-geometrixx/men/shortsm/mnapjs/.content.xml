@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:commerceType="product"
+    cq:productSkuCode="mnapjs"
+    cq:productVariantAxes="[geo-color,size]"
+    cq:tags="[geometrixx-outdoors:apparel/shorts,geometrixx-outdoors:season/summer,geometrixx-outdoors:gender/men]"
+    jcr:lastModified="{Date}2014-12-09T15:04:51.775-08:00"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Jola Summer"
+    sling:resourceType="commerce/components/product"
+    description="Men's Shorts"
+    features="&lt;ul>&#xd;&#xa;&lt;li>Lightweight, breathable cotton keeps you cool on hot summer days&lt;/li>&#xd;&#xa;&lt;li>Large pockets secure essentials like your keys and wallet&lt;/li>&#xd;&#xa;&lt;li>Comes in range of colors&lt;/li>&#xd;&#xa;&lt;li>Easywash, pre-shrunk and stain-resistant&lt;br>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>"
+    identifier="mnapjs"
+    summary="&lt;p>Easywash lightweight cotton keeps you cool and comfortable in the hottest weather. Pre-shrunk stain-resistant fabric. Extra-deep front pockets. Natural Fit is relaxed through the hip and thigh with straight legs. Double stitching throughout. Machine wash and dry.&lt;/p>">
+    <image
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product/image"
+        fileReference="/content/dam/geometrixx/products/shorts/Jola Blue.jpg"/>
+    <geo-green
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:51.803-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="geo-green">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/shorts/Jola Green.jpg"/>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.2-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.812-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.2-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Green.jpg"/>
+        </S>
+        <XL
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.2-XL"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.817-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.2-XL"
+            size="XL">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Green.jpg"/>
+        </XL>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.2-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.819-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.2-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Green.jpg"/>
+        </L>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.2-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.824-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.2-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Green.jpg"/>
+        </M>
+    </geo-green>
+    <blue
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:51.813-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="blue">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/shorts/Jola Blue.jpg"/>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.1-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.817-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.1-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Blue.jpg"/>
+        </S>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.1-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.818-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.1-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Blue.jpg"/>
+        </M>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapjs.1-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.818-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapjs.1-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Jola Blue.jpg"/>
+        </L>
+    </blue>
+</jcr:root>

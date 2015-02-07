@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:commerceType="product"
+    cq:productSkuCode="wmapfs"
+    cq:productVariantAxes="[geo-color,size]"
+    cq:tags="[geometrixx-outdoors:apparel/shorts,geometrixx-outdoors:gender/women,geometrixx-outdoors:activity/running,geometrixx-outdoors:season/summer]"
+    jcr:lastModified="{Date}2014-12-09T15:04:51.662-08:00"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Fiji Sport"
+    sling:resourceType="commerce/components/product"
+    description="Women's Running Shorts"
+    features="&lt;ul>&#xd;&#xa;&lt;li>Cotton-lycra blend&lt;/li>&#xd;&#xa;&lt;li>Easywash&lt;/li>&#xd;&#xa;&lt;li>Guaranteed sweatshop-free&lt;/li>&#xd;&#xa;&lt;li>Made in Bangladesh&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>"
+    identifier="wmapfs"
+    summary="&lt;p>Soft stretchy cotton-based fabric allows great freedom of movement as well as breathability. Available in a variety of colors&lt;/p>">
+    <image
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product/image"
+        fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+    <blue
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:51.702-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="blue">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+        <XL
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.b-XL"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.712-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.b-XL"
+            size="XL">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+        </XL>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.b-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.713-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.b-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+        </S>
+        <XS
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.b-XS"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.717-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.b-XS"
+            size="XS">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+        </XS>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.b-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.722-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.b-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+        </L>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.b-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.723-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.b-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Blue.jpg"/>
+        </M>
+    </blue>
+    <geo-red
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:51.714-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="geo-red">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/shorts/Fiji Red.jpg"/>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.r-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.716-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.r-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Red.jpg"/>
+        </M>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.r-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.716-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.r-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Red.jpg"/>
+        </L>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="wmapfs.r-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:51.723-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="wmapfs.r-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Fiji Red.jpg"/>
+        </S>
+    </geo-red>
+</jcr:root>

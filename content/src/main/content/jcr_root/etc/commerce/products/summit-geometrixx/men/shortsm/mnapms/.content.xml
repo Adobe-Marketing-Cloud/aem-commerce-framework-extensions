@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:commerceType="product"
+    cq:productSkuCode="mnapms"
+    cq:productVariantAxes="[geo-color,size]"
+    cq:tags="[geometrixx-outdoors:apparel/shorts,geometrixx-outdoors:activity/running,geometrixx-outdoors:season/summer,geometrixx-outdoors:gender/men]"
+    jcr:lastModified="{Date}2014-12-09T15:04:52.554-08:00"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Marka Sport"
+    sling:resourceType="commerce/components/product"
+    description="Men's Athletic Shorts"
+    features="&lt;ul>&#xd;&#xa;&lt;li>Lightweight, breathable cotton keeps you cool on hot summer days&lt;/li>&#xd;&#xa;&lt;li>Large pockets secure essentials like your keys and wallet&lt;/li>&#xd;&#xa;&lt;li>Comes in range of colors&lt;/li>&#xd;&#xa;&lt;li>Easywash, pre-shrunk and stain-resistant&lt;/li>&#xd;&#xa;&lt;/ul>"
+    identifier="mnapms"
+    summary="&lt;p>Easywash lightweight cotton keeps you cool and comfortable in the hottest weather. Pre-shrunk stain-resistant fabric. Extra-deep front pockets. Natural Fit is relaxed through the hip and thigh with straight legs. Double stitching throughout. Machine wash and dry.&lt;/p>">
+    <image
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product/image"
+        fileReference="/content/dam/geometrixx/products/shorts/Marka Red.jpg"/>
+    <sportblue
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:52.603-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="sportblue">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/shorts/Marka Blue.jpg"/>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapms.b-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.614-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapms.b-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Marka Blue.jpg"/>
+        </S>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapms.b-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.624-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapms.b-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Marka Blue.jpg"/>
+        </L>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapms.b-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.630-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapms.b-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Marka Blue.jpg"/>
+        </M>
+    </sportblue>
+    <sportred
+        cq:commerceType="variant"
+        jcr:lastModified="{Date}2014-12-09T15:04:52.616-08:00"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product"
+        geo-color="sportred">
+        <image
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product/image"
+            fileReference="/content/dam/geometrixx/products/shorts/Marka Red.jpg"/>
+        <S
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapms.r-S"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.616-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapms.r-S"
+            size="S">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Marka Red.jpg"/>
+        </S>
+        <M
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapms.r-M"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.617-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapms.r-M"
+            size="M">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Marka Red.jpg"/>
+        </M>
+        <L
+            cq:commerceType="variant"
+            cq:productSkuCode="mnapms.r-L"
+            jcr:lastModified="{Date}2014-12-09T15:04:52.624-08:00"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="commerce/components/product"
+            identifier="mnapms.r-L"
+            size="L">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product/image"
+                fileReference="/content/dam/geometrixx/products/shorts/Marka Red.jpg"/>
+        </L>
+    </sportred>
+</jcr:root>

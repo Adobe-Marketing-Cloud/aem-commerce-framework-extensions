@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:commerceType="product"
+    cq:productSkuCode="eqsmra"
+    cq:tags="[geometrixx-outdoors:gender/women,geometrixx-outdoors:apparel/glasses,geometrixx-outdoors:season/summer]"
+    jcr:lastModified="{Date}2014-12-09T15:04:50.674-08:00"
+    jcr:mixinTypes="[cq:Taggable]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Raja Ampat"
+    sling:resourceType="commerce/components/product"
+    description="Women's Sunglasses"
+    identifier="eqsmra"
+    summary="...">
+    <image
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="commerce/components/product/image"
+        fileReference="/content/dam/geometrixx/products/glasses/Raja Ampat.jpg"/>
+</jcr:root>
