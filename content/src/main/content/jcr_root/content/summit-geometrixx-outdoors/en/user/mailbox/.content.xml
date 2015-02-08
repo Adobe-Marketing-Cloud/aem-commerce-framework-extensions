@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-02-08T12:46:38.444+11:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/geometrixx-outdoors/templates/page_sidebar"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Inbox"
+        sling:resourceType="geometrixx-outdoors/components/page_sidebar">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <messagebox_c6b0
+                jcr:created="{Date}2013-05-08T20:59:45.802+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-07-12T21:35:18.071+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="social/messaging/components/messagebox"
+                dateFormatPatterns="[en=MM-dd-yyyy HH:mm:ss,de=dd-MM-yyyy HH:mm:ss,fr=dd-MM-yyyy HH:mm:ss,it=dd-MM-yyyy HH:mm:ss,es=dd-MM-yyyy HH:mm:ss,ja=yyyy-MM-dd HH:mm:ss,zh_CN=yyyy-MM-dd HH:mm:ss,ko_KR=yyyy-MM-dd HH:mm:ss]"
+                displayUserType="Sender"
+                folderPaths="/mail/geometrixx/inbox"
+                pagesize="8"
+                profileFormPath="/content/summit-geometrixx-outdoors/en/user/account/social-profile"
+                replyURL="/content/summit-geometrixx-outdoors/en/user/mailbox/compose-message"
+                servletPath="/bin/geometrixx-outdoors-messaging"
+                showDelete="true"
+                showMarkRead="true"
+                showMarkUnread="true"/>
+        </par>
+        <sidebar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/title"/>
+            <list
+                jcr:lastModified="{Date}2013-04-04T18:52:24.777+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx/components/list"
+                listFrom="static"
+                pages="[/content/summit-geometrixx-outdoors/en/user/mailbox,/content/summit-geometrixx-outdoors/en/user/mailbox/sent-items,/content/summit-geometrixx-outdoors/en/user/mailbox/trash]"
+                tagsMatch="any"/>
+        </sidebar>
+    </jcr:content>
+    <trash/>
+    <sent-items/>
+    <compose-message/>
+</jcr:root>

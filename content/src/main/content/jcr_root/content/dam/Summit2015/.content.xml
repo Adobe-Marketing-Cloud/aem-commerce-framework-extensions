@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <folderThumbnail/>
+    </jcr:content>
+    <Summit-2015-STD.png/>
+    <AdobeSummit2012.jpg/>
+    <image-0002.jpg/>
+    <summit.png/>
+    <AEM_Commerce_Integration_Frameworkv0.4.pptx/>
+</jcr:root>

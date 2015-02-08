@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:catalogVersion="561"
+        cq:lastModified="{Date}2015-02-08T22:00:45.651+11:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/commerce/templates/catalog"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Base Catalog"
+        jcr:uuid="68189106-0b77-4a0e-a753-b06b0b170308"
+        sling:resourceType="commerce/components/catalog">
+        <target
+            jcr:primaryType="nt:unstructured"
+            pageTitle="Summit Geometrixx Outdoors"/>
+        <templates
+            jcr:primaryType="nt:unstructured"
+            catalog="/content/catalogs/summit-geometrixx-outdoors/template-pages/catalog-page-template"
+            product="/content/catalogs/summit-geometrixx-outdoors/template-pages/product-page-template"
+            proxyProductPages="false"
+            section="/content/catalogs/summit-geometrixx-outdoors/template-pages/section-page-template"/>
+        <filter
+            jcr:primaryType="nt:unstructured"
+            searchType="simple"/>
+        <cq:CatalogSyncConfig jcr:primaryType="cq:CatalogSyncConfig">
+            <catalog
+                cq:catalogPath="/content/summit-geometrixx-outdoors/en"
+                cq:rolloutConfigs="[/etc/msm/rolloutconfigs/catalogpagecontent,/etc/msm/rolloutconfigs/catalogrollouthooks]"
+                jcr:primaryType="nt:unstructured"/>
+        </cq:CatalogSyncConfig>
+    </jcr:content>
+    <equipment/>
+</jcr:root>

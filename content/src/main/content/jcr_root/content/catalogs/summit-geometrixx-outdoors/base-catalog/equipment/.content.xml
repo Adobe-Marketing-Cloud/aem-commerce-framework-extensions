@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-02-08T22:13:39.898+11:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/commerce/templates/section"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Equipment"
+        jcr:uuid="6b55c0c2-dad0-4d58-b062-0e0b3b97332a"
+        sling:resourceType="commerce/components/section">
+        <target
+            jcr:primaryType="nt:unstructured"
+            jcr_title="Equipment">
+            <par jcr:primaryType="nt:unstructured">
+                <banner
+                    jcr:primaryType="nt:unstructured"
+                    fileReference="/content/dam/geometrixx-outdoors/banners/snowboard-action.jpg"/>
+            </par>
+        </target>
+        <templates
+            jcr:primaryType="nt:unstructured"
+            section="/content/catalogs/summit-geometrixx-outdoors/template-pages/section-page-template"/>
+        <filter
+            jcr:primaryType="nt:unstructured"
+            searchType="simple"/>
+    </jcr:content>
+    <biking/>
+    <hiking/>
+    <running/>
+    <skiing/>
+    <sunglasses/>
+    <surfing/>
+    <swimming/>
+</jcr:root>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:distribute="{Boolean}true"
+        cq:lastModified="{Date}2015-02-08T12:46:38.273+11:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/libs/social/blog/templates/page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Summer Training"
+        sling:resourceType="geometrixx-outdoors/components/social/journal/page-company"
+        activityCreated="true"
+        author="Alison Parker"
+        hideInNav="{Boolean}true"
+        published="{Date}2011-12-12T09:45:00.000+01:00">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <entry
+                jcr:lastModified="{Date}2011-12-06T15:32:52.964+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="social/blog/components/entrytext"
+                text="&lt;p>See what our own staff members do to beat the heat.&lt;br>&#xa;&lt;/p>&#xa;"/>
+            <textimage
+                jcr:created="{Date}2011-12-06T15:14:27.606+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2011-12-06T15:32:47.919+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/textimage"
+                text="&lt;p>We asked our staff to give us their tips for summer training. Here are some of the responses:&lt;/p>&#xa;&lt;p>&lt;b>Heidi&lt;/b>: &amp;quot;I like to go running in the evening when things cool down. I usually wear my Mombasa trainers because they have the best support.&amp;quot;&lt;/p>&#xa;&lt;p>&lt;b>Jonah&lt;/b>: &amp;quot;When I go biking I ride a Geometrixx Cajamara 27 speed. And I always wear my Tacna helmet!&amp;quot;&lt;/p>&#xa;&lt;p>&lt;b>Zoltan&lt;/b>: &amp;quot;I'm a surfer. When I hit the beach on the Big Island I have to be prepared. So, I work out regularly and make sure my board is in good shape. Also, remeber to always check for sharks!&amp;quot;&lt;/p>&#xa;&lt;p>&lt;b>Ingrid&lt;/b>: &amp;quot;I grew up in the mountains so in the winter I ski, but in the summer I go hiking. Obviously the most important thing to have is a good pair of hiking boots. Make sure they have a stiff sole and lot's of ankle support. You maz thing running shoes are good enough, but 10 minutes covering rocky uneven ground and you'll wish you'd brought the right equipment&amp;quot;&lt;br>&#xa;&lt;/p>&#xa;&lt;p>&lt;b>Be Prepared&lt;/b>To make sure you have the right equipment this summer, Geometrixx-Outdoors is offering a $10 discount.  Simply enter the coupon code 'SUMMERTRAIN' into your cart.  &lt;a href='/content/summit-geometrixx-outdoors/en/seasonal/summer/equipment.html'>Shop now.&lt;/a>"
+                textIsRich="true">
+                <image
+                    jcr:lastModified="{Date}2011-12-06T15:32:47.919+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/geometrixx-outdoors/articles/summer-training.jpg"
+                    imageRotate="0"/>
+            </textimage>
+        </par>
+        <alt
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <comments
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="social/commons/components/comments"/>
+            <trackback
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="social/blog/components/trackback"/>
+        </alt>
+    </jcr:content>
+</jcr:root>

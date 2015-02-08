@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2015-02-08T21:46:50.751+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Application="Microsoft Macintosh PowerPoint"
+            dam:AppVersion="{Decimal}14.0000"
+            dam:created="{Date}2009-08-20T18:55:32.000Z"
+            dam:extracted="{Date}2015-02-08T21:46:45.623+11:00"
+            dam:HeadingPairs="Theme1Slide Titles48"
+            dam:HiddenSlides="{Long}0"
+            dam:HyperlinksChanged="false"
+            dam:i4="{Long}48"
+            dam:lastModifiedBy="Varun Venkataraman"
+            dam:LinksUpToDate="false"
+            dam:lpstr="PowerPoint Presentation"
+            dam:MMClips="{Long}0"
+            dam:modified="{Date}2015-02-08T03:22:15.000Z"
+            dam:Notes="{Long}1"
+            dam:Paragraphs="{Long}430"
+            dam:PresentationFormat="Custom"
+            dam:revision="{Long}367"
+            dam:ScaleCrop="false"
+            dam:sha1="106f8520a09daa65da31c149825566293e77c266"
+            dam:SharedDoc="false"
+            dam:size="{Long}9270344"
+            dam:Slides="{Long}48"
+            dam:Template="{Date}-0001-11-30T00:00:00.000+10:00"
+            dam:TitlesOfParts="Adobe Master Widescreen 2014PowerPoint PresentationAdobe Experience Manager – Commerce Integration FrameworkAGENDAAgendaKey TakeawaysPowerPoint PresentationAgendaPowerPoint PresentationAEM E-Commerce Architecture – 4 LayersAEM E-Commerce Architecture – E-Commerce Components and API AEM E-Commerce Architecture – E-Commerce Implementation and EnginePowerPoint PresentationAEM Commerce – Key Terms – Part 1/3AEM Commerce – Key Terms – Part 2/3AEM Commerce – Key Terms – Part 3/3PowerPoint PresentationExercise 1 – Extending Product Import Management (PIM) ConsoleExercise 1 – Setup and ObservationExercise 1 – TaskExercise 1 – Result 1Exercise 1 – Result 2AEM Commerce – Summit 2015 - Cheat SheetAgendaPowerPoint PresentationAEM Commerce – Default FeaturesAEM Commerce – Catalogue ManagementAEM Commerce – Components – 1/2AEM Commerce – Components – 2/2AEM Commerce – TemplatesAEM Commerce – ClientContext and ContextHub ModulesExercise 2 – Extending Commerce ComponentExercise 2 – Extending Commerce Component - Instructions AgendaAdobe Commerce APIAdobe Commerce API – Key ClassesAdobe Commerce API – Key Classes InteractionExercise 3 – Product Import ManagementExercise 3 – Product Import Management - InstructionsAgendaAEM – ElasticPath Commerce High Level ArchitectureAEM – ElasticPath Commerce – Key ClassesExercise 4 – Extending ElasticPath CommerceExercise 4 – Extending ElasticPath Commerce - InstructionsGray Content Area LayoutBlack Content Area LayoutCall To ActionPowerPoint PresentationPowerPoint Presentation"
+            dam:TotalTime="{Long}20636"
+            dam:variant="{Long}48"
+            dam:vector="Adobe Master Widescreen 2014PowerPoint PresentationAdobe Experience Manager – Commerce Integration FrameworkAGENDAAgendaKey TakeawaysPowerPoint PresentationAgendaPowerPoint PresentationAEM E-Commerce Architecture – 4 LayersAEM E-Commerce Architecture – E-Commerce Components and API AEM E-Commerce Architecture – E-Commerce Implementation and EnginePowerPoint PresentationAEM Commerce – Key Terms – Part 1/3AEM Commerce – Key Terms – Part 2/3AEM Commerce – Key Terms – Part 3/3PowerPoint PresentationExercise 1 – Extending Product Import Management (PIM) ConsoleExercise 1 – Setup and ObservationExercise 1 – TaskExercise 1 – Result 1Exercise 1 – Result 2AEM Commerce – Summit 2015 - Cheat SheetAgendaPowerPoint PresentationAEM Commerce – Default FeaturesAEM Commerce – Catalogue ManagementAEM Commerce – Components – 1/2AEM Commerce – Components – 2/2AEM Commerce – TemplatesAEM Commerce – ClientContext and ContextHub ModulesExercise 2 – Extending Commerce ComponentExercise 2 – Extending Commerce Component - Instructions AgendaAdobe Commerce APIAdobe Commerce API – Key ClassesAdobe Commerce API – Key Classes InteractionExercise 3 – Product Import ManagementExercise 3 – Product Import Management - InstructionsAgendaAEM – ElasticPath Commerce High Level ArchitectureAEM – ElasticPath Commerce – Key ClassesExercise 4 – Extending ElasticPath CommerceExercise 4 – Extending ElasticPath Commerce - InstructionsGray Content Area LayoutBlack Content Area LayoutCall To ActionPowerPoint PresentationPowerPoint Presentation"
+            dam:Words="{Long}2552"
+            dc:creator="[Adobe Systems\, Inc.]"
+            dc:format="application/vnd.openxmlformats-officedocument.presentationml.presentation"
+            dc:title="Important Notes about the 16x9 Template"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Important Notes about the 16x9 Template"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

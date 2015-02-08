@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-02-08T12:46:39.266+11:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/geometrixx-outdoors/templates/page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Thank You"
+        sling:resourceType="geometrixx-outdoors/components/page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/title"
+                css="checkout-title"/>
+            <subtitle
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Your order is being processed."
+                sling:resourceType="geometrixx-outdoors/components/title"
+                css="checkout-title"
+                type="medium"/>
+            <orderid
+                jcr:created="{Date}2013-05-24T18:42:54.646+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-05-24T18:46:22.092+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title=" "
+                sling:resourceType="commerce/components/orderid"
+                columns="[orderPlacedFormatted=Date,#summary=Summary,price=Price,orderStatus=Status]"
+                detailsPagePath="/content/summit-geometrixx-outdoors/en/user/account/order-history/order-details"
+                label="Order number"/>
+            <text_99c4
+                jcr:created="{Date}2012-03-02T08:51:40.676+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2012-10-10T18:17:50.696+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>We are processing your order and an email confirmation has been sent to your email address. Please check your inbox for further details on shipping and contacts. If you have any problems or questions you can &lt;a adhocenable=&quot;false&quot; href=&quot;/content/summit-geometrixx-outdoors/en/toolbar/about-us.html&quot;>email us&lt;/a> and we will promptly see what we can do to help you out. Also, you can &lt;a adhocenable=&quot;false&quot; href=&quot;/content/summit-geometrixx-outdoors/en/user/register.html&quot;>sign up for our newsletter&lt;/a> to get the latest news and deals straight to your inbox.&lt;/p>&#xa;"
+                textIsRich="true"/>
+            <image_40f2
+                jcr:created="{Date}2012-10-10T18:23:57.852+03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2012-10-10T18:25:09.828+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors/colors/grey.png"
+                height="2"
+                imageRotate="0"
+                width="926"/>
+            <colctrl
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/colctrl"
+                controlType="start"
+                layout="3;colctrl-3c"/>
+            <gear-header
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Gear"
+                sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_header"
+                moreLink="/content/summit-geometrixx-outdoors/en/equipment.html"
+                moreText="See More Gear"/>
+            <gear-bar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors/colors/orange.png"/>
+            <gear-teaser
+                cq:targetEngine="cq"
+                jcr:lastModified="{Date}2014-04-01T13:18:46.253+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/target"
+                location="products">
+                <default
+                    jcr:created="{Date}2014-04-01T10:47:12.001+03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2014-04-01T10:47:12.001+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_product"/>
+            </gear-teaser>
+            <col_break_0
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/colctrl"
+                controlType="break"/>
+            <article-header
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Article"
+                sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_header"
+                moreLink="/content/summit-geometrixx-outdoors/en/company/unlimited-blog.html"
+                moreText="View the Blog"/>
+            <article-bar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors/colors/orange.png"/>
+            <article-teaser
+                jcr:lastModified="{Date}2014-04-01T13:22:16.378+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/target"
+                location="article">
+                <default
+                    jcr:created="{Date}2014-04-01T11:28:47.259+03:00"
+                    jcr:createdBy="admin"
+                    jcr:description="Packing light is just the beginning."
+                    jcr:lastModified="{Date}2014-04-01T11:28:47.259+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="12 Travel Tips"
+                    sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_article"
+                    image="/content/dam/geometrixx-outdoors/articles/12-travel-tips.jpg"/>
+            </article-teaser>
+            <col_break_1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/colctrl"
+                controlType="break"/>
+            <social-header
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Social"
+                sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_header"
+                moreLink="/content/summit-geometrixx-outdoors/en/community.html"
+                moreText="View More"/>
+            <social-bar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/geometrixx-outdoors/colors/orange.png"/>
+            <recommend-social
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_social"/>
+            <col_end
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx-outdoors/components/colctrl"
+                controlType="end"/>
+        </par>
+    </jcr:content>
+</jcr:root>
