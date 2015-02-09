@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="0"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <productData
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Node of the product in PIM under /etc/commerce"
+            fieldLabel="product node"
+            name="./productData"
+            predicate="nosystem"
+            rootPath="/etc/commerce/products"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

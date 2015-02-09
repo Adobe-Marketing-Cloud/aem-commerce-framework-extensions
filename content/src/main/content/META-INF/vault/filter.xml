@@ -4,6 +4,8 @@
     <filter root="/etc/scaffolding/summit-geometrixx-outdoors"/>
     <filter root="/etc/tags/summit-geometrixx-outdoors"/>
     <filter root="/content/catalogs/summit-geometrixx-outdoors"/>
-    <filter root="/content/dam/Summit2015"/>
+	<filter root="/content/dam/Summit2015"/>
     <filter root="/content/summit-geometrixx-outdoors"/>
+    <filter root="/apps/commerce-extentions"/>
+    
 </workspaceFilter>

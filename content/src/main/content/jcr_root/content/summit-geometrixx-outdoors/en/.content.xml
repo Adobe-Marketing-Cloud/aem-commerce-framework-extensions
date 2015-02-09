@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
+    <activities/>
     <jcr:content
         cq:accountPage="/content/summit-geometrixx-outdoors/en/user/account"
         cq:cartPage="/content/summit-geometrixx-outdoors/en/user/cart"
@@ -10,10 +11,10 @@
         cq:commerceType="section"
         cq:composeMessagePage="/content/summit-geometrixx-outdoors/en/user/mailbox/compose-message"
         cq:designPath="/etc/designs/geometrixx-outdoors"
-        cq:lastModified="{Date}2015-02-08T22:21:11.794+11:00"
+        cq:lastModified="{Date}2015-02-09T21:44:28.370+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastPropertyRollout="{Date}2015-02-08T22:21:11.793+11:00"
-        cq:lastRolledout="{Date}2015-02-08T22:21:11.848+11:00"
+        cq:lastPropertyRollout="{Date}2015-02-09T21:44:28.369+11:00"
+        cq:lastRolledout="{Date}2015-02-09T21:44:28.410+11:00"
         cq:lastRolledoutBy="admin"
         cq:mailboxPage="/content/summit-geometrixx-outdoors/en/user/mailbox"
         cq:offlinePage="/content/summit-geometrixx-outdoors/en/toolbar/offline"
@@ -27,16 +28,16 @@
         sling:resourceType="geometrixx-outdoors/components/page_home"
         pageTitle="Geometrixx Outdoors">
         <par
-            cq:lastRolledout="{Date}2015-02-08T22:21:11.798+11:00"
+            cq:lastRolledout="{Date}2015-02-09T21:44:28.374+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <banner-teaser
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.829+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.396+11:00"
                 cq:lastRolledoutBy="admin"
                 cq:targetEngine="cq"
-                jcr:lastModified="{Date}2015-02-08T22:21:11.675+11:00"
+                jcr:lastModified="{Date}2015-02-09T21:44:28.211+11:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -44,18 +45,18 @@
                 location="banner"
                 strategyPath="cq/personalization/clientlib/source/strategies/list/first.js"/>
             <image
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.830+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.397+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:created="{Date}2015-02-08T21:48:17.022+11:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-02-08T22:21:11.684+11:00"
+                jcr:lastModified="{Date}2015-02-09T21:44:28.219+11:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/image"
                 fileReference="/content/dam/Summit2015/Summit-2015-STD.png"/>
             <colctrl
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.831+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.397+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -63,7 +64,7 @@
                 controlType="start"
                 layout="3;colctrl-3c"/>
             <gear-header
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.832+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.398+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -72,42 +73,42 @@
                 moreLink="/content/geometrixx-outdoors/en/equipment.html"
                 moreText="See More Gear"/>
             <gear-bar
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.833+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.399+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/image"
                 fileReference="/content/dam/geometrixx-outdoors/colors/orange.png"/>
             <gear-teaser
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.833+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.400+11:00"
                 cq:lastRolledoutBy="admin"
                 cq:targetEngine="cq"
-                jcr:lastModified="{Date}2015-02-08T22:21:11.711+11:00"
+                jcr:lastModified="{Date}2015-02-09T21:44:28.243+11:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq/personalization/components/target"
                 location="products">
                 <default
-                    cq:lastRolledout="{Date}2015-02-08T22:21:11.837+11:00"
+                    cq:lastRolledout="{Date}2015-02-09T21:44:28.402+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:created="{Date}2014-04-01T10:47:12.001+03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2015-02-08T22:21:11.721+11:00"
+                    jcr:lastModified="{Date}2015-02-09T21:44:28.253+11:00"
                     jcr:lastModifiedBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_product"/>
             </gear-teaser>
             <col_break_0
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.838+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.402+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/colctrl"
                 controlType="break"/>
             <article-header
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.839+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.403+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -116,28 +117,28 @@
                 moreLink="/content/geometrixx-outdoors/en/company/unlimited-blog.html"
                 moreText="View the Blog"/>
             <article-bar
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.840+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.404+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/image"
                 fileReference="/content/dam/geometrixx-outdoors/colors/orange.png"/>
             <article-teaser
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.841+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.404+11:00"
                 cq:lastRolledoutBy="admin"
-                jcr:lastModified="{Date}2015-02-08T22:21:11.743+11:00"
+                jcr:lastModified="{Date}2015-02-09T21:44:28.275+11:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq/personalization/components/target"
                 location="article">
                 <default
-                    cq:lastRolledout="{Date}2015-02-08T22:21:11.844+11:00"
+                    cq:lastRolledout="{Date}2015-02-09T21:44:28.406+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:created="{Date}2014-04-01T11:28:47.259+03:00"
                     jcr:createdBy="admin"
                     jcr:description="Packing light is just the beginning."
-                    jcr:lastModified="{Date}2015-02-08T22:21:11.754+11:00"
+                    jcr:lastModified="{Date}2015-02-09T21:44:28.285+11:00"
                     jcr:lastModifiedBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -146,14 +147,14 @@
                     image="/content/dam/geometrixx-outdoors/articles/12-travel-tips.jpg"/>
             </article-teaser>
             <col_break_1
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.845+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.407+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/colctrl"
                 controlType="break"/>
             <social-header
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.846+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.408+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -162,20 +163,20 @@
                 moreLink="/content/geometrixx-outdoors/en/community.html"
                 moreText="View More"/>
             <social-bar
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.846+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.408+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/image"
                 fileReference="/content/dam/geometrixx-outdoors/colors/orange.png"/>
             <recommend-social
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.847+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.409+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/social/recommend/recommend_social"/>
             <col_end
-                cq:lastRolledout="{Date}2015-02-08T22:21:11.848+11:00"
+                cq:lastRolledout="{Date}2015-02-09T21:44:28.409+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -188,8 +189,9 @@
             cq:rolloutConfigs="[/etc/msm/rolloutconfigs/catalogpagecontent,/etc/msm/rolloutconfigs/catalogrollouthooks]"
             jcr:primaryType="cq:LiveSyncConfig"/>
     </jcr:content>
-    <activities/>
     <company/>
     <toolbar/>
     <user/>
+    <cart/>
+    <equipment/>
 </jcr:root>
