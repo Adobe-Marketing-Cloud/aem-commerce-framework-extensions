@@ -11,15 +11,6 @@
         jcr:title="Equipment"
         jcr:uuid="6b55c0c2-dad0-4d58-b062-0e0b3b97332a"
         sling:resourceType="commerce/components/section">
-        <target
-            jcr:primaryType="nt:unstructured"
-            jcr_title="Equipment">
-            <par jcr:primaryType="nt:unstructured">
-                <banner
-                    jcr:primaryType="nt:unstructured"
-                    fileReference="/content/dam/geometrixx-outdoors/banners/snowboard-action.jpg"/>
-            </par>
-        </target>
         <templates
             jcr:primaryType="nt:unstructured"
             section="/content/catalogs/summit-geometrixx-outdoors/template-pages/section-page-template"/>
