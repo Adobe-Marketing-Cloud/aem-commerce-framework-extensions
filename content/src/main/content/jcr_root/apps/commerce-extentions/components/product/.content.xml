@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="eCommerce Training Product"
     allowedParents="[*/parsys]"
-    componentGroup="Summit Commerce"/>
+    componentGroup="Commerce Training"/>

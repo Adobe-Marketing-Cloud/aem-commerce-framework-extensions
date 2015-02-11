@@ -8,28 +8,28 @@
         com.adobe.cq.commerce.common.EnumerateAxisFilter"
         %>
 <%
-    String cartPage = "/content/summit-geometrixx-outdoors/en/cart";
+    String cartPage = "/content/geometrixx-outdoors/en/cart";
 
-    CommerceService commerceService = resource.adaptTo(CommerceService.class);
-    CommerceSession session = commerceService.login(slingRequest, slingResponse);
+    CommerceService commerceService = null; // Task 1
+    CommerceSession session = null; // Task 2
     Node node = resource.adaptTo(Node.class);
-    String productDataPath = node.getProperty("productData").getString();
-    Product baseProduct = resourceResolver.resolve(productDataPath).adaptTo(Product.class);
+    String productDataPath = null; // Task 3
+    Product baseProduct = null; // Task 3
 %>
 <div class=product>
-    <h1><%= baseProduct.getTitle() %></h1>
-     
+    <h1><%= /* Task 4 Title*/ %></h1>
+
     <div class="product-viewer" itemprop="image">
        <cq:include path="<%= baseProduct.getImageUrl() %>" resourceType="commerce/components/product/image"/>
     </div>
-    <div><%= baseProduct.getDescription() %></div>
+    <div><%= /* Task 4 Description*/ %></div>
 
     <div style="clear:both;">
         <table>
             <tr>
                 <%
                 Iterator<String> axesIterator = baseProduct.getVariantAxes();
-                String firstAxis = axesIterator.next(); %>
+                String firstAxis = null; // Task 5 %>
                 <th width="120"><%= firstAxis%></th>
                 <%
                     String secondAxis = null;
@@ -42,13 +42,12 @@
                  %>
             </tr>
             <%
-            Iterator<Product> firstAxisProductIterator = baseProduct.getVariants(new EnumerateAxisFilter(firstAxis));
-            while (firstAxisProductIterator.hasNext()) {
+            while (/* Task 6 Iterate over the first axis products */){
                 Product firstAxisProduct = firstAxisProductIterator.next();
                 %>
                 <tr>
                     <td>
-                        <%= xssAPI.encodeForHTML(firstAxisProduct.getProperty(firstAxis, String.class)) %>
+                        <%= /* Task 7 the first axis value*/ %>
                     </td>
                     <% if (secondAxis == null) {%>
                         <td>
@@ -64,7 +63,7 @@
                                 Iterator<Product> secondAxisProductIterator = firstAxisProduct.getVariants(new EnumerateAxisFilter(secondAxis));
                                 while (secondAxisProductIterator.hasNext()) {
                                     Product secondAxisProduct = secondAxisProductIterator.next();
-                                    String price = session.getProductPrice(secondAxisProduct);
+                                    String price = null; // Task 8
                                 %>
                                         <form style="padding:0 5px; margin:0; float:left;" method="POST" action="<%=xssAPI.getValidHref(cartPage + "/_jcr_content/par/cart.push.html")%>">
                                             <input type="hidden" name="product" value="<%= secondAxisProduct.getPath()%>"/>
