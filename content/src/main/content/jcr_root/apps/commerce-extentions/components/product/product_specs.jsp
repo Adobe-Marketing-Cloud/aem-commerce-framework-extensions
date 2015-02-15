@@ -20,32 +20,14 @@
 		com.adobe.cq.commerce.api.Product,
 		com.adobe.cq.commerce.api.CommerceSession,
 		com.adobe.cq.commerce.api.CommerceService,
-		com.day.cq.i18n.I18n,
-		java.util.ResourceBundle,
-		java.util.Locale"
+		com.day.cq.i18n.I18n"
 %><%
-    Locale pageLocale = null;
-    if (currentPage != null) {
-        pageLocale = currentPage.getLanguage(false);
-    } else if (request.getParameter("pagePath") != null) {
-        String pagePath = request.getParameter("pagePath");
-        Page contextPage = pageManager.getPage(pagePath);
-        if (contextPage != null) {
-            pageLocale = contextPage.getLanguage(false);
-        }
-    }
-    if (pageLocale == null) {
-        pageLocale = request.getLocale();
-    }
-
-    final ResourceBundle bundle = slingRequest.getResourceBundle(pageLocale);
-    final I18n i18n = new I18n(bundle);
+    final I18n i18n = new I18n(slingRequest);
 
     CommerceService commerceService = resource.adaptTo(CommerceService.class);
     CommerceSession session = commerceService.login(slingRequest, slingResponse);
 
     Product product = (Product) request.getAttribute("cq.commerce.product");
-
     String productId = product.getSKU();
 %>
 <p class="product-price" itemprop="price"><%= xssAPI.encodeForHTML(session.getProductPrice(product)) %></p>

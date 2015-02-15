@@ -20,7 +20,6 @@
 		java.util.Iterator,
 		java.util.List,
 		org.apache.commons.lang.StringUtils,
-		org.apache.sling.api.resource.Resource,
 		com.adobe.cq.commerce.api.CommerceService,
 		com.adobe.cq.commerce.api.CommerceSession,
 		com.adobe.cq.commerce.api.Product,
@@ -28,29 +27,9 @@
 		com.adobe.cq.commerce.common.CommerceHelper,
 		com.adobe.cq.commerce.common.EnumerateAxisFilter,
 		com.day.cq.i18n.I18n,
-		com.day.cq.wcm.api.components.DropTarget,
-		java.util.ResourceBundle,
-		java.util.Locale"
+		com.day.cq.wcm.api.components.DropTarget"
         %><%
-
-    Locale pageLocale = null;
-    if (currentPage != null) {
-        pageLocale = currentPage.getLanguage(false);
-    } else if (request.getParameter("pagePath") != null) {
-        String pagePath = request.getParameter("pagePath");
-        Page contextPage = pageManager.getPage(pagePath);
-        if (contextPage != null) {
-            pageLocale = contextPage.getLanguage(false);
-        }
-    }
-    if (pageLocale == null) {
-        pageLocale = request.getLocale();
-    }
-
-    final ResourceBundle bundle = slingRequest.getResourceBundle(pageLocale);
-    final I18n i18n = new I18n(bundle);
-
-    final String language = pageLocale.getLanguage();
+    final I18n i18n = new I18n(slingRequest);
 
     CommerceService commerceService = resource.adaptTo(CommerceService.class);
     CommerceSession session = commerceService.login(slingRequest, slingResponse);
@@ -81,7 +60,7 @@
     List<Product> variations = new ArrayList<Product>();
 
     String variationAxis = baseProduct.getProperty("variationAxis", String.class);
-    String variationTitle = baseProduct.getProperty("variationTitle", language, String.class);
+    String variationTitle = baseProduct.getProperty("variationTitle", String.class);
     String variationLead = baseProduct.getProperty("variationLead", String.class);
 
     if (StringUtils.isNotEmpty(variationAxis)) {
@@ -137,7 +116,7 @@
         if (window.ContextHub && ContextHub.getStore("abandonedproducts")) {
             ContextHub.getStore("abandonedproducts").record(
                     '<%= xssAPI.encodeForJSString(baseProduct.getPagePath()) %>',
-                    '<%= xssAPI.encodeForJSString(baseProduct.getTitle(language)) %>',
+                    '<%= xssAPI.encodeForJSString(baseProduct.getTitle()) %>',
                     '<%= xssAPI.encodeForJSString(baseProductImage != null ? resourceResolver.map(baseProductImage.getPath()) : "") %>',
                     '<%= xssAPI.encodeForJSString(session.getProductPrice(baseProduct))%>');
         }
@@ -168,14 +147,14 @@
         if (window.ContextHub && ContextHub.getStore("recentlyviewed")) {
             ContextHub.getStore("recentlyviewed").record(
                     '<%= xssAPI.encodeForJSString(baseProduct.getPagePath()) %>',
-                    '<%= xssAPI.encodeForJSString(baseProduct.getTitle(language)) %>',
+                    '<%= xssAPI.encodeForJSString(baseProduct.getTitle()) %>',
                     '<%= xssAPI.encodeForJSString(baseProductImage != null ? resourceResolver.map(baseProductImage.getPath()) : "") %>',
                     '<%= xssAPI.encodeForJSString(session.getProductPrice(baseProduct))%>');
         }
         if (CQ_Analytics && CQ_Analytics.ViewedProducts) {
             CQ_Analytics.ViewedProducts.record(
                     '<%= xssAPI.encodeForJSString(baseProduct.getPagePath()) %>',
-                    '<%= xssAPI.encodeForJSString(baseProduct.getTitle(language)) %>',
+                    '<%= xssAPI.encodeForJSString(baseProduct.getTitle()) %>',
                     '<%= xssAPI.encodeForJSString(baseProductImage != null ? resourceResolver.map(baseProductImage.getPath()) : "") %>',
                     '<%= xssAPI.encodeForJSString(session.getProductPrice(baseProduct))%>');
         }
@@ -251,12 +230,12 @@
         <h3><%= xssAPI.filterHTML(variationTitle) %></h3>
         <ul>
             <% for (Product variant : variations) { %>
-            <li title="<%= xssAPI.encodeForHTMLAttr(variant.getTitle(language)) %>" data-sku="<%= variant.getSKU() %>">
+            <li title="<%= xssAPI.encodeForHTMLAttr(variant.getTitle()) %>" data-sku="<%= variant.getSKU() %>">
                 <% String thumbnail = variant.getThumbnailUrl();
                     if (StringUtils.isNotEmpty(thumbnail)) { %>
-                <img src="<%= xssAPI.getValidHref(thumbnail) %>" alt="<%= xssAPI.encodeForHTMLAttr(variant.getTitle(language)) %>"/>
+                <img src="<%= xssAPI.getValidHref(thumbnail) %>" alt="<%= xssAPI.encodeForHTMLAttr(variant.getTitle()) %>"/>
                 <% } else { %>
-                <span><%= xssAPI.encodeForHTML(variant.getTitle(language)) %></span>
+                <span><%= xssAPI.encodeForHTML(variant.getTitle()) %></span>
                 <% } %>
             </li>
             <% } %>
@@ -269,7 +248,7 @@
           onsubmit="return validateProductQuantity('<%= productQuantityId %>') && trackCartAdd(this)">
         <div class="product-size-quantity">
             <% if (product.axisIsVariant("size")) {
-                String initialSize = product.getProperty("size", language, String.class); %>
+                String initialSize = product.getProperty("size", String.class); %>
             <section class="product-size">
                 <h3><%= xssAPI.filterHTML(i18n.get("Size")) %></h3>
                 <ul>
@@ -284,9 +263,9 @@
                         java.util.Collections.sort(sizes, CommerceHelper.getProductSizeComparator());
 
                         for (Product p : sizes) {
-                            String title = p.getTitle(language);
-                            String description = p.getDescription(language);
-                            String size = p.getProperty("size", language, String.class);
+                            String title = p.getTitle();
+                            String description = p.getDescription();
+                            String size = p.getProperty("size", String.class);
                             final String sizeId = xssAPI.encodeForHTMLAttr("size-" + size + "-" + System.currentTimeMillis());
                             String checked = (size != null && size.equals(initialSize)) ? "checked='checked'" : ""; %>
                     <li><span><label for="<%= sizeId %>"><%= xssAPI.encodeForHTML(size) %></label></span>
