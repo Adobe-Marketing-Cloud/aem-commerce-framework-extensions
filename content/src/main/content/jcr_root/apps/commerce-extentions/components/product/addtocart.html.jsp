@@ -19,35 +19,49 @@
 		java.util.ArrayList,
 		java.util.Iterator,
 		java.util.List,
-	    java.util.ResourceBundle,
-		java.util.Locale,
 		org.apache.commons.lang.StringUtils,
+		org.apache.sling.api.resource.Resource,
 		com.adobe.cq.commerce.api.CommerceService,
 		com.adobe.cq.commerce.api.CommerceSession,
 		com.adobe.cq.commerce.api.Product,
 		com.adobe.cq.commerce.common.AxisFilter,
 		com.adobe.cq.commerce.common.CommerceHelper,
 		com.adobe.cq.commerce.common.EnumerateAxisFilter,
+		com.day.cq.i18n.I18n,
 		com.day.cq.wcm.api.components.DropTarget,
-		com.day.cq.i18n.I18n"%><%
-%><%
-    final Locale pageLocale = currentPage.getLanguage(false);
+		java.util.ResourceBundle,
+		java.util.Locale"
+        %><%
+
+    Locale pageLocale = null;
+    if (currentPage != null) {
+        pageLocale = currentPage.getLanguage(false);
+    } else if (request.getParameter("pagePath") != null) {
+        String pagePath = request.getParameter("pagePath");
+        Page contextPage = pageManager.getPage(pagePath);
+        if (contextPage != null) {
+            pageLocale = contextPage.getLanguage(false);
+        }
+    }
+    if (pageLocale == null) {
+        pageLocale = request.getLocale();
+    }
+
     final ResourceBundle bundle = slingRequest.getResourceBundle(pageLocale);
     final I18n i18n = new I18n(bundle);
 
     final String language = pageLocale.getLanguage();
 
-    CommerceService commerceService = null; //   Task 1
-    CommerceSession session = null;  // Task2 
+    CommerceService commerceService = resource.adaptTo(CommerceService.class);
+    CommerceSession session = commerceService.login(slingRequest, slingResponse);
 
-    %><cq:include script="init.jsp"/><%
-
-    String addToCartUrl = (String) request.getAttribute("cq.commerce.addToCartUrl");
-    String redirect = (String) request.getAttribute("cq.commerce.redirect");
-    String errorRedirect = (String) request.getAttribute("cq.commerce.errorRedirect");
-    Product baseProduct = null; // Task 3
-
+    Product baseProduct = resource.adaptTo(Product.class);
+    String addToCartUrl = baseProduct.getPath() + ".commerce.addcartentry.html";
     Resource baseProductImage = baseProduct.getImage();
+
+    boolean showProductAsset = "true".equals(request.getParameter("showProductAsset"));
+    boolean showProductPrice = "true".equals(request.getParameter("showProductPrice"));
+    boolean showProductForm = "true".equals(request.getParameter("showProductForm"));
 
     // This product component renders products with up to two variant axes:
     //   1) the product can have a variant "size" axis
@@ -67,7 +81,7 @@
     List<Product> variations = new ArrayList<Product>();
 
     String variationAxis = baseProduct.getProperty("variationAxis", String.class);
-    String variationTitle = i18n.getVar(baseProduct.getProperty("variationTitle", language, String.class));
+    String variationTitle = baseProduct.getProperty("variationTitle", language, String.class);
     String variationLead = baseProduct.getProperty("variationLead", String.class);
 
     if (StringUtils.isNotEmpty(variationAxis)) {
@@ -93,20 +107,20 @@
 %>
 <script type="text/javascript">
 
-	$CQ(document).on("sitecatalystAfterCollect", function(event) {
+    $CQ(document).on("sitecatalystAfterCollect", function(event) {
         if (CQ_Analytics.Sitecatalyst) {
             CQ_Analytics.record({
-                    "event": ["prodView"],
-                    "values": {
-                    	"product": [{
-                    		"category": "",
-                    		"sku": "<%= xssAPI.encodeForJSString(baseProduct.getSKU()) %>"
-                    	}]
-                    },
-                    "componentPath": "<%= xssAPI.encodeForJSString(resource.getResourceType()) %>"
+                "event": ["prodView"],
+                "values": {
+                    "product": [{
+                        "category": "",
+                        "sku": "<%= xssAPI.encodeForJSString(baseProduct.getSKU()) %>"
+                    }]
+                },
+                "componentPath": "<%= xssAPI.encodeForJSString(resource.getResourceType()) %>"
             });
         }
-	});
+    });
 
     function validateProductQuantity(fieldId) {
         var quantity = document.getElementById(fieldId).value;
@@ -132,19 +146,19 @@
             var productPrice    = Number($("input[name='product-size']:checked", form).data('price').replace(/[^0-9\\.]/g, ''));
             var productChildSku =        $("input[name='product-size']:checked", form).data('sku');
             CQ_Analytics.record({
-                    "event": ["cartAdd"<%= (session.getCartEntryCount() == 0) ? ", 'cartOpen'" : "" %>],
-                    "values": {
-                    	"product": [{
-                    		"category": "",
-                    		"sku": "<%= xssAPI.encodeForJSString(baseProduct.getSKU()) %>",
-                            "price": productPrice * productQuantity,
-                            "quantity": productQuantity,
-                    		"evars": {
-                            	"childSku": CQ.shared.Util.htmlEncode(productChildSku)
-                    		}
-                    	}]
-                    },
-                    "componentPath": "<%= xssAPI.encodeForJSString(resource.getResourceType()) %>"
+                "event": ["cartAdd"<%= (session.getCartEntryCount() == 0) ? ", 'cartOpen'" : "" %>],
+                "values": {
+                    "product": [{
+                        "category": "",
+                        "sku": "<%= xssAPI.encodeForJSString(baseProduct.getSKU()) %>",
+                        "price": productPrice * productQuantity,
+                        "quantity": productQuantity,
+                        "evars": {
+                            "childSku": CQ.shared.Util.htmlEncode(productChildSku)
+                        }
+                    }]
+                },
+                "componentPath": "<%= xssAPI.encodeForJSString(resource.getResourceType()) %>"
             });
         }
         return true;
@@ -164,7 +178,7 @@
                     '<%= xssAPI.encodeForJSString(baseProduct.getTitle(language)) %>',
                     '<%= xssAPI.encodeForJSString(baseProductImage != null ? resourceResolver.map(baseProductImage.getPath()) : "") %>',
                     '<%= xssAPI.encodeForJSString(session.getProductPrice(baseProduct))%>');
-        }	
+        }
     }
 
     function selectVariationAndSize() {
@@ -172,15 +186,15 @@
             var hashSku = window.location.hash.slice(1);
             var hashSize = $(".product-size input[data-sku='"+hashSku+"']");
             if (hashSize.length > 0) {
-                $("article").addClass("isHidden");
-                hashSize.parents("article").removeClass("isHidden");
+                $("article:visible").hide();
+                hashSize.parents("article").show();
                 hashSize.click();
                 return;
             } else {
                 var hashVariation = $("li[data-sku='"+hashSku+"']");
                 if (hashVariation.length > 0) {
-                    $("article").addClass("isHidden");
-                    hashVariation.parents("article").removeClass("isHidden");
+                    $("article:visible").hide();
+                    hashVariation.parents("article").show();
                     hashVariation.click();
                     return;
                 }
@@ -201,25 +215,38 @@
 </script>
 <%
 
-    String articleVisibility = ""; // possible values: empty: visible, "isHidden": hidden
+    String articleStyle = "";
     for (Product product : variations) {
         request.setAttribute("cq.commerce.product", product);
 %>
-<article class="product <%= DropTarget.CSS_CLASS_PREFIX %>product-data-reference <%= articleVisibility%>"
-         itemscope itemtype="http://schema.org/Product" data-sku="<%= product.getSKU() %>">
-    <div class="product-viewer" itemprop="image">
+<article class="product product-add-to-cart <%= DropTarget.CSS_CLASS_PREFIX %>product-data-reference" <%= articleStyle %>
+         itemscope itemtype="http://schema.org/Product" data-sku="<%= product.getSKU() %>"><%
+
+    if (showProductAsset) {
+
+    %><div class="product-viewer" itemprop="image">
         <% Resource assetRes = product.getAsset();
             if (assetRes != null) { %>
         <sling:include resource="<%= assetRes%>"/>
         <% } %>
     </div>
 
-    <div class="product-details">
-        <cq:include script="product_header.jsp"/>
-        <cq:include script="product_specs.jsp"/>
-    </div>
+    <% } %>
 
-    <% if (variations.size() > 1) { %>
+    <div class="product-details">
+        <cq:include script="product_header.jsp"/><%
+
+    if (showProductPrice) {
+
+        %><cq:include script="product_specs.jsp"/><%
+
+    }
+
+%></div><%
+
+        if (showProductForm) {
+
+        if (variations.size() > 1) { %>
     <section class="product-chooser">
         <h3><%= xssAPI.filterHTML(variationTitle) %></h3>
         <ul>
@@ -242,7 +269,7 @@
           onsubmit="return validateProductQuantity('<%= productQuantityId %>') && trackCartAdd(this)">
         <div class="product-size-quantity">
             <% if (product.axisIsVariant("size")) {
-               String initialSize = product.getProperty("size", language, String.class); %>
+                String initialSize = product.getProperty("size", language, String.class); %>
             <section class="product-size">
                 <h3><%= xssAPI.filterHTML(i18n.get("Size")) %></h3>
                 <ul>
@@ -281,17 +308,19 @@
             </section>
         </div>
         <section class="product-submit">
-            <input type="hidden" name="redirect" value="<%= resourceResolver.map(request, redirect) %>.html"/>
-            <input type="hidden" name="redirect-product-not-found" value="<%= resourceResolver.map(request, errorRedirect) %>.html"/>
+            <input type="hidden" name="redirect" value=""/>
+            <input type="hidden" name="redirect-product-not-found" value=""/>
             <input type="hidden" name="product-path" value="<%= product.getPath() %>" />
             <span class="button-group"><input type="submit" value="<%= i18n.get("Add to Cart") %>"/><span></span></span>
             <p class="product-wishlist"><a href="#">+ <%= xssAPI.filterHTML(i18n.get("Add to wishlist")) %></a></p>
         </section>
-    </form>
+    </form><%
 
-</article>
+    }
+
+%></article>
+<cq:includeClientLib js="cq.commerce"/>
 <%
-        articleVisibility = "isHidden";
+        articleStyle = "style='display:none'";
     }
 %>
-<cq:include script="product_social.jsp"/>

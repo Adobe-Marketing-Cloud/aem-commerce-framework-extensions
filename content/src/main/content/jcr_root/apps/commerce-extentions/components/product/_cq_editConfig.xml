@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    cq:actions="[text: Form Text ,-,edit,-,delete]"
-    cq:layout="editbar"
-    jcr:primaryType="cq:EditConfig"/>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:disableTargeting="{Boolean}true"
+    jcr:primaryType="cq:EditConfig">
+    <cq:dropTargets jcr:primaryType="nt:unstructured">
+        <product-data-reference
+            jcr:primaryType="cq:DropTargetConfig"
+            accept="[.*]"
+            groups="[product]"
+            propertyName="./productData"/>
+    </cq:dropTargets>
+    <cq:formParameters
+        cq:commerceType="product"
+        jcr:primaryType="nt:unstructured"/>
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afteredit="CQ.commerce.Edit.productAfterEdit"/>
+</jcr:root>

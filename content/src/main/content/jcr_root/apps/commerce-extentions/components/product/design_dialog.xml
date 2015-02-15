@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Product Page (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <addToCartRedirect
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Page to display after adding products to the cart.  (Specify '.' to stay on the current page.)"
+            fieldLabel="Add To Cart Redirect"
+            name="./addToCartRedirect"
+            xtype="pathfield"/>
+        <cartErrorRedirect
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Page to display when the product could not be added to the cart."
+            fieldLabel="Cart Error Redirect"
+            name="./cartErrorRedirect"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>
