@@ -39,7 +39,9 @@
     String addToCartUrl = (String) request.getAttribute("cq.commerce.addToCartUrl");
     String redirect = (String) request.getAttribute("cq.commerce.redirect");
     String errorRedirect = (String) request.getAttribute("cq.commerce.errorRedirect");
-    Product baseProduct = (Product) request.getAttribute("cq.commerce.product");
+    Node node = resource.adaptTo(Node.class);
+    String productDataPath = node.getProperty("productData").getString();
+    Product baseProduct = resourceResolver.resolve(productDataPath).adaptTo(Product.class);
 
     Resource baseProductImage = baseProduct.getImage();
 
