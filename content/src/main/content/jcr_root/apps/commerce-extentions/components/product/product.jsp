@@ -31,18 +31,20 @@
 %><%
     final I18n i18n = new I18n(slingRequest);
 
-    CommerceService commerceService = resource.adaptTo(CommerceService.class);
-    CommerceSession session = commerceService.login(slingRequest, slingResponse);
+    CommerceService commerceService = null; // Task1
+    CommerceSession session = null; // Task2
 
     %><cq:include script="init.jsp"/><%
 
     String addToCartUrl = (String) request.getAttribute("cq.commerce.addToCartUrl");
     String redirect = (String) request.getAttribute("cq.commerce.redirect");
     String errorRedirect = (String) request.getAttribute("cq.commerce.errorRedirect");
-    Product baseProduct = (Product) request.getAttribute("cq.commerce.product");
+    String productDataPath = null ;//Task3
+    Product baseProduct = null; // Task4
 
     Resource baseProductImage = baseProduct.getImage();
-
+    
+    
     // This product component renders products with up to two variant axes:
     //   1) the product can have a variant "size" axis
     //   2) the product can have a second variant axis defined by properties:
