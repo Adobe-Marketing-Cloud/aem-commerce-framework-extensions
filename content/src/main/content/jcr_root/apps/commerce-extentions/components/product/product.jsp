@@ -27,7 +27,8 @@
         com.adobe.cq.commerce.common.CommerceHelper,
         com.adobe.cq.commerce.common.EnumerateAxisFilter,
         com.day.cq.wcm.api.components.DropTarget,
-        com.day.cq.i18n.I18n"%><%
+        com.day.cq.i18n.I18n,
+    com.adobe.summit.commerce.custom.SummitProduct"%><%
 %><%
     final I18n i18n = new I18n(slingRequest);
 
@@ -220,8 +221,10 @@
         <h3><%= xssAPI.filterHTML(variationTitle) %></h3>
         <ul>
             <% for (Product variant : variations) { %>
+
             <li title="<%= xssAPI.encodeForHTMLAttr(variant.getTitle()) %>" data-sku="<%= variant.getSKU() %>">
                 <% String thumbnail = variant.getThumbnailUrl();
+                   
                     if (StringUtils.isNotEmpty(thumbnail)) { %>
                 <img src="<%= xssAPI.getValidHref(thumbnail) %>" alt="<%= xssAPI.encodeForHTMLAttr(variant.getTitle()) %>"/>
                 <% } else { %>

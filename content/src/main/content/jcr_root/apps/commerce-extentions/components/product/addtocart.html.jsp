@@ -260,7 +260,7 @@
                         for (Iterator<Product> unorderedSizes = product.getVariants(filter); unorderedSizes.hasNext(); ) {
                             sizes.add(unorderedSizes.next());
                         }
-                        java.util.Collections.sort(sizes, CommerceHelper.getProductSizeComparator());
+                        //java.util.Collections.sort(sizes, CommerceHelper.getProductSizeComparator());
 
                         for (Product p : sizes) {
                             String title = p.getTitle();

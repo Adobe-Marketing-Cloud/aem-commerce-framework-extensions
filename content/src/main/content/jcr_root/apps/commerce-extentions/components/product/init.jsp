@@ -23,8 +23,8 @@
         %><%
 
     String addToCartUrl = currentPage.getPath() + ".commerce.addcartentry.html";
-    String redirect = CommerceHelper.mapPathToCurrentLanguage(currentPage, currentStyle.get("addToCartRedirect", ""));
-    String errorRedirect = CommerceHelper.mapPathToCurrentLanguage(currentPage, currentStyle.get("cartErrorRedirect", ""));
+	String redirect = "/content/summit-geometrixx-outdoors/en/user/cart.html"; //CommerceHelper.mapPathToCurrentLanguage(currentPage, currentStyle.get("addToCartRedirect", ""));
+	String errorRedirect = "/content/summit-geometrixx-outdoors/en/user/cart.html"; //CommerceHelper.mapPathToCurrentLanguage(currentPage, currentStyle.get("cartErrorRedirect", ""));
     if (StringUtils.isEmpty(redirect) && request.getAttribute(CommerceConstants.REQ_ATTR_CARTPAGE) != null) {
         //
         // Legacy CQ5.6 sites won't have the redirects in the design, and instead rely on their parent
