@@ -7,7 +7,7 @@
         cq:cartPage="/content/summit-geometrixx-outdoors/en/user/cart"
         cq:catalogBlueprint="/content/catalogs/geometrixx-outdoors/base-catalog"
         cq:checkoutPage="/content/summit-geometrixx-outdoors/en/user/checkout"
-        cq:commerceProvider="summit-commerce"
+        cq:commerceProvider="geometrixx"
         cq:commerceType="section"
         cq:composeMessagePage="/content/summit-geometrixx-outdoors/en/user/mailbox/compose-message"
         cq:designPath="/etc/designs/geometrixx-outdoors"

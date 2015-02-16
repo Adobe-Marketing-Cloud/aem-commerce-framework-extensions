@@ -17,11 +17,11 @@
 %><%@ include file="/libs/foundation/global.jsp" %><%
 %><%@ page contentType="text/html; charset=utf-8" import="
     com.adobe.cq.commerce.api.Product,
-  com.adobe.summit.commerce.custom.SummitProduct"
+    com.adobe.summit.commerce.custom.SummitProduct"
 %><%
     Product product = (Product) request.getAttribute("cq.commerce.product");
-    String summitDescription = ((SummitProduct)product).getSummitDescription();
-    String summitPrice = ((SummitProduct)product).getSummitPrice();
+    String summitDescription = "";//Exercise3-Task2-Step7
+    String summitPrice = ""; //Exercise3-Task2-Step7
 
 %>
 <header>
