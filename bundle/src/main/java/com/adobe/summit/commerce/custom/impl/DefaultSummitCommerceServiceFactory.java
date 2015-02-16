@@ -13,11 +13,10 @@ import org.apache.sling.jcr.api.SlingRepository;
 import org.apache.sling.settings.SlingSettingsService;
 
 import com.adobe.cq.commerce.api.CommerceService;
-import com.adobe.cq.commerce.api.CommerceServiceFactory;
 import com.adobe.cq.commerce.common.AbstractJcrCommerceServiceFactory;
 import com.adobe.cq.commerce.common.CommerceSearchProviderManager;
 import com.adobe.granite.security.user.UserPropertiesService;
-import com.adobe.summit.commerce.custom.SummitCommerceService;
+import com.adobe.summit.commerce.custom.SummitCommerceServiceFactory;
 import com.day.cq.wcm.api.LanguageManager;
 
 @Component(metatype = true, label = "Summit Commerce Factory")
@@ -28,7 +27,7 @@ import com.day.cq.wcm.api.LanguageManager;
 		})
 public class DefaultSummitCommerceServiceFactory extends
 		AbstractJcrCommerceServiceFactory implements
-		CommerceServiceFactory {
+		SummitCommerceServiceFactory {
 
 	@Reference
     protected LanguageManager languageManager;
