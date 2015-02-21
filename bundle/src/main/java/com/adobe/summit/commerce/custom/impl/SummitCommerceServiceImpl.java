@@ -9,11 +9,8 @@ import org.apache.sling.api.resource.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adobe.cq.commerce.api.CommerceException;
-import com.adobe.cq.commerce.api.Product;
 import com.elasticpath.aem.commerce.AbstractElasticPathCommerceService;
 import com.elasticpath.aem.commerce.cortex.CortexServiceContext;
-import com.elasticpath.aem.commerce.impl.ElasticPathProductImpl;
 import com.elasticpath.aem.commerce.service.UserPropertiesService;
 import com.elasticpath.rest.client.CortexClient;
 import com.elasticpath.rest.client.CortexClientFactory;
@@ -34,16 +31,6 @@ public class SummitCommerceServiceImpl extends AbstractElasticPathCommerceServic
 	
 	public CortexSdkServiceFactory getServiceFactory(final CortexClient cortexClient) {
 		return new SummitCortexSdkServiceFactory(cortexClient, this);
-	}
-
-
-	@Override
-	public Product getProduct(final String path) throws CommerceException {
-		Resource resource = resolver.getResource(path);
-		if (resource != null && SummitProduct.isAProductOrVariant(resource)) {
-			return new SummitProduct(resource);
-		}
-		return null;
 	}
 
 
