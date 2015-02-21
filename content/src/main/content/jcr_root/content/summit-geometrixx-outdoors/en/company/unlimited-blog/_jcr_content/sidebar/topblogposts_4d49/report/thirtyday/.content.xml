@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    cq:lastAttempt="1357682877312"
-    cq:reportType="ranked"
-    jcr:primaryType="cq:PollConfigFolder"
-    interval="{Long}3600"
-    source="screport:default"/>

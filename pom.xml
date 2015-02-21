@@ -50,7 +50,7 @@
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.scr.annotations</artifactId>
-                <version>1.6.0</version>
+                <version>1.9.6</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -111,7 +111,12 @@
             </dependency>
 
             <!-- Commerce specific dependencies -->
-
+             <dependency>
+                <groupId>com.elasticpath.aem.commerce</groupId>
+                <artifactId>cq-commerce-elasticpath-impl</artifactId>
+                <version>0-SNAPSHOT</version>
+                <scope>provided</scope>
+            </dependency>    
             <dependency>
                 <groupId>com.adobe.cq.commerce</groupId>
                 <artifactId>cq-commerce-core</artifactId>
@@ -136,6 +141,81 @@
                 <version>0.1.6</version>
                 <scope>provided</scope>
             </dependency>
+
+            <!-- Elasticpath Commerce Integration Framework related dependencies -->
+            <dependency>
+                <groupId>com.elasticpath.aem.commerce</groupId>
+                <artifactId>cq-commerce-elasticpath-impl</artifactId>
+                <version>0-SNAPSHOT</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.elasticpath.rest</groupId>
+                <artifactId>cortex-jaxrs-client</artifactId>
+                <version>0-SNAPSHOT</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- EP - CIF - Rest client to communicate with EP server -->
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>2.0.1</version>
+                <scope>provided</scope>
+            </dependency>   
+
+            <!-- EP - CIF - Sling Adaptor to communicate with EP server -->
+            <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.adapter</artifactId>
+                <version>2.0.4</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- EP - CIF - CQ Address and Personalisation to communicate with EP server -->
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>cq-address</artifactId>
+                <version>1.1.6</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adobe.granite</groupId>
+                <artifactId>com.adobe.granite.ui.commons</artifactId>
+                <version>5.5.138</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.day.cq</groupId>
+                <artifactId>cq-personalization</artifactId>
+                <version>5.6.6</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- EP - CIF - Utility services for communication with EP server -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>15.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>1.4.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.3.2</version>
+                <scope>provided</scope>
+            </dependency>
+            
+
         </dependencies>
     </dependencyManagement>
 
@@ -167,12 +247,12 @@
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.7.4</version>
+                    <version>1.15.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-bundle-plugin</artifactId>
-                    <version>2.3.7</version>
+                    <version>2.5.3</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

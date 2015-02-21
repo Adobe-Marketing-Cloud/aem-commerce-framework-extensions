@@ -1,6 +1,5 @@
 package com.adobe.summit.commerce.custom;
 
-import com.adobe.cq.commerce.api.CommerceSession;
 
 /**
  * Custom Commerce Session for Summit 
@@ -8,6 +7,6 @@ import com.adobe.cq.commerce.api.CommerceSession;
  * @author vvenkata
  *
  */
-public interface SummitCommerceSession  extends CommerceSession {
+public interface SummitCommerceSession {
 
 }

@@ -3,7 +3,7 @@
  */
 package com.adobe.summit.commerce.custom;
 
-import com.adobe.cq.commerce.api.CommerceService;
+import com.elasticpath.aem.commerce.ElasticPathCommerceService;
 
 /**
  * Extention to Commerce Services
@@ -11,7 +11,7 @@ import com.adobe.cq.commerce.api.CommerceService;
  * @author vvenkata
  *
  */
-public interface SummitCommerceService extends CommerceService {
+public interface SummitCommerceService extends ElasticPathCommerceService {
 
 	
 
