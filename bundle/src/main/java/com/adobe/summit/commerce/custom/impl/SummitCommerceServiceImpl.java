@@ -44,7 +44,7 @@ public class SummitCommerceServiceImpl extends AbstractJcrCommerceService
 	@Override
 	public CommerceSession login(SlingHttpServletRequest request,
 			SlingHttpServletResponse response) throws CommerceException {
-		return new SummitCommerceSessionImpl(this, request, response, resource);
+		return null; //Step 3
 	}
 
 	@Override
@@ -58,11 +58,7 @@ public class SummitCommerceServiceImpl extends AbstractJcrCommerceService
 
 	@Override
 	public Product getProduct(final String path) throws CommerceException {
-		Resource resource = resolver.getResource(path);
-		if (resource != null && SummitProduct.isAProductOrVariant(resource)) {
-			return new SummitProduct(resource);
-		}
-		return null;
+		return null; //Step 2
 	}
 
 	@Override

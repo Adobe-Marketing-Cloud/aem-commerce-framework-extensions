@@ -8,13 +8,19 @@ import org.apache.sling.api.resource.Resource;
 import com.adobe.cq.commerce.api.CommerceService;
 import com.adobe.cq.commerce.api.CommerceServiceFactory;
 
+/**
+ * Factory interface to extend
+ * 
+ * @author vvenkata
+ *
+ */
 public interface SummitCommerceServiceFactory extends CommerceServiceFactory {
 
 	/**
-	 * Returns a new <code>ElasticPathCommerceService</code>.
+	 * Returns a new <code>CommerceService</code>.
 	 * 
 	 * @param resource Resource
-	 * @return ElasticPathCommerceService- Commerce service specific to Elastic path.
+	 * @return CommerceService- Commerce service specific to implementation.
 	 */
 	CommerceService getCommerceService(Resource resource);
 

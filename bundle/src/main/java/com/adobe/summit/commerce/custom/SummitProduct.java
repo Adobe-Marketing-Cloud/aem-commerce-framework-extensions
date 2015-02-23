@@ -8,6 +8,8 @@ import org.apache.sling.api.resource.Resource;
 import com.adobe.cq.commerce.common.AbstractJcrProduct;
 
 /**
+ * Custom product
+ * 
  * @author vvenkata
  *
  */
@@ -21,14 +23,7 @@ public class SummitProduct extends AbstractJcrProduct {
 	@Override
 	public String getSKU() {
 	     return getProperty(PN_IDENTIFIER, String.class);
-	}
-
-	public String getSummitDescription() {
-	     return getProperty("jcr:summit", String.class);
-	}
-
-	public String getSummitPrice() {
-	     return getProperty("summitprice", String.class);
-	}
+	}	
 	
+	// Step 4
 }

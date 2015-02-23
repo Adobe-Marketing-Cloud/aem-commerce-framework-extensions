@@ -55,7 +55,7 @@ public class DefaultSummitCommerceServiceFactory extends
 	 * @return SummitCommerceService- Commerce service specific to Elastic path.
 	 */
 	public CommerceService getCommerceService(Resource resource) {
-		return new SummitCommerceServiceImpl(getServiceContext(), resource);
+		return null;	// Task 1 
 	}
 
 }
