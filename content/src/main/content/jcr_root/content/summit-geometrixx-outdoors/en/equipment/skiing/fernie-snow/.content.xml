@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:29.946+11:00"
+        cq:lastModified="{Date}2015-02-23T20:36:26.856+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:29.987+11:00"
+        cq:lastRolledout="{Date}2015-02-23T20:36:26.907+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnfr"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,37 +13,37 @@
         jcr:title="Fernie Snow"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:29.962+11:00"
+            cq:lastRolledout="{Date}2015-02-23T20:36:26.871+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:29.969+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:26.876+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:17.252+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnfr">
                 <eqwnfr-m-m
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:29.974+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.894+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnfr/M">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:29.977+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.897+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:29.978+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.898+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,49 +51,49 @@
                 </eqwnfr-m-m>
                 <eqwnfr-s-s
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:29.979+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.898+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnfr/S">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:29.982+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.902+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:29.982+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.902+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqwnfr-s-s>
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:29.983+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.903+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:29.983+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.903+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:29.984+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:26.904+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:29.986+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.905+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -101,7 +101,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:29.986+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:26.906+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -111,7 +111,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:29.987+11:00"
+            cq:lastRolledout="{Date}2015-02-23T20:36:26.906+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
@@ -123,8 +123,5 @@
             cq:master="/content/catalogs/summit-geometrixx-outdoors/template-pages/product-page-template"
             cq:rolloutConfigs="[/etc/msm/rolloutconfigs/catalogpagecontent,/etc/msm/rolloutconfigs/catalogrollouthooks]"
             jcr:primaryType="cq:LiveCopy"/>
-        <image
-            jcr:primaryType="nt:unstructured"
-            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
     </jcr:content>
 </jcr:root>

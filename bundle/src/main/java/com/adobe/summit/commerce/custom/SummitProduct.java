@@ -26,9 +26,4 @@ public class SummitProduct extends AbstractJcrProduct {
 	public String getSummitDescription() {
 	     return getProperty("jcr:summit", String.class);
 	}
-
-	public String getSummitPrice() {
-	     return getProperty("summitprice", String.class);
-	}
-	
 }

@@ -16,7 +16,8 @@
 --%><%
 %><%@ include file="/libs/foundation/global.jsp" %><%
 %><%@ page contentType="text/html; charset=utf-8" import="
-    com.adobe.cq.commerce.api.Product"
+    com.adobe.cq.commerce.api.Product,
+    com.adobe.summit.commerce.custom.SummitProduct"
 %><%
     Product product = (Product) request.getAttribute("cq.commerce.product");
 %>
@@ -24,5 +25,5 @@
     <p class="product-brand" itemprop="brand"><%= xssAPI.encodeForHTML(product.getProperty("brand", String.class)) %></p>
     <h1 class="product-title" itemprop="name"><%= xssAPI.encodeForHTML(product.getTitle()) %></h1>
     <h2 class="product-description"><%= xssAPI.encodeForHTML(product.getDescription()) %></h2>
-    <%= product.getProperty("jcr:summit", String.class) %>
+    <%= xssAPI.encodeForHTML(((SummitProduct)product).getSummitDescription()) %>
 </header>

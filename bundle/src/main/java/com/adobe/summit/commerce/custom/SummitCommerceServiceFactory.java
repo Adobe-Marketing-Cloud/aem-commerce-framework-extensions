@@ -11,10 +11,10 @@ import com.adobe.cq.commerce.api.CommerceServiceFactory;
 public interface SummitCommerceServiceFactory extends CommerceServiceFactory {
 
 	/**
-	 * Returns a new <code>ElasticPathCommerceService</code>.
+	 * Returns a new <code>CommerceService</code>.
 	 * 
 	 * @param resource Resource
-	 * @return ElasticPathCommerceService- Commerce service specific to Elastic path.
+	 * @return CommerceService- Commerce service specific to Implementation.
 	 */
 	CommerceService getCommerceService(Resource resource);
 

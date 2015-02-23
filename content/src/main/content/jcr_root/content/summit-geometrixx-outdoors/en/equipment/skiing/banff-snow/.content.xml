@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:27.596+11:00"
+        cq:lastModified="{Date}2015-02-23T20:36:25.965+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:27.837+11:00"
+        cq:lastRolledout="{Date}2015-02-23T20:36:26.101+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,37 +13,37 @@
         jcr:title="Banff Snow"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:27.634+11:00"
+            cq:lastRolledout="{Date}2015-02-23T20:36:26.005+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:27.644+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:26.022+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:17.174+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf">
                 <eqwnbf-7_5-7_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.693+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.042+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/7.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.700+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.045+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.701+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.046+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </eqwnbf-7_5-7_5>
                 <eqwnbf-13-13
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.702+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.046+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/13">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.717+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.050+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.719+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.050+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,21 +73,21 @@
                 </eqwnbf-13-13>
                 <eqwnbf-9_5-9_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.719+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.051+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/9.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.726+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.054+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.727+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.055+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -95,21 +95,21 @@
                 </eqwnbf-9_5-9_5>
                 <eqwnbf-10-10
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.729+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.055+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/10">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.738+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.059+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.739+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.060+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -117,21 +117,21 @@
                 </eqwnbf-10-10>
                 <eqwnbf-11-11
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.742+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.060+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/11">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.749+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.064+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.750+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.065+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -139,21 +139,21 @@
                 </eqwnbf-11-11>
                 <eqwnbf-12-12
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.751+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.065+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/12">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.767+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.069+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.768+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.069+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -161,21 +161,21 @@
                 </eqwnbf-12-12>
                 <eqwnbf-8_5-8_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.769+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.070+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/8.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.777+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.073+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.778+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.074+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -183,21 +183,21 @@
                 </eqwnbf-8_5-8_5>
                 <eqwnbf-8-8
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.779+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.074+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/8">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.785+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.078+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.785+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.079+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -205,21 +205,21 @@
                 </eqwnbf-8-8>
                 <eqwnbf-11_5-11_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.786+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.079+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/11.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.792+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.083+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.793+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.083+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -227,21 +227,21 @@
                 </eqwnbf-11_5-11_5>
                 <eqwnbf-9-9
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.793+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.084+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/9">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.802+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.087+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.803+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.088+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -249,21 +249,21 @@
                 </eqwnbf-9-9>
                 <eqwnbf-10_5-10_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.803+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.088+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/10.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.821+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.092+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.822+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.092+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -271,49 +271,49 @@
                 </eqwnbf-10_5-10_5>
                 <eqwnbf-7-7
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.824+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.093+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnbf/7">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.829+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.096+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:27.830+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T20:36:26.097+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqwnbf-7-7>
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.831+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.097+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.832+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.098+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:27.832+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:26.098+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:27.835+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:26.100+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -321,7 +321,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:27.835+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:26.100+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -331,7 +331,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:27.836+11:00"
+            cq:lastRolledout="{Date}2015-02-23T20:36:26.101+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
@@ -343,8 +343,5 @@
             cq:master="/content/catalogs/summit-geometrixx-outdoors/template-pages/product-page-template"
             cq:rolloutConfigs="[/etc/msm/rolloutconfigs/catalogpagecontent,/etc/msm/rolloutconfigs/catalogrollouthooks]"
             jcr:primaryType="cq:LiveCopy"/>
-        <image
-            jcr:primaryType="nt:unstructured"
-            fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
     </jcr:content>
 </jcr:root>

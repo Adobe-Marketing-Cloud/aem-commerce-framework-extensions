@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:31.730+11:00"
+        cq:lastModified="{Date}2015-02-23T20:36:27.551+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:31.775+11:00"
+        cq:lastRolledout="{Date}2015-02-23T20:36:27.576+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/sunglasses/eqsmij"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,42 +13,42 @@
         jcr:title="Irian Jaya"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:31.747+11:00"
+            cq:lastRolledout="{Date}2015-02-23T20:36:27.563+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:31.765+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:27.569+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/sunglasses/eqsmij">
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:31.769+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:27.572+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Irian Jaya.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:31.770+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:27.572+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:31.771+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:27.573+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:31.773+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T20:36:27.575+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -56,7 +56,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:31.774+11:00"
+                cq:lastRolledout="{Date}2015-02-23T20:36:27.575+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -66,7 +66,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:31.775+11:00"
+            cq:lastRolledout="{Date}2015-02-23T20:36:27.576+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
@@ -78,8 +78,5 @@
             cq:master="/content/catalogs/summit-geometrixx-outdoors/template-pages/product-page-template"
             cq:rolloutConfigs="[/etc/msm/rolloutconfigs/catalogpagecontent,/etc/msm/rolloutconfigs/catalogrollouthooks]"
             jcr:primaryType="cq:LiveCopy"/>
-        <image
-            jcr:primaryType="nt:unstructured"
-            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Irian Jaya.jpg"/>
     </jcr:content>
 </jcr:root>
