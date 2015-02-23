@@ -31,8 +31,8 @@
 %><%
     final I18n i18n = new I18n(slingRequest);
 
-    CommerceService commerceService = null; // Task1
-    CommerceSession session = null; // Task2
+    CommerceService commerceService = resource.adaptTo(CommerceService.class);
+    CommerceSession session = commerceService.login(slingRequest, slingResponse);
 
     %><cq:include script="init.jsp"/><%
 
