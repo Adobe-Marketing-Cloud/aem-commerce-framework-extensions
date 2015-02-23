@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-09T22:24:50.174+11:00"
+        cq:lastModified="{Date}2015-02-23T16:57:38.448+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-09T22:24:50.232+11:00"
+        cq:lastRolledout="{Date}2015-02-23T16:57:38.548+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,14 +13,14 @@
         jcr:title="Abidjan Water"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-09T22:24:50.187+11:00"
+            cq:lastRolledout="{Date}2015-02-23T16:57:38.466+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-09T22:24:50.193+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:38.483+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:17.660+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
@@ -29,21 +29,21 @@
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw">
                 <wmapaw_r-m-m
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.204+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.496+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw/waterred/M">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.207+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.501+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/swimming/Abidjan Red.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Red.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.208+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.501+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </wmapaw_r-m-m>
                 <wmapaw_r-l-l
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.208+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.502+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw/waterred/L">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.211+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.506+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/swimming/Abidjan Red.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Red.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.212+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.507+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,21 +73,21 @@
                 </wmapaw_r-l-l>
                 <wmapaw_r-s-s
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.212+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.507+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw/waterred/S">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.215+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.512+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/swimming/Abidjan Red.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Red.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.216+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.512+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -95,21 +95,21 @@
                 </wmapaw_r-s-s>
                 <wmapaw_b-s-s
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.216+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.513+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw/waterblue/S">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.219+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.526+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/swimming/Abidjan Blue.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.220+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.527+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -117,21 +117,21 @@
                 </wmapaw_b-s-s>
                 <wmapaw_b-l-l
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.220+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.528+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw/waterblue/L">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.224+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.532+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/swimming/Abidjan Blue.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.224+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.532+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -139,49 +139,49 @@
                 </wmapaw_b-l-l>
                 <wmapaw_b-m-m
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.225+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.533+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/swimming/wmapaw/waterblue/M">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.228+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.537+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/swimming/Abidjan Blue.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:50.228+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:38.538+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </wmapaw_b-m-m>
                 <image
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.229+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.539+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/swimming/Abidjan Red.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Red.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.229+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.540+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-09T22:24:50.230+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:38.541+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-09T22:24:50.231+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:38.546+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -189,7 +189,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-09T22:24:50.232+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:38.547+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -199,7 +199,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-09T22:24:50.232+11:00"
+            cq:lastRolledout="{Date}2015-02-23T16:57:38.548+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
@@ -213,6 +213,6 @@
             jcr:primaryType="cq:LiveCopy"/>
         <image
             jcr:primaryType="nt:unstructured"
-            fileReference="/content/dam/geometrixx/products/swimming/Abidjan Red.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/swimming/Abidjan Red.jpg"/>
     </jcr:content>
 </jcr:root>

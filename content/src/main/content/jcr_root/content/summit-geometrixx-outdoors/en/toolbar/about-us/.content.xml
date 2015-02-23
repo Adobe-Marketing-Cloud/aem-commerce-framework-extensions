@@ -32,7 +32,7 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/image"
-                    fileReference="/content/dam/geometrixx/offices/newport beach.jpg"
+                    fileReference="/content/dam/summit-geometrixx-outdoors/offices/newport beach.jpg"
                     imageCrop="0,190,1280,797"
                     imageRotate="0"
                     width="620"/>

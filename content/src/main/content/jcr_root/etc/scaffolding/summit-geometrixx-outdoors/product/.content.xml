@@ -7,7 +7,6 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Product Data"
         sling:resourceType="wcm/scaffolding/components/scaffolding">
-        <dialog/>
         <cq:dialog
             jcr:primaryType="nt:unstructured"
             jcr:title="Summit Geometrixx Outdoors Product Properties"
@@ -68,7 +67,12 @@
                                                 ignoreData="{Boolean}true"
                                                 name="_charset_"
                                                 value="utf-8"/>
-                                            <summit/>
+                                            <summitdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldLabel="Summit Description"
+                                                name="./jcr:summit"
+                                                renderReadOnly="{Boolean}true"/>
                                         </items>
                                     </titles>
                                     <erp
@@ -109,13 +113,6 @@
                                                 name="./price@TypeHint"
                                                 renderReadOnly="{Boolean}true"
                                                 value="Decimal"/>
-                                            <summit-price
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                fieldLabel="Summit Price"
-                                                name="./summitprice"
-                                                renderReadOnly="{Boolean}true"
-                                                validation="geometrixx.price"/>
                                         </items>
                                     </erp>
                                 </items>
@@ -148,5 +145,6 @@
                 </items>
             </content>
         </cq:dialog>
+        <dialog/>
     </jcr:content>
 </jcr:root>

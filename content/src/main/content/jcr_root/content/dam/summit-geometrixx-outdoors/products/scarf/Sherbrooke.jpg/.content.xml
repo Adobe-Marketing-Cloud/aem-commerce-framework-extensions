@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="cd3a7e4a-8d91-4304-a6e1-3e4b3b948d05">
+    <jcr:content
+        cq:name="Sherbrooke.jpg"
+        cq:parentPath="/content/dam/summit-geometrixx-outdoors/products/scarf"
+        jcr:lastModified="{Date}2015-02-23T16:54:29.636+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:DateTimeDigitized="{Date}2011-11-02T19:26:11.000+01:00"
+            dam:ExifImageLength="{Long}429"
+            dam:ExifImageWidth="{Long}600"
+            dam:ExifOffset="{Long}196"
+            dam:ExifVersion="MDIyMQ=="
+            dam:extracted="{Date}2012-11-30T13:32:18.311+01:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}350"
+            dam:Physicalheightininches="{Decimal}1.2257143259048462"
+            dam:Physicalwidthindpi="{Long}350"
+            dam:Physicalwidthininches="{Decimal}1.7142857313156128"
+            dam:Progressive="no"
+            dam:sha1="f1e076b3b000832a4b856eb86d4fbfc32ff2fabf"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2012-11-30T13:32:18.558+01:00"
+            exif:ExifImageLength="{Long}429"
+            exif:ExifImageWidth="{Long}600"
+            exif:PixelXDimension="{Long}350"
+            exif:PixelYDimension="{Long}350"
+            jcr:lastModified="{Date}2015-02-23T16:54:29.604+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}429"
+            tiff:ImageWidth="{Long}600"
+            tiff:Orientation="{Long}1"
+            tiff:PhotometricInterpretation="{Long}2"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="350"
+            tiff:YResolution="350"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

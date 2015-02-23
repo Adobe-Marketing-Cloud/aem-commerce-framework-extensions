@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="ce5ebf11-17da-4947-ae75-062fdfd3ba8f">
+    <jcr:content
+        cq:name="Montreal Pink.jpg"
+        cq:parentPath="/content/dam/summit-geometrixx-outdoors/products/hat"
+        jcr:lastModified="{Date}2015-02-23T16:54:27.513+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:DateTimeDigitized="{Date}2011-11-01T19:55:38.000+01:00"
+            dam:ExifImageLength="{Long}468"
+            dam:ExifImageWidth="{Long}600"
+            dam:ExifOffset="{Long}210"
+            dam:ExifVersion="MDIyMQ=="
+            dam:extracted="{Date}2012-11-30T13:27:40.875+01:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}350"
+            dam:Physicalheightininches="{Decimal}1.337142825126648"
+            dam:Physicalwidthindpi="{Long}350"
+            dam:Physicalwidthininches="{Decimal}1.7142857313156128"
+            dam:Progressive="no"
+            dam:sha1="15cdeac2519b27c73ca38358cad0b2ca0b1d30d0"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2012-11-30T13:27:41.612+01:00"
+            exif:ExifImageLength="{Long}468"
+            exif:ExifImageWidth="{Long}600"
+            exif:PixelXDimension="{Long}350"
+            exif:PixelYDimension="{Long}350"
+            jcr:lastModified="{Date}2015-02-23T16:54:27.362+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}468"
+            tiff:ImageWidth="{Long}600"
+            tiff:Orientation="{Long}1"
+            tiff:PhotometricInterpretation="{Long}2"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="350"
+            tiff:YResolution="350"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
