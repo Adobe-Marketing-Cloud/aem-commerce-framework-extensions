@@ -31,8 +31,8 @@
 %><%
     final I18n i18n = new I18n(slingRequest);
 
-    CommerceService commerceService = resource.adaptTo(CommerceService.class);
-    CommerceSession session = commerceService.login(slingRequest, slingResponse);
+    CommerceService commerceService = null; // Task1
+    CommerceSession session = null; // Task2
 
     %><cq:include script="init.jsp"/><%
 
@@ -44,7 +44,8 @@
     Product baseProduct = resourceResolver.resolve(productDataPath).adaptTo(Product.class);
 
     Resource baseProductImage = baseProduct.getImage();
-
+    
+    
     // This product component renders products with up to two variant axes:
     //   1) the product can have a variant "size" axis
     //   2) the product can have a second variant axis defined by properties:

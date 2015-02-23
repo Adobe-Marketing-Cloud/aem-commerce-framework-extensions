@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="da3c6804-e1f9-4e5c-b24b-a00dc9bbc29b">
+    <jcr:content
+        cq:name="Interlaken.jpg"
+        cq:parentPath="/content/dam/summit-geometrixx-outdoors/products/footwear"
+        jcr:lastModified="{Date}2015-02-23T16:54:30.199+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:DateTimeDigitized="{Date}2011-11-01T22:35:43.000+01:00"
+            dam:ExifImageLength="{Long}448"
+            dam:ExifImageWidth="{Long}600"
+            dam:ExifOffset="{Long}212"
+            dam:ExifVersion="MDIyMQ=="
+            dam:extracted="{Date}2012-11-30T13:30:31.369+01:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}240"
+            dam:Physicalheightininches="{Decimal}1.8666666746139526"
+            dam:Physicalwidthindpi="{Long}240"
+            dam:Physicalwidthininches="{Decimal}2.5"
+            dam:Progressive="no"
+            dam:sha1="5ab9a2d0fae2f240e7a52145467e2bf8e90ce93d"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2012-11-30T13:30:32.295+01:00"
+            exif:ExifImageLength="{Long}448"
+            exif:ExifImageWidth="{Long}600"
+            exif:PixelXDimension="{Long}240"
+            exif:PixelYDimension="{Long}240"
+            jcr:lastModified="{Date}2015-02-23T16:54:30.153+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}448"
+            tiff:ImageWidth="{Long}600"
+            tiff:Orientation="{Long}1"
+            tiff:PhotometricInterpretation="{Long}2"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="240"
+            tiff:YResolution="240"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

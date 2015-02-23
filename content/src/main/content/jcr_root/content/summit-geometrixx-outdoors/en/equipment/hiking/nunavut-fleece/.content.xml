@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-09T22:24:45.242+11:00"
+        cq:lastModified="{Date}2015-02-23T16:57:18.560+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-09T22:24:45.315+11:00"
+        cq:lastRolledout="{Date}2015-02-23T16:57:18.641+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,14 +13,14 @@
         jcr:title="Nunavut Fleece"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-09T22:24:45.261+11:00"
+            cq:lastRolledout="{Date}2015-02-23T16:57:18.577+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-09T22:24:45.267+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:18.584+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:16.678+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
@@ -29,21 +29,21 @@
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn">
                 <eqsmnn_o-s-s
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.279+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.600+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/orange/S">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.282+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.604+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Orange.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.283+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.604+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </eqsmnn_o-s-s>
                 <eqsmnn_o-xl-xl
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.283+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.605+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/orange/XL">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.286+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.608+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Orange.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.287+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.609+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,21 +73,21 @@
                 </eqsmnn_o-xl-xl>
                 <eqsmnn_o-m-m
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.287+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.609+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/orange/M">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.290+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.613+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Orange.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.291+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.613+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -95,21 +95,21 @@
                 </eqsmnn_o-m-m>
                 <eqsmnn_o-l-l
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.291+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.614+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/orange/L">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.294+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.617+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Orange.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.295+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.618+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -117,21 +117,21 @@
                 </eqsmnn_o-l-l>
                 <eqsmnn_b-xl-xl
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.295+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.618+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/geo-black/XL">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.298+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.622+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Black.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.299+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.622+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -139,21 +139,21 @@
                 </eqsmnn_b-xl-xl>
                 <eqsmnn_b-s-s
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.299+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.623+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/geo-black/S">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.302+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.627+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Black.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.302+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.627+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -161,21 +161,21 @@
                 </eqsmnn_b-s-s>
                 <eqsmnn_b-m-m
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.303+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.628+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/geo-black/M">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.306+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.631+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Black.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.306+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.632+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -183,49 +183,49 @@
                 </eqsmnn_b-m-m>
                 <eqsmnn_b-l-l
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.307+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.632+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmnn/geo-black/L">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.310+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.636+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/coat/Nunavut Black.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Black.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:45.311+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:18.636+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqsmnn_b-l-l>
                 <image
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.311+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.637+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Orange.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.311+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.637+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-09T22:24:45.312+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:18.638+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-09T22:24:45.314+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:18.640+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -233,7 +233,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-09T22:24:45.314+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:18.640+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -243,7 +243,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-09T22:24:45.314+11:00"
+            cq:lastRolledout="{Date}2015-02-23T16:57:18.641+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
@@ -257,6 +257,6 @@
             jcr:primaryType="cq:LiveCopy"/>
         <image
             jcr:primaryType="nt:unstructured"
-            fileReference="/content/dam/geometrixx/products/coat/Nunavut Orange.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/coat/Nunavut Orange.jpg"/>
     </jcr:content>
 </jcr:root>
