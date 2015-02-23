@@ -45,7 +45,8 @@
     Product baseProduct = resourceResolver.resolve(productDataPath).adaptTo(Product.class);
 
     Resource baseProductImage = baseProduct.getImage();
-
+    
+    
     // This product component renders products with up to two variant axes:
     //   1) the product can have a variant "size" axis
     //   2) the product can have a second variant axis defined by properties:

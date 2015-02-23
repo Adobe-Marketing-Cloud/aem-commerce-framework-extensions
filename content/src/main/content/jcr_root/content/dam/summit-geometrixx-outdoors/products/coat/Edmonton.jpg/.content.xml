@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:lr="http://ns.adobe.com/lightroom/1.0/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="1c88d397-4178-43b6-8be4-0263832290c5">
+    <jcr:content
+        cq:name="Edmonton.jpg"
+        cq:parentPath="/content/dam/summit-geometrixx-outdoors/products/coat"
+        jcr:lastModified="{Date}2015-02-23T16:54:29.198+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dc:description="Men's Winter Coat"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2015-02-23T16:54:29.098+11:00"
+            dc:subject="[Apparel,Coats,Men,Winter]"
+            dc:title="Edmonton Winter"
+            exif:ExifImageLength="{Long}442"
+            exif:ExifImageWidth="{Long}600"
+            exif:PixelXDimension="{Long}72"
+            exif:PixelYDimension="{Long}72"
+            jcr:lastModified="{Date}2015-02-23T16:54:29.098+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            photoshop:ColorMode="{Long}1"
+            photoshop:LegacyIPTCDigest="6C93937C4C9E70F93FDA9D03134B11ED"
+            tiff:BitsPerSample="\[S@57bb6486"
+            tiff:Compression="{Long}6"
+            tiff:ImageLength="{Long}442"
+            tiff:ImageWidth="{Long}600"
+            tiff:Orientation="{Long}1"
+            tiff:PhotometricInterpretation="{Long}1"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:SamplesPerPixel="{Long}4"
+            tiff:XResolution="72"
+            tiff:YResolution="72"
+            xmp:CreateDate="{Date}2011-11-01T19:13:25.000+01:00"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"
+            xmp:MetadataDate="{Date}2011-11-14T13:52:23.000+01:00"
+            xmp:ModifyDate="{Date}2011-11-14T13:52:23.000+11:00"
+            xmpMM:DocumentID="C39AF7B3E3EF6F64C3F3377CC1F4EED1"
+            xmpMM:InstanceID="xmp.iid:43F262BB07206811B920DA32732B918A"
+            xmpMM:OriginalDocumentID="C39AF7B3E3EF6F64C3F3377CC1F4EED1">
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}3"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:DAED8CD4082068118C14AE0F6991ECD4"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-09T11:19:21.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:F22BFDC009206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T13:34:54.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:43F262BB07206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T13:52:23.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+            <lr:hierarchicalSubject
+                jcr:primaryType="nt:unstructured"
+                _x0031_="Season|Winter"
+                _x0032_="Apparel"
+                _x0033_="Gender|Men"
+                _x0034_="Apparel|Coats"
+                xmpArraySize="{Long}4"
+                xmpArrayType="rdf:Bag"
+                xmpNodeType="xmpArray"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>
