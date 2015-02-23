@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-09T22:24:49.865+11:00"
+        cq:lastModified="{Date}2015-02-23T16:57:32.294+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-09T22:24:49.925+11:00"
+        cq:lastRolledout="{Date}2015-02-23T16:57:32.418+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,14 +13,14 @@
         jcr:title="Lagos Mini Longboard"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-09T22:24:49.878+11:00"
+            cq:lastRolledout="{Date}2015-02-23T16:57:32.322+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-09T22:24:49.885+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:32.331+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:17.563+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
@@ -29,21 +29,21 @@
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg">
                 <eqsmlg-9ft8in-9ft8in
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.895+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.349+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg/9ft8in">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.898+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.355+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.899+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.356+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </eqsmlg-9ft8in-9ft8in>
                 <eqsmlg-10ft0in-10ft0in
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.899+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.357+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg/10ft0in">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.902+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.378+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.903+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.379+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,21 +73,21 @@
                 </eqsmlg-10ft0in-10ft0in>
                 <eqsmlg-9ft6in-9ft6in
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.903+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.380+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg/9ft6in">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.907+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.385+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.908+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.387+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -95,21 +95,21 @@
                 </eqsmlg-9ft6in-9ft6in>
                 <eqsmlg-9ft2in-9ft2in
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.909+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.388+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg/9ft2in">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.912+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.394+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.912+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.396+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -117,21 +117,21 @@
                 </eqsmlg-9ft2in-9ft2in>
                 <eqsmlg-9ft4in-9ft4in
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.913+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.397+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg/9ft4in">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.916+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.404+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.916+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.405+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -139,49 +139,49 @@
                 </eqsmlg-9ft4in-9ft4in>
                 <eqsmlg-10ft3in-10ft3in
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.917+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.406+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/surfing/eqsmlg/10ft3in">
                     <image
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.920+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.411+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
-                        fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                        fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-09T22:24:49.921+11:00"
+                        cq:lastRolledout="{Date}2015-02-23T16:57:32.412+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqsmlg-10ft3in-10ft3in>
                 <image
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.921+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.413+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.922+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.413+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-09T22:24:49.922+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:32.414+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-09T22:24:49.924+11:00"
+                    cq:lastRolledout="{Date}2015-02-23T16:57:32.416+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -189,7 +189,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-09T22:24:49.925+11:00"
+                cq:lastRolledout="{Date}2015-02-23T16:57:32.417+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -199,7 +199,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-09T22:24:49.925+11:00"
+            cq:lastRolledout="{Date}2015-02-23T16:57:32.418+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
@@ -213,6 +213,6 @@
             jcr:primaryType="cq:LiveCopy"/>
         <image
             jcr:primaryType="nt:unstructured"
-            fileReference="/content/dam/geometrixx/products/equipment/Lagos.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lagos.jpg"/>
     </jcr:content>
 </jcr:root>
