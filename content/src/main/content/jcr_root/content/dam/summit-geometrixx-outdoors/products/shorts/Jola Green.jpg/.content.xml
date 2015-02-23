@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:lr="http://ns.adobe.com/lightroom/1.0/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2014-12-09T15:04:58.473-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dc:description="[Men's Shorts]"
+            dc:format="image/jpeg"
+            dc:subject="[Apparel,Men,Shorts,Summer]"
+            dc:title="[Jola Summer]"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            photoshop:ColorMode="{Long}3"
+            photoshop:ICCProfile="Adobe RGB (1998)"
+            photoshop:LegacyIPTCDigest="E6235E45CC8C60054ED2E509C6D05979"
+            xmp:CreateDate="{Date}2011-11-01T21:01:10.000+01:00"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"
+            xmp:MetadataDate="{Date}2011-11-14T15:08:09.000+01:00"
+            xmp:ModifyDate="{Date}2011-11-14T15:08:09.000+01:00"
+            xmpMM:DocumentID="EDEFE42E8BDB458C8D2FFD820BD8E4B7"
+            xmpMM:InstanceID="xmp.iid:53C07C7010206811B920DA32732B918A"
+            xmpMM:OriginalDocumentID="EDEFE42E8BDB458C8D2FFD820BD8E4B7">
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}5"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:E322C367082068118C14AE0F6991ECD4"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-09T11:16:19.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:E57464FF09206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T13:35:39.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:1A36B1C707206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T13:52:39.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0034_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:52C07C7010206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T15:08:09.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0035_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:53C07C7010206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T15:08:09.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+            <lr:hierarchicalSubject
+                jcr:primaryType="nt:unstructured"
+                _x0031_="Season|Summer"
+                _x0032_="Gender|Men"
+                _x0033_="Apparel"
+                _x0034_="Apparel|Shorts"
+                xmpArraySize="{Long}4"
+                xmpArrayType="rdf:Bag"
+                xmpNodeType="xmpArray"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

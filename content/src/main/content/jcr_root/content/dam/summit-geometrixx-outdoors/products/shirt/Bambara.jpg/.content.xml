@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:lr="http://ns.adobe.com/lightroom/1.0/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2014-12-09T15:04:48.659-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dc:description="[Men's Cotton T-Shirt]"
+            dc:format="image/jpeg"
+            dc:subject="[Apparel,Men,Shirt,Summer]"
+            dc:title="[Bambara Cargo]"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            photoshop:ColorMode="{Long}3"
+            photoshop:ICCProfile="Adobe RGB (1998)"
+            photoshop:LegacyIPTCDigest="C4913E6BDAA19E31116CE6B20C8A0B2D"
+            xmp:CreateDate="{Date}2010-05-24T20:34:02.000-04:00"
+            xmp:CreatorTool="Adobe Photoshop CS2 Macintosh"
+            xmp:MetadataDate="{Date}2011-11-14T14:02:30.000+01:00"
+            xmp:ModifyDate="{Date}2011-11-14T14:02:30.000+01:00"
+            xmpMM:DocumentID="uuid:2620894E690411DF95CAB8B5DBCB54AE"
+            xmpMM:InstanceID="xmp.iid:8FD820EE07206811B920DA32732B918A"
+            xmpMM:OriginalDocumentID="uuid:2620894E690411DF95CAB8B5DBCB54AE">
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="uuid:7AF003F44AC811DF94DA84700F22973C"
+                stRef:instanceID="uuid:2620894B690411DF95CAB8B5DBCB54AE"
+                xmpNodeType="xmpStruct"/>
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}3"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:DE22C367082068118C14AE0F6991ECD4"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-09T11:16:19.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:3AA421BC08206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T13:33:18.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:8FD820EE07206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T14:02:30.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+            <lr:hierarchicalSubject
+                jcr:primaryType="nt:unstructured"
+                _x0031_="Season|Summer"
+                _x0032_="Gender|Men"
+                _x0033_="Apparel"
+                _x0034_="Apparel|Shirt"
+                xmpArraySize="{Long}4"
+                xmpArrayType="rdf:Bag"
+                xmpNodeType="xmpArray"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

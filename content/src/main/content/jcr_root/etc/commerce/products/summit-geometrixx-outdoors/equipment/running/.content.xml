@@ -29,7 +29,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
         <purple
             cq:commerceType="variant"
             jcr:lastModified="{Date}2014-12-09T15:04:51.983-08:00"
@@ -39,7 +39,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             <_x0031_0.5
                 cq:commerceType="variant"
                 cq:productSkuCode="eqsmmr.2-10.5"
@@ -51,7 +51,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0031_0.5>
             <_x0037_.5
                 cq:commerceType="variant"
@@ -64,7 +64,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0037_.5>
             <_x0031_1
                 cq:commerceType="variant"
@@ -77,7 +77,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0031_1>
             <_x0031_0
                 cq:commerceType="variant"
@@ -90,7 +90,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0031_0>
             <_x0039_
                 cq:commerceType="variant"
@@ -103,7 +103,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0039_>
             <_x0036_.5
                 cq:commerceType="variant"
@@ -116,7 +116,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0036_.5>
             <_x0038_
                 cq:commerceType="variant"
@@ -129,7 +129,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0038_>
             <_x0037_
                 cq:commerceType="variant"
@@ -142,7 +142,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0037_>
             <_x0036_
                 cq:commerceType="variant"
@@ -155,7 +155,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0036_>
             <_x0038_.5
                 cq:commerceType="variant"
@@ -168,7 +168,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0038_.5>
             <_x0035_.5
                 cq:commerceType="variant"
@@ -181,7 +181,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0035_.5>
             <_x0039_.5
                 cq:commerceType="variant"
@@ -194,7 +194,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </_x0039_.5>
             <geo-5
                 cq:commerceType="variant"
@@ -207,7 +207,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Purple.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Purple.jpg"/>
             </geo-5>
         </purple>
         <pink
@@ -219,7 +219,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             <_x0036_.5
                 cq:commerceType="variant"
                 cq:productSkuCode="eqsmmr.1-6.5"
@@ -231,7 +231,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0036_.5>
             <geo-5
                 cq:commerceType="variant"
@@ -244,7 +244,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </geo-5>
             <_x0036_
                 cq:commerceType="variant"
@@ -257,7 +257,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0036_>
             <_x0031_0.5
                 cq:commerceType="variant"
@@ -270,7 +270,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0031_0.5>
             <_x0037_
                 cq:commerceType="variant"
@@ -283,7 +283,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0037_>
             <_x0038_
                 cq:commerceType="variant"
@@ -296,7 +296,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0038_>
             <_x0039_
                 cq:commerceType="variant"
@@ -309,7 +309,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0039_>
             <_x0037_.5
                 cq:commerceType="variant"
@@ -322,7 +322,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0037_.5>
             <_x0035_.5
                 cq:commerceType="variant"
@@ -335,7 +335,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0035_.5>
             <_x0038_.5
                 cq:commerceType="variant"
@@ -348,7 +348,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0038_.5>
             <_x0039_.5
                 cq:commerceType="variant"
@@ -361,7 +361,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0039_.5>
             <_x0031_1
                 cq:commerceType="variant"
@@ -374,7 +374,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0031_1>
             <_x0031_0
                 cq:commerceType="variant"
@@ -387,7 +387,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Mombassa Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Mombassa Pink.jpg"/>
             </_x0031_0>
         </pink>
     </eqsmmr>
@@ -410,7 +410,7 @@
             jcr:lastModified="{Date}2015-02-22T20:52:27.352+11:00"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
         <blue
             cq:commerceType="variant"
             jcr:lastModified="{Date}2014-12-09T15:04:52.165-08:00"
@@ -420,7 +420,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             <_x0037_.5
                 cq:commerceType="variant"
                 cq:productSkuCode="eqsmnr.b-7.5"
@@ -432,7 +432,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0037_.5>
             <_x0031_1
                 cq:commerceType="variant"
@@ -445,7 +445,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0031_1>
             <_x0031_0
                 cq:commerceType="variant"
@@ -458,7 +458,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0031_0>
             <_x0039_
                 cq:commerceType="variant"
@@ -471,7 +471,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0039_>
             <_x0038_
                 cq:commerceType="variant"
@@ -484,7 +484,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0038_>
             <_x0037_
                 cq:commerceType="variant"
@@ -497,7 +497,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0037_>
             <_x0031_2
                 cq:commerceType="variant"
@@ -510,7 +510,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0031_2>
             <_x0031_3
                 cq:commerceType="variant"
@@ -523,7 +523,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0031_3>
             <_x0038_.5
                 cq:commerceType="variant"
@@ -536,7 +536,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0038_.5>
             <_x0039_.5
                 cq:commerceType="variant"
@@ -549,7 +549,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0039_.5>
             <_x0031_1.5
                 cq:commerceType="variant"
@@ -562,7 +562,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0031_1.5>
             <_x0031_0.5
                 cq:commerceType="variant"
@@ -575,7 +575,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Blue.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
             </_x0031_0.5>
         </blue>
         <pink
@@ -587,7 +587,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             <_x0035_.5
                 cq:commerceType="variant"
                 cq:productSkuCode="eqsmnr.p-5.5"
@@ -599,7 +599,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0035_.5>
             <_x0031_0.5
                 cq:commerceType="variant"
@@ -612,7 +612,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0031_0.5>
             <_x0036_.5
                 cq:commerceType="variant"
@@ -625,7 +625,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0036_.5>
             <_x0039_
                 cq:commerceType="variant"
@@ -638,7 +638,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0039_>
             <_x0037_.5
                 cq:commerceType="variant"
@@ -651,7 +651,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0037_.5>
             <_x0038_.5
                 cq:commerceType="variant"
@@ -664,7 +664,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0038_.5>
             <geo-5
                 cq:commerceType="variant"
@@ -677,7 +677,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </geo-5>
             <_x0036_
                 cq:commerceType="variant"
@@ -690,7 +690,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0036_>
             <_x0037_
                 cq:commerceType="variant"
@@ -703,7 +703,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0037_>
             <_x0038_
                 cq:commerceType="variant"
@@ -716,7 +716,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0038_>
             <_x0031_0
                 cq:commerceType="variant"
@@ -729,7 +729,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0031_0>
             <_x0031_1
                 cq:commerceType="variant"
@@ -742,7 +742,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0031_1>
             <_x0039_.5
                 cq:commerceType="variant"
@@ -755,7 +755,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Pink.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
             </_x0039_.5>
         </pink>
         <geo-green
@@ -767,7 +767,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             <_x0039_.5
                 cq:commerceType="variant"
                 cq:productSkuCode="eqsmnr.g-9.5"
@@ -779,7 +779,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0039_.5>
             <_x0031_1
                 cq:commerceType="variant"
@@ -792,7 +792,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0031_1>
             <_x0031_2
                 cq:commerceType="variant"
@@ -805,7 +805,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0031_2>
             <_x0031_0
                 cq:commerceType="variant"
@@ -818,7 +818,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0031_0>
             <_x0038_.5
                 cq:commerceType="variant"
@@ -831,7 +831,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0038_.5>
             <_x0038_
                 cq:commerceType="variant"
@@ -844,7 +844,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0038_>
             <_x0039_
                 cq:commerceType="variant"
@@ -857,7 +857,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0039_>
             <_x0031_3
                 cq:commerceType="variant"
@@ -870,7 +870,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0031_3>
             <_x0037_
                 cq:commerceType="variant"
@@ -883,7 +883,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0037_>
             <_x0031_0.5
                 cq:commerceType="variant"
@@ -896,7 +896,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0031_0.5>
             <_x0031_1.5
                 cq:commerceType="variant"
@@ -909,7 +909,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0031_1.5>
             <_x0037_.5
                 cq:commerceType="variant"
@@ -922,7 +922,7 @@
                 <image
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
-                    fileReference="/content/dam/geometrixx/products/footwear/Nairobi Green.jpg"/>
+                    fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
             </_x0037_.5>
         </geo-green>
     </eqsmnr>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2014-12-09T15:04:51.876-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:ApertureValue="{Decimal}6.643855776306108"
+            dam:Bitsperpixel="{Long}24"
+            dam:CustomRendered="{Long}0"
+            dam:DateTimeDigitized="{Date}2009-10-08T14:58:16.000+02:00"
+            dam:DateTimeOriginal="{Date}2009-10-08T14:58:16.000+02:00"
+            dam:ExifImageLength="{Long}400"
+            dam:ExifImageWidth="{Long}600"
+            dam:ExifOffset="{Long}260"
+            dam:ExifVersion="MDIyMQ=="
+            dam:ExposureCompensation="{Decimal}0.0"
+            dam:ExposureMode="{Long}1"
+            dam:ExposureProgram="{Long}1"
+            dam:ExposureTime="{Decimal}0.00625"
+            dam:extracted="{Date}2012-11-30T13:28:24.874+01:00"
+            dam:Fileformat="JPEG"
+            dam:FocalLength="{Decimal}70.0"
+            dam:FocalPlaneResolutionUnit="{Long}2"
+            dam:FocalPlaneXResolution="{Decimal}3849.212121212121"
+            dam:FocalPlaneYResolution="{Decimal}3908.141935483871"
+            dam:MaxApertureValue="{Decimal}3.0"
+            dam:MeteringMode="{Long}5"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:PhotographicSensitivity="{Long}100"
+            dam:Physicalheightindpi="{Long}300"
+            dam:Physicalheightininches="{Decimal}1.3333333730697632"
+            dam:Physicalwidthindpi="{Long}300"
+            dam:Physicalwidthininches="{Decimal}2.0"
+            dam:Progressive="yes"
+            dam:SceneCaptureType="{Long}0"
+            dam:sha1="0d22c3d3f40a5fdc9574a134fdfbdcc840d65522"
+            dam:ShutterSpeedValue="{Decimal}7.321928460342146"
+            dam:SubSecTimeDigitized="{Long}66"
+            dam:SubSecTimeOriginal="{Long}66"
+            dam:WhiteBalance="{Long}0"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2012-11-30T13:28:25.550+01:00"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

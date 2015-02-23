@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:psAux="http://ns.adobe.com/exif/1.0/aux/" xmlns:lr="http://ns.adobe.com/lightroom/1.0/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2014-12-09T15:04:57.385-08:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dc:description="[Coat]"
+            dc:format="image/jpeg"
+            dc:subject="[Apparel,Coats,Hiking,Men,Winter,Women]"
+            dc:title="[Nunavut Fleece]"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            photoshop:DateCreated="{Date}2007-06-27T00:00:00.000-07:00"
+            psAux:ApproximateFocusDistance="0/1"
+            psAux:Firmware="Firmware Version 1.1.4"
+            psAux:FlashCompensation="0/1"
+            psAux:Lens="70.0-200.0 mm"
+            psAux:LensInfo="70/1 200/1 0/0 0/0"
+            psAux:SerialNumber="337795"
+            xmp:CreateDate="{Date}2011-07-19T13:58:39.000+02:00"
+            xmp:CreatorTool="Adobe Photoshop CS4 Macintosh"
+            xmp:MetadataDate="{Date}2011-11-14T15:28:25.000+01:00"
+            xmp:ModifyDate="{Date}2011-11-14T14:26:57.000+01:00"
+            xmpMM:DocumentID="uuid:AC341E4EB38B11E09374957FCF19EE3A"
+            xmpMM:InstanceID="xmp.iid:7A9B47870A206811822ABB7A979FFCED"
+            xmpMM:OriginalDocumentID="uuid:AC341E4EB38B11E09374957FCF19EE3A">
+            <xmpMM:DerivedFrom
+                jcr:primaryType="nt:unstructured"
+                stRef:documentID="uuid:AC341E4AB38B11E09374957FCF19EE3A"
+                stRef:instanceID="uuid:AC341E4BB38B11E09374957FCF19EE3A"
+                xmpNodeType="xmpStruct"/>
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}8"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:0180117407206811AA69BB4C8FB1C224"
+                    stEvt:softwareAgent="Adobe Photoshop CS4 Macintosh"
+                    stEvt:when="{Date}2011-07-19T14:09:46.000+02:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:0280117407206811AA69BB4C8FB1C224"
+                    stEvt:softwareAgent="Adobe Photoshop CS4 Macintosh"
+                    stEvt:when="{Date}2011-07-19T14:09:46.000+02:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:B2B0FE817120681194578AF279266457"
+                    stEvt:softwareAgent="Adobe Photoshop CS5 Macintosh"
+                    stEvt:when="{Date}2011-11-02T12:52:35.000-06:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0034_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:B3B0FE817120681194578AF279266457"
+                    stEvt:softwareAgent="Adobe Photoshop CS5 Macintosh"
+                    stEvt:when="{Date}2011-11-02T12:52:35.000-06:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0035_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:D8ED8CD4082068118C14AE0F6991ECD4"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-09T11:19:21.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0036_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:32A421BC08206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T13:26:29.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0037_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:59A04FD80B206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T14:26:57.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0038_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:7A9B47870A206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T15:28:25.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+            <lr:hierarchicalSubject
+                jcr:primaryType="nt:unstructured"
+                _x0031_="Season|Winter"
+                _x0032_="Gender|Men"
+                _x0033_="Gender|Women"
+                _x0034_="Apparel"
+                _x0035_="Apparel|Coats"
+                _x0036_="Equipment|Hiking"
+                xmpArraySize="{Long}6"
+                xmpArrayType="rdf:Bag"
+                xmpNodeType="xmpArray"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

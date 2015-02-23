@@ -5,5 +5,6 @@
     <filter root="/etc/tags/summit-geometrixx-outdoors"/>
     <filter root="/content/catalogs/summit-geometrixx-outdoors"/>
     <filter root="/content/dam/Summit2015"/>
+    <filter root="/content/dam/summit-geometrixx-outdoors"/>
     <filter root="/content/summit-geometrixx-outdoors"/>
 </workspaceFilter>
