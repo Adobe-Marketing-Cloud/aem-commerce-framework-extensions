@@ -24,7 +24,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/gloves/Blackcomb.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Blackcomb.jpg"/>
         <S
             cq:commerceType="variant"
             cq:productSkuCode="eqwnbc-S"
@@ -36,7 +36,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/gloves/Blackcomb.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Blackcomb.jpg"/>
         </S>
         <L
             cq:commerceType="variant"
@@ -49,7 +49,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/gloves/Blackcomb.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Blackcomb.jpg"/>
         </L>
         <M
             cq:commerceType="variant"
@@ -62,7 +62,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/gloves/Blackcomb.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Blackcomb.jpg"/>
         </M>
     </eqwnbc>
     <eqwnbf
@@ -81,7 +81,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         <_x0037_.5
             cq:commerceType="variant"
             cq:productSkuCode="eqwnbf-7.5"
@@ -93,7 +93,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0037_.5>
         <_x0031_3
             cq:commerceType="variant"
@@ -106,7 +106,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0031_3>
         <_x0039_.5
             cq:commerceType="variant"
@@ -119,7 +119,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0039_.5>
         <_x0031_0
             cq:commerceType="variant"
@@ -132,7 +132,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0031_0>
         <_x0031_1
             cq:commerceType="variant"
@@ -145,7 +145,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0031_1>
         <_x0031_2
             cq:commerceType="variant"
@@ -158,7 +158,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0031_2>
         <_x0038_.5
             cq:commerceType="variant"
@@ -171,7 +171,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0038_.5>
         <_x0038_
             cq:commerceType="variant"
@@ -184,7 +184,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0038_>
         <_x0031_1.5
             cq:commerceType="variant"
@@ -197,7 +197,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0031_1.5>
         <_x0039_
             cq:commerceType="variant"
@@ -210,7 +210,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0039_>
         <_x0031_0.5
             cq:commerceType="variant"
@@ -223,7 +223,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0031_0.5>
         <_x0037_
             cq:commerceType="variant"
@@ -236,7 +236,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Banff.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Banff.jpg"/>
         </_x0037_>
     </eqwnbf>
     <eqwnfr
@@ -255,7 +255,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/glasses/Fernie.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
         <M
             cq:commerceType="variant"
             cq:productSkuCode="eqwnfr-M"
@@ -267,7 +267,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/glasses/Fernie.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
         </M>
         <S
             cq:commerceType="variant"
@@ -280,7 +280,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/glasses/Fernie.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Fernie.jpg"/>
         </S>
     </eqwnfr>
     <eqwnkl
@@ -298,7 +298,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/glasses/Kelowna.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Kelowna.jpg"/>
     </eqwnkl>
     <eqwnkm
         cq:commerceType="product"
@@ -316,7 +316,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         <_x0039_
             cq:commerceType="variant"
             cq:productSkuCode="eqwnkm-9"
@@ -328,7 +328,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0039_>
         <_x0031_0
             cq:commerceType="variant"
@@ -341,7 +341,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0031_0>
         <_x0038_
             cq:commerceType="variant"
@@ -354,7 +354,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0038_>
         <_x0031_3
             cq:commerceType="variant"
@@ -367,7 +367,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0031_3>
         <_x0031_2
             cq:commerceType="variant"
@@ -380,7 +380,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0031_2>
         <_x0031_1
             cq:commerceType="variant"
@@ -393,7 +393,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0031_1>
         <_x0037_
             cq:commerceType="variant"
@@ -406,7 +406,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Kamloops.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Kamloops.jpg"/>
         </_x0037_>
     </eqwnkm>
     <eqwnkw
@@ -424,7 +424,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/helmet/Kawartha.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/helmet/Kawartha.jpg"/>
     </eqwnkw>
     <eqwnmt
         cq:commerceType="product"
@@ -442,7 +442,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/gloves/Mont Tremblant.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
         <S
             cq:commerceType="variant"
             cq:productSkuCode="eqwnmt-S"
@@ -454,7 +454,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/gloves/Mont Tremblant.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
         </S>
         <M
             cq:commerceType="variant"
@@ -467,7 +467,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/gloves/Mont Tremblant.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
         </M>
         <L
             cq:commerceType="variant"
@@ -480,7 +480,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/gloves/Mont Tremblant.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
         </L>
     </eqwnmt>
     <eqwntb
@@ -499,7 +499,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         <_x0039_.5
             cq:commerceType="variant"
             cq:productSkuCode="eqwntb-9.5"
@@ -511,7 +511,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0039_.5>
         <_x0031_1.5
             cq:commerceType="variant"
@@ -524,7 +524,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0031_1.5>
         <_x0031_0.5
             cq:commerceType="variant"
@@ -537,7 +537,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0031_0.5>
         <_x0038_.5
             cq:commerceType="variant"
@@ -550,7 +550,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0038_.5>
         <_x0039_
             cq:commerceType="variant"
@@ -563,7 +563,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0039_>
         <_x0031_0
             cq:commerceType="variant"
@@ -576,7 +576,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0031_0>
         <_x0038_
             cq:commerceType="variant"
@@ -589,7 +589,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0038_>
         <_x0031_1
             cq:commerceType="variant"
@@ -602,7 +602,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0031_1>
         <_x0037_
             cq:commerceType="variant"
@@ -615,7 +615,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0037_>
         <_x0037_.5
             cq:commerceType="variant"
@@ -628,7 +628,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0037_.5>
         <_x0031_2
             cq:commerceType="variant"
@@ -641,7 +641,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0031_2>
         <_x0031_3
             cq:commerceType="variant"
@@ -654,7 +654,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/footwear/Tobermory.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Tobermory.jpg"/>
         </_x0031_3>
     </eqwntb>
     <eqwnwh
@@ -674,7 +674,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/equipment/Whistler.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Whistler.jpg"/>
         <_x0031_40cm
             cq:commerceType="variant"
             cq:productSkuCode="eqwnwh-140cm"
@@ -686,7 +686,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/equipment/Whistler.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Whistler.jpg"/>
         </_x0031_40cm>
         <_x0031_50cm
             cq:commerceType="variant"
@@ -699,7 +699,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/equipment/Whistler.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Whistler.jpg"/>
         </_x0031_50cm>
         <_x0031_30cm
             cq:commerceType="variant"
@@ -712,7 +712,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/equipment/Whistler.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Whistler.jpg"/>
         </_x0031_30cm>
         <_x0031_60cm
             cq:commerceType="variant"
@@ -725,7 +725,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/equipment/Whistler.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Whistler.jpg"/>
         </_x0031_60cm>
     </eqwnwh>
 </jcr:root>

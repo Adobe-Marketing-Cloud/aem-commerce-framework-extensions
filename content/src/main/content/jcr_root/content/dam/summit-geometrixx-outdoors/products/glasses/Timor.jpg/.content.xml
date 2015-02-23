@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:lr="http://ns.adobe.com/lightroom/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="7406c1eb-7f04-4634-b004-9fb59a628f20">
+    <jcr:content
+        cq:name="Timor.jpg"
+        cq:parentPath="/content/dam/summit-geometrixx-outdoors/products/glasses"
+        jcr:lastModified="{Date}2015-02-23T16:54:28.742+11:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dc:description="Men's Sport Shades"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2015-02-23T16:54:28.693+11:00"
+            dc:subject="[Equipment,Glasses,Men,Summer,Women]"
+            dc:title="Timor Sun"
+            exif:ExifImageLength="{Long}284"
+            exif:ExifImageWidth="{Long}600"
+            exif:PixelXDimension="{Long}72"
+            exif:PixelYDimension="{Long}72"
+            jcr:lastModified="{Date}2015-02-23T16:54:28.692+11:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:BitsPerSample="\[S@34806470"
+            tiff:Compression="{Long}6"
+            tiff:ImageLength="{Long}284"
+            tiff:ImageWidth="{Long}600"
+            tiff:Orientation="{Long}1"
+            tiff:PhotometricInterpretation="{Long}2"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:SamplesPerPixel="{Long}3"
+            tiff:XResolution="72"
+            tiff:YResolution="72"
+            xmp:CreateDate="{Date}2011-11-01T21:01:57.000+01:00"
+            xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh"
+            xmp:MetadataDate="{Date}2011-11-14T15:36:31.000+01:00"
+            xmp:ModifyDate="{Date}2011-11-14T13:53:30.000+11:00"
+            xmpMM:DocumentID="4BBADB1355DC5DBAEEA3AD057F8E7DFC"
+            xmpMM:InstanceID="xmp.iid:8E5F3CE61A206811822ABB7A979FFCED"
+            xmpMM:OriginalDocumentID="4BBADB1355DC5DBAEEA3AD057F8E7DFC">
+            <xmpMM:History
+                jcr:primaryType="nt:unstructured"
+                xmpArraySize="{Long}4"
+                xmpArrayType="rdf:Seq"
+                xmpNodeType="xmpArray">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:CB301555082068118C14AE0F6991ECD4"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-09T11:16:18.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:1A2B7A550A206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T13:39:02.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/"
+                    stEvt:instanceID="xmp.iid:A60A77E107206811B920DA32732B918A"
+                    stEvt:softwareAgent="Adobe Photoshop CS5.1 Macintosh"
+                    stEvt:when="{Date}2011-11-14T13:53:30.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+                <_x0034_
+                    jcr:primaryType="nt:unstructured"
+                    stEvt:action="saved"
+                    stEvt:changed="/metadata"
+                    stEvt:instanceID="xmp.iid:8E5F3CE61A206811822ABB7A979FFCED"
+                    stEvt:softwareAgent="Adobe Photoshop Camera Raw 6.5 (Macintosh)"
+                    stEvt:when="{Date}2011-11-14T15:36:31.000+01:00"
+                    xmpNodeType="xmpStruct"/>
+            </xmpMM:History>
+            <lr:hierarchicalSubject
+                jcr:primaryType="nt:unstructured"
+                _x0031_="Season|Summer"
+                _x0032_="Equipment"
+                _x0033_="Gender|Women"
+                _x0034_="Gender|Men"
+                _x0035_="Equipment|Glasses"
+                xmpArraySize="{Long}5"
+                xmpArrayType="rdf:Bag"
+                xmpNodeType="xmpArray"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

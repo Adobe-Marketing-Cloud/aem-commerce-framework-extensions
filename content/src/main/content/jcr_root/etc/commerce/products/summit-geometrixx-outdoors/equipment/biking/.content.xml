@@ -23,7 +23,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/equipment/Cajamara.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Cajamara.jpg"/>
     </eqsmcj>
     <eqsmsp
         cq:commerceType="product"
@@ -41,7 +41,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/equipment/Sparrow.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Sparrow.jpg"/>
     </eqsmsp>
     <eqsmtc
         cq:commerceType="product"
@@ -60,7 +60,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/helmet/Tacna.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/helmet/Tacna.jpg"/>
         <L
             cq:commerceType="variant"
             cq:productSkuCode="eqsmtc-L"
@@ -72,7 +72,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/helmet/Tacna.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/helmet/Tacna.jpg"/>
         </L>
         <M
             cq:commerceType="variant"
@@ -85,7 +85,7 @@
             <image
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce/components/product/image"
-                fileReference="/content/dam/geometrixx/products/helmet/Tacna.jpg"/>
+                fileReference="/content/dam/summit-geometrixx-outdoors/products/helmet/Tacna.jpg"/>
         </M>
     </eqsmtc>
 </jcr:root>

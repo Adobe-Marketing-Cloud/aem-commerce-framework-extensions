@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <Tahiti.jpg/>
+    <Tuareg.jpg/>
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <folderThumbnail/>
+    </jcr:content>
+    <Fiji_x0020_Blue.jpg/>
+    <Fiji_x0020_Red.jpg/>
+    <Jola_x0020_Blue.jpg/>
+    <Jola_x0020_Green.jpg/>
+    <Marka_x0020_Red.jpg/>
+    <Marka_x0020_Blue.jpg/>
+</jcr:root>

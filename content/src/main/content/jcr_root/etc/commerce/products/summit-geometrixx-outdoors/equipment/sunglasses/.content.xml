@@ -22,7 +22,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/glasses/Irian Jaya.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Irian Jaya.jpg"/>
     </eqsmij>
     <eqsmra
         cq:commerceType="product"
@@ -39,7 +39,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/glasses/Raja Ampat.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Raja Ampat.jpg"/>
     </eqsmra>
     <eqsmsm
         cq:commerceType="product"
@@ -56,7 +56,7 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/glasses/Sumatra.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Sumatra.jpg"/>
     </eqsmsm>
     <eqsmti
         cq:commerceType="product"
@@ -73,6 +73,6 @@
         <image
             jcr:primaryType="nt:unstructured"
             sling:resourceType="commerce/components/product/image"
-            fileReference="/content/dam/geometrixx/products/glasses/Timor.jpg"/>
+            fileReference="/content/dam/summit-geometrixx-outdoors/products/glasses/Timor.jpg"/>
     </eqsmti>
 </jcr:root>
