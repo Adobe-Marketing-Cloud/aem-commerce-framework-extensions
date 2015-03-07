@@ -1,0 +1,178 @@
+<!--
+  ~ Copyright © 2015 Elastic Path Software Inc. All rights reserved.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ====================================================================== -->
+	<!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+	<!-- ====================================================================== -->
+	<parent>
+		<groupId>com.elasticpath.aem.geometrixx</groupId>
+		<artifactId>ep-geometrixx-parent</artifactId>
+		<version>0-SNAPSHOT</version>
+	</parent>
+
+	<!-- ======================================================================= -->
+	<!-- P R O J E C T D E S C R I P T I O N -->
+	<!-- ======================================================================= -->
+	<artifactId>ep-geometrixx-commerce-extension</artifactId>
+	<version>0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+
+	<name>Geometrixx Demo Store</name>
+	<description>Bundle for model classes used by Geometrixx store</description>
+
+	<!-- ======================================================================= -->
+	<!-- D E P E N D E N C I E S                                                 -->
+	<!-- ======================================================================= -->
+	<dependencies>
+		<!-- Elasticpath -->
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-commerce-elasticpath-impl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.rest</groupId>
+			<artifactId>cortex-jaxrs-client</artifactId>
+		</dependency>
+
+		<!-- AEM -->
+		<dependency>
+			<groupId>com.adobe.cq.commerce</groupId>
+			<artifactId>cq-commerce-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.adobe.aem</groupId>
+			<artifactId>aem-api</artifactId>
+		</dependency>
+
+		<!-- JCR -->
+		<dependency>
+			<groupId>javax.jcr</groupId>
+			<artifactId>jcr</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+
+		<!-- Intellij IDE dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.scr.annotations</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+
+		<!-- Test -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+		</dependency>
+
+	</dependencies>
+
+
+	<!-- ======================================================================= -->
+	<!-- B U I L D D E F I N I T I O N -->
+	<!-- ======================================================================= -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-scr-plugin</artifactId>
+				<version>1.20.0</version>
+				<executions>
+					<execution>
+						<id>generate-scr-descriptor</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>scr</goal>
+						</goals>
+						<configuration>
+							<!-- Private service properties for all services. -->
+							<properties>
+								<service.vendor>Elastic Path Software, Inc.</service.vendor>
+							</properties>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<version>2.5.3</version>
+				<configuration>
+					<instructions>
+						<Export-Package>
+							com.elasticpath.geometrixx.rest.sdk.*
+						</Export-Package>
+						<Import-Package>
+							com.adobe.cq.commerce.api;version=3.1.0,
+							*
+						</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

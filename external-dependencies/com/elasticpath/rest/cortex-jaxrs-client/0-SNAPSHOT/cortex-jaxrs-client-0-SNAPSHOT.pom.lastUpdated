@@ -1,0 +1,14 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Feb 24 21:35:02 EST 2015
+http\://repository.apache.org/snapshots/.lastUpdated=1424774101929
+http\://repo2.maven.org/maven2/.error=
+http\://repo.adobe.com/nexus/content/groups/public/.error=
+http\://repo.adobe.com/nexus/content/groups/public/.lastUpdated=1424774100896
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.error=Could not transfer artifact com.elasticpath.rest\:cortex-jaxrs-client\:pom\:0-SNAPSHOT from/to nexus-releases (http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories)\: nexus.bsl.eur.adobe.com\: nodename nor servname provided, or not known
+default-http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.lastUpdated=1424774102991
+http\://54.148.18.74\:8081/nexus/content/groups/enablement-ep-repository-group/.lastUpdated=1424496738872
+http\://repo2.maven.org/maven2/.lastUpdated=1424774102943
+http\://repo1.maven.org/maven2/.lastUpdated=1424774102493
+http\://repo1.maven.org/maven2/.error=
+http\://repository.apache.org/snapshots/.error=
+http\://54.148.18.74\:8081/nexus/content/groups/enablement-ep-repository-group/.error=

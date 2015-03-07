@@ -1,0 +1,228 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.elasticpath.aem.geometrixx</groupId>
+		<artifactId>ep-geometrixx-parent</artifactId>
+		<version>0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>ep-geometrixx-content</artifactId>
+	<version>0-SNAPSHOT</version>
+
+	<name>Geometrixx Elastic Path Content Package</name>
+	<description>Package for a Elastic Path based Geometrixx Outdoors store</description>
+
+	<properties>
+		<!-- author deploy defaults -->
+		<aem.author.user>admin</aem.author.user>
+		<aem.author.password>admin</aem.author.password>
+		<aem.author.host>localhost</aem.author.host>
+		<aem.author.port>4502</aem.author.port>
+
+		<!-- publish deploy defaults -->
+		<aem.publish.user>admin</aem.publish.user>
+		<aem.publish.password>admin</aem.publish.password>
+		<aem.publish.host>localhost</aem.publish.host>
+		<aem.publish.port>4503</aem.publish.port>
+
+		<!--Configurable properties-->
+		<targetDir>apps/geometrixx-outdoors/install</targetDir>
+
+		<!--Dependency/Plugin versions-->
+		<com.day.jcr.vault.content-package.version>0.0.20</com.day.jcr.vault.content-package.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.elasticpath.aem.geometrixx</groupId>
+			<artifactId>ep-geometrixx-commerce-extension</artifactId>
+			<version>0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>content/jcr_root</directory>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+
+		<plugins>
+			<!--Copies the jars where content-package can see them, to save specifying them twice-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/classes/${targetDir}</outputDirectory>
+							<excludeTransitive>true</excludeTransitive>
+							<excludeScope>provided</excludeScope>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>com.day.jcr.vault</groupId>
+				<artifactId>content-package-maven-plugin</artifactId>
+				<version>${com.day.jcr.vault.content-package.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>package</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<filters>
+						<filter>
+							<root>/apps/cq/security/content/tools/userProperties</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/config</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/components/addressbook</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/components/calltoaction</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/components/form/text</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/components/order_shipping_status</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/i18n/en_US</root>
+						</filter>
+						<filter>
+							<root>/apps/geometrixx-outdoors/install</root>
+						</filter>
+						<filter>
+							<root>/content/catalogs/geometrixx-outdoors/elasticpath-base-catalog</root>
+						</filter>
+						<filter>
+							<root>/content/catalogs/geometrixx-outdoors/elasticpath-template-pages</root>
+						</filter>
+						<filter>
+							<root>/content/dam/geometrixx</root>
+						</filter>
+						<filter>
+							<root>/content/campaigns/geometrixx-outdoors/elasticpath-big-spender</root>
+						</filter>
+						<filter>
+							<root>/content/campaigns/geometrixx-outdoors/elasticpath-perfect-partner</root>
+						</filter>
+						<filter>
+							<root>/content/geometrixx-outdoors/en_US</root>
+						</filter>
+						<filter>
+							<root>/content/usergenerated/content/geometrixx-outdoors/en_US</root>
+						</filter>
+						<filter>
+							<root>/etc/clientlibs/elasticpath</root>
+						</filter>
+						<filter>
+							<root>/etc/languages</root>
+						</filter>
+						<filter>
+							<root>/etc/commerce/products/geometrixx</root>
+						</filter>
+						<filter>
+							<root>/etc/importers/elasticpath</root>
+						</filter>
+						<filter>
+							<root>/etc/segmentation/geometrixx-outdoors/elasticpath-ashanti-nomad-perfect-partner</root>
+						</filter>
+						<filter>
+							<root>/etc/segmentation/geometrixx-outdoors/elasticpath-jola-summer-perfect-partner</root>
+						</filter>
+						<filter>
+							<root>/etc/segmentation/geometrixx-outdoors/ordervalue100to200</root>
+						</filter>
+						<filter>
+							<root>/libs/commerce/elasticpath</root>
+						</filter>
+						<filter>
+							<root>/libs/cq/security/widgets/source/widgets/security/Preferences.js</root>
+						</filter>
+					</filters>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>deploy-author</id>
+			<properties>
+				<aem.deploy.user>${aem.author.user}</aem.deploy.user>
+				<aem.deploy.pword>${aem.author.password}</aem.deploy.pword>
+				<aem.deploy.host>${aem.author.host}</aem.deploy.host>
+				<aem.deploy.port>${aem.author.port}</aem.deploy.port>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.day.jcr.vault</groupId>
+						<artifactId>content-package-maven-plugin</artifactId>
+						<configuration>
+							<userId>${aem.deploy.user}</userId>
+							<password>${aem.deploy.pword}</password>
+							<targetURL>http://${aem.deploy.host}:${aem.deploy.port}/crx/packmgr/service.jsp</targetURL>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>deploy-publish</id>
+			<properties>
+				<aem.deploy.user>${aem.publish.user}</aem.deploy.user>
+				<aem.deploy.pword>${aem.publish.password}</aem.deploy.pword>
+				<aem.deploy.host>${aem.publish.host}</aem.deploy.host>
+				<aem.deploy.port>${aem.publish.port}</aem.deploy.port>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.day.jcr.vault</groupId>
+						<artifactId>content-package-maven-plugin</artifactId>
+						<configuration>
+							<userId>${aem.deploy.user}</userId>
+							<password>${aem.deploy.pword}</password>
+							<targetURL>http://${aem.deploy.host}:${aem.deploy.port}/crx/packmgr/service.jsp</targetURL>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

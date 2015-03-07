@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.elasticpath</groupId>
+	<artifactId>code-checking-rules-parent</artifactId>
+	<version>68</version>
+	<packaging>pom</packaging>
+
+	<name>Elastic Path: Code Checking Rules Parent</name>
+	<description>Elastic Path Code Checking Rules</description>
+
+	<properties>
+		<java.version>1.7</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
+		<maven.deploy.plugin.version>2.8</maven.deploy.plugin.version>
+		<maven.javadoc.plugin.version>2.9.1</maven.javadoc.plugin.version>
+		<maven.release.plugin.version>2.4.1</maven.release.plugin.version>
+	</properties>
+
+	<inceptionYear>2010</inceptionYear>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>${maven.javadoc.plugin.version}</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven.deploy.plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>code-checking-rules</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<id>with-job-generators</id>
+			<modules>
+				<module>build-job-generators/jenkins</module>
+			</modules>
+		</profile>
+	</profiles>
+</project>

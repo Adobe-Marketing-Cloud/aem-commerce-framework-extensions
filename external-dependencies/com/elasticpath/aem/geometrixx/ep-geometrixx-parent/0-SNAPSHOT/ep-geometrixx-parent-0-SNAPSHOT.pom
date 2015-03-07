@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ====================================================================== -->
+	<!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+	<!-- ====================================================================== -->
+	<parent>
+		<groupId>com.elasticpath.aem.commerce</groupId>
+		<artifactId>aem-commerce-parent</artifactId>
+		<version>0-SNAPSHOT</version>
+	</parent>
+
+	<!-- ======================================================================= -->
+	<!-- P R O J E C T D E S C R I P T I O N -->
+	<!-- ======================================================================= -->
+	<groupId>com.elasticpath.aem.geometrixx</groupId>
+	<artifactId>ep-geometrixx-parent</artifactId>
+	<version>0-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<name>Geometrixx Reactor</name>
+	<description>Reactor build for Geometrixx Demo</description>
+
+	<modules>
+		<module>commerce-extension</module>
+		<module>deployment-package</module>
+	</modules>
+
+	<properties>
+		<!-- author deploy defaults -->
+		<aem.user>admin</aem.user>
+		<aem.password>admin</aem.password>
+		<aem.host>localhost</aem.host>
+		<aem.port>4502</aem.port>
+
+		<!--Jacoco-->
+		<jacoco.instruction.covered-ratio>0.40</jacoco.instruction.covered-ratio>
+		<jacoco.branch.covered-ratio>0.41</jacoco.branch.covered-ratio>
+		<jacoco.line.covered-ratio>0.43</jacoco.line.covered-ratio>
+		<jacoco.complexity.covered-ratio>0.35</jacoco.complexity.covered-ratio>
+		<jacoco.method.covered-ratio>0.38</jacoco.method.covered-ratio>
+		<jacoco.class.covered-ratio>0.46</jacoco.class.covered-ratio>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Elasticpath -->
+			<dependency>
+				<groupId>com.elasticpath.aem.commerce</groupId>
+				<artifactId>cq-commerce-elasticpath-impl</artifactId>
+				<version>${com.elasticpath.aem.commerce.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- version differs from aem-commerce-parent -->
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.5</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jsp-api</artifactId>
+				<version>2.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.ws.rs</groupId>
+				<artifactId>javax.ws.rs-api</artifactId>
+				<version>2.0.1</version>
+				<scope>provided</scope>
+			</dependency>	
+			<!-- Testing -->
+			<!-- not included in aem-commerce-parent -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-simple</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

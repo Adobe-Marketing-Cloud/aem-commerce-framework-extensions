@@ -1,0 +1,187 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ====================================================================== -->
+	<!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+	<!-- ====================================================================== -->
+	<parent>
+		<groupId>com.elasticpath.aem.commerce</groupId>
+		<artifactId>aem-commerce-parent</artifactId>
+		<version>0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>ep-commerce-api</artifactId>
+	<name>Elastic Path Commerce API</name>
+	<description>Package for a Elastic Path commerce api implementation</description>
+
+	<properties>
+		<!--Configurable properties-->
+		<targetDir>apps/ep-commerce-api/install</targetDir>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-config-elasticpath-impl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-commerce-elasticpath-impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-commerce-elasticpath-importer</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-elasticpath-connectionfactory-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-elasticpath-activemq-connectionfactory</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem</groupId>
+			<artifactId>ep-aem-import-api</artifactId>
+			<version>${com.elasticpath.aem.ep-aem-import-api.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.rest</groupId>
+			<artifactId>cortex-jaxrs-client</artifactId>
+		</dependency>
+
+		<!-- Json Unmarshaller and dependencies -->
+		<dependency>
+			<groupId>com.elasticpath.json</groupId>
+			<artifactId>json-unmarshaller</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.minidev</groupId>
+			<artifactId>json-smart</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.minidev</groupId>
+			<artifactId>asm</artifactId>
+		</dependency>
+
+		<!--Jackson-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jaxb-annotations</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-base</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+
+		<!--Injection-->
+		<dependency>
+			<groupId>org.ops4j</groupId>
+			<artifactId>peaberry</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ops4j.peaberry.extensions</groupId>
+			<artifactId>peaberry.activation</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath</groupId>
+			<artifactId>com.google.guice-repackage</artifactId>
+			<version>0.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aopalliance</groupId>
+			<artifactId>com.springsource.org.aopalliance</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!--Repackaged with osgi headers-->
+		<dependency>
+			<groupId>org.glassfish.hk2.external</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>2.4.0-b06</version>
+		</dependency>
+
+		<!--Other-->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!--Copies the jars where content-package can see them, to save specifying them twice-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/classes/${targetDir}</outputDirectory>
+							<excludeTransitive>true</excludeTransitive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>com.day.jcr.vault</groupId>
+				<artifactId>content-package-maven-plugin</artifactId>
+				<version>${com.day.jcr.vault.content-package.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>

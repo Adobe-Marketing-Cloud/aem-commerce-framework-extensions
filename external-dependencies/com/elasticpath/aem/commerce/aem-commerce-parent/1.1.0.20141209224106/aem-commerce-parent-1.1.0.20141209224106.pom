@@ -1,0 +1,870 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.elasticpath.aem.commerce</groupId>
+	<artifactId>aem-commerce-parent</artifactId>
+	<version>1.1.0.20141209224106</version>
+	<name>EP AEM Commerce parent pom</name>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>commerce</module>
+		<module>config</module>
+		<module>importer</module>
+		<module>ui</module>
+	</modules>
+
+	<properties>
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss.SSSZ</maven.build.timestamp.format>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.junit.usefile>false</maven.junit.usefile>
+
+		<curl.dir/>
+
+		<!-- author deploy defaults -->
+		<aem.author.user>admin</aem.author.user>
+		<aem.author.password>admin</aem.author.password>
+		<aem.author.host>localhost</aem.author.host>
+		<aem.author.port>4502</aem.author.port>
+
+		<!-- publish deploy defaults -->
+		<aem.publish.user>admin</aem.publish.user>
+		<aem.publish.password>admin</aem.publish.password>
+		<aem.publish.host>localhost</aem.publish.host>
+		<aem.publish.port>4503</aem.publish.port>
+
+		<!-- Integration Layer -->
+		<java.cortex.jaxrs.client.version>1.12.0.20141209224106</java.cortex.jaxrs.client.version>
+
+		<!-- javax -->
+		<servlet.version>2.4</servlet.version>
+		<servlet.jsp.version>2.0</servlet.jsp.version>
+
+		<com.elasticpath.code-checking-rules.version>68</com.elasticpath.code-checking-rules.version>
+		<com.elasticpath.commerce-engine.version>612.0.0.20141209224106</com.elasticpath.commerce-engine.version>
+		<com.elasticpath.aem.ep-aem-import-api.version>1.5</com.elasticpath.aem.ep-aem-import-api.version>
+
+		<!-- JCR -->
+		<jcr.version>2.0</jcr.version>
+
+		<!-- CQ5 Commerce -->
+		<cq.commerce.core.version>5.10.36</cq.commerce.core.version>
+		<cq.commerce.pim.version>5.9.26</cq.commerce.pim.version>
+		<cq.address.version>1.1.6</cq.address.version>
+
+		<!-- CQ5 -->
+		<cq.version>5.6.2</cq.version>
+		<cq.commons.version>5.6.4</cq.commons.version>
+		<cq.wcm.api.version>5.6.2</cq.wcm.api.version>
+		<cq.foundation.version>5.6.4</cq.foundation.version>
+		<cq.gfx.version>2.1.4</cq.gfx.version>
+		<cq.text.version>1.1.8</cq.text.version>
+		<cq.workflow.version>5.5.0</cq.workflow.version>
+		<cq.wcm.workflow.api.version>5.3.0</cq.wcm.workflow.api.version>
+		<cq.security.version>5.6.2</cq.security.version>
+		<cq.search.version>5.5.4</cq.search.version>
+		<cq.statistics.version>5.5.0</cq.statistics.version>
+		<cq.text.version>1.1.8</cq.text.version>
+		<cq.apps>/apps/geometrixx-outdoors</cq.apps>
+		<cq.personalization.version>5.6.6</cq.personalization.version>
+		<cq.analytics.version>5.6.12</cq.analytics.version>
+		<cq.granite.xssprotection.version>5.5.4</cq.granite.xssprotection.version>
+		<cq.dam.version>5.5.0</cq.dam.version>
+
+		<!-- sling -->
+		<sling.api.version>2.3.0</sling.api.version>
+		<sling.jcr.api.version>2.1.0</sling.jcr.api.version>
+		<sling.jcr.resource.version>2.3.6</sling.jcr.resource.version>
+		<sling.event.version>3.1.2</sling.event.version>
+		<sling.commons.json.version>2.0.6</sling.commons.json.version>
+		<sling.commons.version>2.1.0</sling.commons.version>
+		<sling.settings.version>1.1.0</sling.settings.version>
+		<sling.velocity.version>2.1.0</sling.velocity.version>
+
+		<!-- jackrabbit -->
+		<jackrabbit.jcr.commons.version>2.7.2</jackrabbit.jcr.commons.version>
+
+		<!-- OSGi -->
+		<osgi.version>1.2.0</osgi.version>
+		<osgi.compendium.version>4.0.0</osgi.compendium.version>
+		<scr.annotations.version>1.5.0</scr.annotations.version>
+
+		<!-- apache commons -->
+		<commons.lang.version>2.4</commons.lang.version>
+		<commons.io.version>1.4</commons.io.version>
+		<commons.logging.version>1.1.1</commons.logging.version>
+		<commons.codec.version>1.5</commons.codec.version>
+
+		<!-- testing -->
+		<junit.version>4.8.2</junit.version>
+		<sling.testing.version>2.0.8</sling.testing.version>
+		<sling.junit.version>1.0.6</sling.junit.version>
+		<mockito-core.version>1.9.5</mockito-core.version>
+		<powermock.version>1.5.4</powermock.version>
+		<groovy.version>2.4.0-beta-3</groovy.version>
+
+		<!-- other -->
+		<slf4j.version>1.7.6</slf4j.version>
+		<jackson.version>1.9.2</jackson.version>
+		<com.fasterxml.jackson.version>2.4.3</com.fasterxml.jackson.version>
+
+		<!-- plugins -->
+		<compiler.version>1.6</compiler.version>
+		<compiler.plugin.version>3.1</compiler.plugin.version>
+		<exec.plugin.version>1.2</exec.plugin.version>
+		<scr.plugin.version>1.7.0</scr.plugin.version>
+		<gmaven.version>1.4</gmaven.version>
+		<gmaven.provider.version>1.8</gmaven.provider.version>
+		<felix.bundle.plugin.version>2.3.6</felix.bundle.plugin.version>
+		<xml.plugin.version>1.0</xml.plugin.version>
+		<site.plugin.version>3.0</site.plugin.version>
+		<project.info.plugin.version>2.4</project.info.plugin.version>
+		<javadoc.plugin.version>2.8</javadoc.plugin.version>
+		<checkstyle.plugin.version>2.13</checkstyle.plugin.version>
+		<pmd.plugin.version>3.0.1</pmd.plugin.version>
+		<surefire.plugin.version>2.11</surefire.plugin.version>
+		<failsafe.plugin.version>2.11</failsafe.plugin.version>
+		<m2e.plugin.version>1.0.0</m2e.plugin.version>
+		<assembly.plugin.version>2.2.1</assembly.plugin.version>
+		<sling.plugin.version>2.1.0</sling.plugin.version>
+		<release.plugin.version>2.2.2</release.plugin.version>
+		<deploy.plugin.version>2.4</deploy.plugin.version>
+		<jaxws.plugin.version>2.1</jaxws.plugin.version>
+		<jacoco.plugin.version>0.7.1.201405082137</jacoco.plugin.version>
+	</properties>
+
+	<!-- ======================================================================= -->
+	<!-- P R O J E C T D E S C R I P T I O N -->
+	<!-- ======================================================================= -->
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<sling.user>admin</sling.user>
+				<sling.install.skip>true</sling.install.skip>
+			</properties>
+		</profile>
+		<profile>
+			<id>local-author</id>
+			<activation>
+				<property>
+					<name>local-author</name>
+				</property>
+			</activation>
+			<properties>
+				<resources.env>local-author</resources.env>
+				<skip>false</skip>
+				<sling.host>${aem.author.host}</sling.host>
+				<sling.port>${aem.author.port}</sling.port>
+				<sling.user>${aem.author.user}</sling.user>
+				<sling.password>${aem.author.password}</sling.password>
+			</properties>
+		</profile>
+		<profile>
+			<id>local-publish</id>
+			<activation>
+				<property>
+					<name>local-publish</name>
+				</property>
+			</activation>
+			<properties>
+				<resources.env>local-publish</resources.env>
+				<skip>false</skip>
+				<sling.host>${aem.publish.host}</sling.host>
+				<sling.port>${aem.publish.port}</sling.port>
+				<sling.user>${aem.publish.user}</sling.user>
+				<sling.password>${aem.publish.password}</sling.password>
+			</properties>
+		</profile>
+
+	</profiles>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--EP-->
+			<dependency>
+				<groupId>com.elasticpath.aem.commerce</groupId>
+				<artifactId>cq-config-elasticpath-impl</artifactId>
+				<version>1.1.0.20141209224106</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--Jackson-->
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-core-asl</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<!--osgi-->
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.core</artifactId>
+				<version>4.1.0</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
+				<version>4.1.0</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--scr-->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.scr.annotations</artifactId>
+				<version>1.9.4</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- javax -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>${servlet.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jsp-api</artifactId>
+				<version>${servlet.jsp.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.jcr</groupId>
+				<artifactId>jcr</artifactId>
+				<version>${jcr.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.jmx</artifactId>
+				<version>0.2.6</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.security.user</artifactId>
+				<version>0.0.26</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.workflow.api</artifactId>
+				<version>1.0.2</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.adapter</artifactId>
+				<version>2.0.4</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- OSGi -->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
+				<version>${osgi.version}</version>
+				<scope>provided</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.felix</groupId>
+						<artifactId>javax.servlet</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.foundation</artifactId>
+				<version>${osgi.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- CQ -->
+			<dependency>
+				<groupId>com.adobe.cq.commerce</groupId>
+				<artifactId>cq-commerce-core</artifactId>
+				<version>${cq.commerce.core.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.adobe.cq.commerce</groupId>
+				<artifactId>cq-commerce-pim</artifactId>
+				<version>${cq.commerce.pim.version}</version>
+				<scope>provided</scope>
+				<exclusions>
+					<!--
+						Must be excluded due to to NoSuchFieldError occuring when using MockitoJUnitRunner
+						See https://stackoverflow.com/questions/7688395/nosuchfielderror-when-trying-to-run-a-junit-test-with-spring
+					-->
+					<exclusion>
+						<groupId>junit</groupId>
+						<artifactId>junit-dep</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>com.adobe.cq</groupId>
+				<artifactId>cq-address</artifactId>
+				<version>${cq.address.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-commons</artifactId>
+				<version>${cq.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-wcm-foundation</artifactId>
+				<version>${cq.foundation.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-wcm-api</artifactId>
+				<version>${cq.wcm.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-wcm-commons</artifactId>
+				<version>${cq.foundation.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.commons</groupId>
+				<artifactId>day-commons-gfx</artifactId>
+				<version>${cq.gfx.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-tagging</artifactId>
+				<version>${cq.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-wcm-workflow</artifactId>
+				<version>${cq.workflow.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-wcm-workflow-api</artifactId>
+				<version>${cq.wcm.workflow.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.workflow</groupId>
+				<artifactId>cq-workflow-api</artifactId>
+				<version>${cq.workflow.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-msm-api</artifactId>
+				<version>${cq.foundation.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-mailer</artifactId>
+				<version>${cq.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.collab</groupId>
+				<artifactId>cq-collab-blog</artifactId>
+				<version>${cq.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.collab</groupId>
+				<artifactId>cq-collab-commons</artifactId>
+				<version>${cq.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-security-api</artifactId>
+				<version>${cq.security.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-search</artifactId>
+				<version>${cq.search.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-statistics</artifactId>
+				<version>${cq.statistics.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.commons</groupId>
+				<artifactId>day-commons-text</artifactId>
+				<version>${cq.text.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-personalization</artifactId>
+				<version>${cq.personalization.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-analytics</artifactId>
+				<version>${cq.analytics.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.xssprotection</artifactId>
+				<version>${cq.granite.xssprotection.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.adobe.aem</groupId>
+				<artifactId>aem-api</artifactId>
+				<version>6.0.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+				<version>1.6.1</version>
+			</dependency>
+
+			<!-- sling -->
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.api</artifactId>
+				<version>${sling.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.jcr.api</artifactId>
+				<version>${sling.jcr.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.jcr.resource</artifactId>
+				<version>${sling.jcr.resource.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.event</artifactId>
+				<version>${sling.event.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.json</artifactId>
+				<version>${sling.commons.json.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.settings</artifactId>
+				<version>${sling.settings.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.osgi</artifactId>
+				<version>${sling.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.junit.core</artifactId>
+				<version>${sling.junit.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.scripting.velocity</artifactId>
+				<version>${sling.velocity.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- jackrabbit -->
+			<dependency>
+				<groupId>org.apache.jackrabbit</groupId>
+				<artifactId>jackrabbit-jcr-commons</artifactId>
+				<version>${jackrabbit.jcr.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.jackrabbit</groupId>
+				<artifactId>jackrabbit-api</artifactId>
+				<version>${jackrabbit.jcr.commons.version}</version>
+			</dependency>
+
+			<!-- logging -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- commons -->
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>${commons.lang.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons.io.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--Jackson-->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-module-jaxb-annotations</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-base</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- testing -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.testing</artifactId>
+				<version>${sling.testing.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.junit.remote</artifactId>
+				<version>${sling.junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.day.cq.dam</groupId>
+				<artifactId>cq-dam-api</artifactId>
+				<version>${cq.dam.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.elasticpath.rest</groupId>
+				<artifactId>cortex-jaxrs-client</artifactId>
+				<version>${java.cortex.jaxrs.client.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons.codec.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.elasticpath</groupId>
+				<artifactId>code-checking-rules</artifactId>
+				<version>${com.elasticpath.code-checking-rules.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito-core.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-module-junit4</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-mockito</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-module-junit4-common</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-core</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-reflect</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-support</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy-all</artifactId>
+				<version>${groovy.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-validator</groupId>
+				<artifactId>commons-validator</artifactId>
+				<version>1.4.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>jsr305</artifactId>
+				<version>2.0.3</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>adobe-public</id>
+			<name>Adobe Basel Public Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>adobe-public-releases</id>
+			<name>Adobe Basel Public Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>${release.repository.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>${snapshot.repository.url}</url>
+		</snapshotRepository>
+		<site>
+			<id>site</id>
+			<url>${site.url}</url>
+		</site>
+	</distributionManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>${jacoco.plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-bundle-plugin</artifactId>
+					<extensions>true</extensions>
+					<configuration>
+						<instructions>
+							<Bundle-RequiredExecutionEnvironment>JavaSE-1.7</Bundle-RequiredExecutionEnvironment>
+						</instructions>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${compiler.plugin.version}</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+
+				<!-- Apache Felix SCR Plugin -->
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-scr-plugin</artifactId>
+					<version>1.20.0</version>
+					<executions>
+						<execution>
+							<id>generate-scr-scrdescriptor</id>
+							<goals>
+								<goal>scr</goal>
+							</goals>
+							<configuration>
+								<!-- Private service properties for all services. -->
+								<properties>
+									<service.vendor>Day Management AG</service.vendor>
+								</properties>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- Set fixed version for dependency plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>2.8</version>
+				</plugin>
+
+				<!-- Set fixed version for jar plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+
+				<!-- Set fixed version for idea plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-idea-plugin</artifactId>
+					<version>2.2</version>
+				</plugin>
+
+				<!-- Set fixed version for surefire plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.13</version>
+				</plugin>
+
+				<!-- Set fixed version for war plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.3</version>
+				</plugin>
+
+				<!-- Set fixed version for failsafe plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>2.13</version>
+				</plugin>
+
+				<!-- Set fixed version for install plugin  -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+
+				<!-- Set fixed version for deploy plugin  -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.7</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

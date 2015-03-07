@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.elasticpath.aem.commerce</groupId>
+		<artifactId>aem-commerce-parent</artifactId>
+		<version>0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>cq-elasticpath-connectionfactory-api</artifactId>
+	<version>0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+
+	<name>Elastic Path JMS ConnectionFactory API</name>
+	<description>Elastic Path JMS ConnectionFactory for Aem Importer</description>
+
+	<dependencies>
+
+		<!-- JMS -->
+		<dependency>
+			<groupId>javax.jms</groupId>
+			<artifactId>jms</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<!--OSGI-->
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<obrRepository>NONE</obrRepository>
+					<instructions>
+						<Embed-Dependency>jms</Embed-Dependency>
+						<Embed-Directory>OSGI-INF/lib</Embed-Directory>
+						<_exportcontents>
+							javax.jms;version=1.1,
+							com.elasticpath.jms.api
+						</_exportcontents>
+						<Import-Package>javax.transaction.xa;resolution:=optional</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+			<!-- BEGIN - ElasticPath Style and Code Coverage Plugins -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+			</plugin>
+			<!-- END - ElasticPath Style and Code Coverage Plugins -->
+		</plugins>
+	</build>
+</project>
