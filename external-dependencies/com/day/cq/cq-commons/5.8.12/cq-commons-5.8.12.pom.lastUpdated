@@ -1,0 +1,13 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Feb 20 23:52:03 EST 2015
+b710073145faa3c3d97abef0cbbe3487b8f17351@default-http\://54.148.18.74\:8081/nexus/content/groups/enablement-ep-repository-group/.lastUpdated=1424436723547
+http\://repository.apache.org/snapshots/.lastUpdated=1423988232757
+http\://repo2.maven.org/maven2/.error=
+http\://repo.adobe.com/nexus/content/groups/public/.error=
+http\://repo.adobe.com/nexus/content/groups/public/.lastUpdated=1423988231384
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.lastUpdated=1423988242661
+http\://repo2.maven.org/maven2/.lastUpdated=1423988237869
+http\://repo1.maven.org/maven2/.lastUpdated=1423988233995
+http\://repo1.maven.org/maven2/.error=
+http\://repository.apache.org/snapshots/.error=
+http\://54.148.18.74\:8081/nexus/content/groups/enablement-ep-repository-group/.error=Could not transfer artifact com.day.cq\:cq-commons\:pom\:5.8.12 from/to internet-mirror (http\://54.148.18.74\:8081/nexus/content/groups/enablement-ep-repository-group)\: Operation timed out
