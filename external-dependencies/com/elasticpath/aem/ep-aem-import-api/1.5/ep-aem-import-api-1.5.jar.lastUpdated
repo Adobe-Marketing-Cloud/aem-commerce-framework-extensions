@@ -1,0 +1,14 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Feb 20 23:54:28 EST 2015
+http\://dev.cqblueprints.com/nexus/content/repositories/releases/.error=
+http\://dev.cqblueprints.com/nexus/content/repositories/releases/.lastUpdated=1424436868816
+http\://repository.apache.org/snapshots/.lastUpdated=1424436865848
+http\://repo2.maven.org/maven2/.error=
+http\://repo.adobe.com/nexus/content/groups/public/.error=
+http\://repo.adobe.com/nexus/content/groups/public/.lastUpdated=1424436865494
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.lastUpdated=1424436868202
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.error=
+http\://repo2.maven.org/maven2/.lastUpdated=1424436866870
+http\://repo1.maven.org/maven2/.error=
+http\://repo1.maven.org/maven2/.lastUpdated=1424436866277
+http\://repository.apache.org/snapshots/.error=

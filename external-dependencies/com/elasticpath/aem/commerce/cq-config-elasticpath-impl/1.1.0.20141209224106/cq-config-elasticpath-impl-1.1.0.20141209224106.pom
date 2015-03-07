@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.elasticpath.aem.commerce</groupId>
+		<artifactId>aem-commerce-parent</artifactId>
+		<version>1.1.0.20141209224106</version>
+	</parent>
+
+	<artifactId>cq-config-elasticpath-impl</artifactId>
+	<version>1.1.0.20141209224106</version>
+	<packaging>bundle</packaging>
+
+	<name>Elastic Path Commerce Config</name>
+	<description>Maintains common configurables and constants used across various AEM Commerce dependencies</description>
+
+	<dependencies>
+		<!--osgi-->
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+		</dependency>
+
+		<!--scr-->
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.scr.annotations</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.adapter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.jcr.resource</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-scr-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-Category>cq5</Bundle-Category>
+						<Embed-Dependency>
+							guava,
+							commons-net,
+							commons-lang3,
+							jsr305
+						</Embed-Dependency>
+						<Embed-Directory>OSGI-INF/lib</Embed-Directory>
+						<Embed-Transitive>true</Embed-Transitive>
+						<Export-Package>
+							com.elasticpath.commerce.config
+						</Export-Package>
+						<Import-Package>
+								com.fasterxml.jackson.*;version=2.4.3,
+								com.adobe.cq.commerce.api;version=2.0.0,
+								com.adobe.cq.commerce.api.collection;version=1.0.0,
+								com.adobe.cq.commerce.api.promotion;version=1.2.1,
+								com.adobe.cq.commerce.common;version=3.2.0,
+								com.adobe.cq.commerce.common.promotion;version=1.2.0,
+								com.adobe.cq.commerce.pim.api;version=1.3.1,
+								com.adobe.cq.commerce.pim.common;version=1.3.1,
+								com.adobe.granite.security.user;version=1.3.0,
+								com.adobe.granite.workflow.launcher;version=1.0.0,
+								com.day.cq.analytics.sitecatalyst.util;version=5.7.0,
+								com.day.cq.commons;version=5.7.0,
+								com.day.cq.commons.inherit;version=5.7.0,
+								com.day.cq.i18n;version=5.4.0,
+								com.day.cq.personalization;version=5.8.0,
+								com.day.cq.tagging;version=5.7.0,
+								com.day.cq.wcm.api;version=1.7.0,
+								com.day.cq.wcm.api.designer;version=5.7.0,
+								com.day.cq.wcm.commons;version=5.8.0,
+								com.day.cq.wcm.foundation;version=5.9.0,
+								com.day.image;version=1.0.0,
+								javax.jcr;version=2.0.0,
+								javax.jcr.nodetype;version=2.0.0,
+								javax.jcr.query;version=2.0.0,
+								javax.servlet.http;version=3.0.0,
+								org.apache.commons.collections;version=3.2.1,
+								org.apache.commons.lang;version=2.5.0,
+								org.apache.jackrabbit.commons;version=2.4.0,
+								org.apache.jackrabbit.util;version=2.4.0,
+								org.apache.sling.api;version=2.3.0,
+								org.apache.sling.api.request;version=2.4.0,
+								org.apache.sling.api.resource;version=2.6.0,
+								org.apache.sling.commons.json;version=2.0.4,
+								org.apache.sling.commons.osgi;version=2.2.0,
+								org.apache.sling.jcr.api;version=2.2.0,
+								org.apache.sling.settings;version=1.3.0,
+								org.osgi.service.component;version=1.2.1,
+								org.slf4j;version=1.7.6,
+								*;resolution:=optional
+						</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

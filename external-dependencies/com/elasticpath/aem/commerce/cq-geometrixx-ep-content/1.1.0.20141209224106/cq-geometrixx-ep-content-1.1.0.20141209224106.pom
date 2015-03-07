@@ -1,0 +1,275 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ====================================================================== -->
+	<!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+	<!-- ====================================================================== -->
+	<parent>
+		<groupId>com.elasticpath.aem.commerce</groupId>
+		<artifactId>aem-commerce-parent</artifactId>
+		<version>1.1.0.20141209224106</version>
+	</parent>
+
+	<!-- ======================================================================= -->
+	<!-- P R O J E C T D E S C R I P T I O N -->
+	<!-- ======================================================================= -->
+	<artifactId>cq-geometrixx-ep-content</artifactId>
+	<name>Geometrixx Elastic Path Content Package</name>
+	<description>Package for a Elastic Path based geometrixx-outdoors store</description>
+
+	<!-- ======================================================================= -->
+	<!-- P R O P E R T I E S -->
+	<!-- ======================================================================= -->
+	<properties>
+		<assembly.plugin.version>2.2.1</assembly.plugin.version>
+		<maven.test.skip>true</maven.test.skip>
+		<assembly.descriptor>src/main/assembly/zip.xml</assembly.descriptor>
+		<!-- product info properties. To be filtered in jcr_root/libs/cq/core/productinfo -->
+		<cq.productinfo.version>${project.version}</cq.productinfo.version>
+		<cq.productinfo.shortversion>5.6.1</cq.productinfo.shortversion>
+		<cq.productinfo.year>2014</cq.productinfo.year>
+		<cq.productinfo.group>day/cq561/product</cq.productinfo.group>
+		<cq.productinfo.company>Elastic Path Software</cq.productinfo.company>
+		<remoteresources.skip>true</remoteresources.skip>
+	</properties>
+
+	<!-- ======================================================================= -->
+	<!-- B U I L D D E F I N I T I O N -->
+	<!-- ======================================================================= -->
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/content/jcr_root</directory>
+				<filtering>false</filtering>
+				<excludes>
+					<exclude>**/.vlt</exclude>
+					<exclude>**/.vltignore</exclude>
+					<exclude>**/*.iml</exclude>
+					<exclude>**/.classpath</exclude>
+					<exclude>**/.project</exclude>
+					<exclude>**/.settings</exclude>
+					<exclude>**/.DS_Store</exclude>
+					<exclude>**/target/**</exclude>
+					<exclude>**/jcr.log</exclude>
+				</excludes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<!--
+                we want to keep some of the META-INF files and not configure
+                everything in the plugin (mainly the filters).
+
+                copy the resource explicitly instead of attaching it to the default resources
+            -->
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<!-- ensure that the empty directories are copied -->
+				<configuration>
+					<includeEmptyDirs>true</includeEmptyDirs>
+				</configuration>
+
+				<executions>
+					<execution>
+						<id>copy-metainf-vault-resources</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/vault-work/META-INF</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/src/main/content/META-INF</directory>
+									<filtering>false</filtering>
+									<excludes>
+										<exclude>**/.vlt</exclude>
+										<exclude>**/.vltignore</exclude>
+										<exclude>**/*.iml</exclude>
+										<exclude>**/.classpath</exclude>
+										<exclude>**/.project</exclude>
+										<exclude>**/.settings</exclude>
+										<exclude>**/.DS_Store</exclude>
+									</excludes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>${assembly.plugin.version}</version>
+				<configuration>
+					<appendAssemblyId>false</appendAssemblyId>
+					<descriptors>
+						<descriptor>${assembly.descriptor}</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>${exec.plugin.version}</version>
+					<executions>
+						<execution>
+							<id>install-package</id>
+							<phase>install</phase>
+							<goals>
+								<goal>exec</goal>
+							</goals>
+							<configuration>
+								<executable>curl</executable>
+								<arguments>
+									<argument>-f</argument>
+									<argument>-v</argument>
+									<argument>-u</argument>
+									<argument>${aem.deploy.user}:${aem.deploy.pword}</argument>
+									<argument>-F</argument>
+									<argument>file=@./target/${project.artifactId}-${project.version}.zip</argument>
+									<argument>
+										http://${aem.deploy.host}:${aem.deploy.port}/crx/packmgr/service.jsp?name=${project.artifactId}-${project.parent.version}
+									</argument>
+									<argument>-F</argument>
+									<argument>install=true</argument>
+								</arguments>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>deploy-author</id>
+			<properties>
+				<aem.deploy.user>${aem.author.user}</aem.deploy.user>
+				<aem.deploy.pword>${aem.author.password}</aem.deploy.pword>
+				<aem.deploy.host>${aem.author.host}</aem.deploy.host>
+				<aem.deploy.port>${aem.author.port}</aem.deploy.port>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>deploy-publish</id>
+			<properties>
+				<aem.deploy.user>${aem.publish.user}</aem.deploy.user>
+				<aem.deploy.pword>${aem.publish.password}</aem.deploy.pword>
+				<aem.deploy.host>${aem.publish.host}</aem.deploy.host>
+				<aem.deploy.port>${aem.publish.port}</aem.deploy.port>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-config-elasticpath-impl</artifactId>
+			<version>${project.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-commerce-elasticpath-impl</artifactId>
+			<version>${project.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem.commerce</groupId>
+			<artifactId>cq-commerce-elasticpath-importer</artifactId>
+			<version>${project.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.aem</groupId>
+			<artifactId>ep-aem-import-api</artifactId>
+			<version>${com.elasticpath.aem.ep-aem-import-api.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.elasticpath.rest</groupId>
+			<artifactId>cortex-jaxrs-client</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<!--Jackson-->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jaxb-annotations</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-base</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+		<!--Other-->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>

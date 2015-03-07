@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.elasticpath</groupId>
+	<artifactId>com.google.guice-repackage</artifactId>
+	<version>0.0.0</version>
+
+	<packaging>bundle</packaging>
+	<name>Google Guice</name>
+	<description>Google Guice Repackaged to behave better on AEM</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.groupId}.${project.artifactId}_${project.version}</finalName>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-bundle-plugin</artifactId>
+					<version>2.3.4</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.1.2</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Version>${project.version}</Bundle-Version>
+						<Embed-Dependency>guice;scope=compile;inline=true</Embed-Dependency>
+						<_exportcontents>
+							com.google.inject.matcher;version="1.3",
+							com.google.inject.name;version="1.3",
+							com.google.inject.spi;version="1.3",
+							com.google.inject.binder;version="1.3",
+							com.google.inject.util;version="1.3",
+							com.google.inject;version="1.3"
+						</_exportcontents>
+						<Import-Package>
+							com.google.inject.internal.asm.util;resolution:=optional,
+							javax.inject;version="[1.0,2)",
+							org.aopalliance.intercept
+						</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project> 

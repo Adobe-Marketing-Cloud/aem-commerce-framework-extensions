@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.elasticpath</groupId>
+		<artifactId>code-checking-rules-parent</artifactId>
+		<version>68</version>
+	</parent>
+
+	<artifactId>code-checking-rules</artifactId>
+
+	<name>Elastic Path: Code Checking Rules</name>
+	<description>This artifact contains resources used for static analysis of the Elastic Path code based on corporate coding conventions.  Because it's used in the grandparent pom, it cannot list grandparent as its parent.</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.puppycrawl.tools</groupId>
+			<artifactId>checkstyle</artifactId>
+			<version>5.9</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>

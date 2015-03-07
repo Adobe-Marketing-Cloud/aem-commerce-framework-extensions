@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Sun Feb 15 19:15:18 EST 2015
+cq-commerce-core-5.12.32.jar>nexus-releases=
+cq-commerce-core-5.12.32.pom>nexus-releases=
+cq-commerce-core-5.12.32.jar>=

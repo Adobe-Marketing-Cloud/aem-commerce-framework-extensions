@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Feb 24 21:35:06 EST 2015
+json-unmarshaller-1.0.0.jar>=
+json-unmarshaller-1.0.0.pom>fallback1=
+json-unmarshaller-1.0.0.jar>internet-mirror=
+json-unmarshaller-1.0.0.pom>internet-mirror=

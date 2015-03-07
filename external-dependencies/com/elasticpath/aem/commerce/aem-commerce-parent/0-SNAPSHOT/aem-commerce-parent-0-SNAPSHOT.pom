@@ -1,0 +1,975 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.elasticpath.aem.commerce</groupId>
+	<artifactId>aem-commerce-parent</artifactId>
+	<version>0-SNAPSHOT</version>
+	<name>EP AEM Commerce parent pom</name>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>commerce</module>
+		<module>config</module>
+		<module>importer</module>
+		<module>deployment-package</module>
+		<module>activemq-connection-factory</module>
+		<module>jms-connection-factory-api</module>
+	</modules>
+
+	<properties>
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss.SSSZ</maven.build.timestamp.format>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.junit.usefile>false</maven.junit.usefile>
+
+		<!--Output results with pmd-->
+		<pmd.printFailingErrors>true</pmd.printFailingErrors>
+
+		<!-- author deploy defaults -->
+		<aem.author.user>admin</aem.author.user>
+		<aem.author.password>admin</aem.author.password>
+		<aem.author.host>localhost</aem.author.host>
+		<aem.author.port>4502</aem.author.port>
+
+		<!-- publish deploy defaults -->
+		<aem.publish.user>admin</aem.publish.user>
+		<aem.publish.password>admin</aem.publish.password>
+		<aem.publish.host>localhost</aem.publish.host>
+		<aem.publish.port>4503</aem.publish.port>
+
+		<!-- Elastic Path Versions -->
+		<com.elasticpath.code-checking-rules.version>68</com.elasticpath.code-checking-rules.version>
+		<com.elasticpath.aem.commerce.version>0-SNAPSHOT</com.elasticpath.aem.commerce.version>
+		<com.elasticpath.aem.ep-aem-import-api.version>1.6</com.elasticpath.aem.ep-aem-import-api.version>
+		<com.elasticpath.commerce-engine.version>611.0.0-SNAPSHOT</com.elasticpath.commerce-engine.version>
+		<java.cortex.jaxrs.client.version>0-SNAPSHOT</java.cortex.jaxrs.client.version>
+
+		<!-- Json Unmarshaller and dependents -->
+		<java.json.unmarshaller.version>1.0.0</java.json.unmarshaller.version>
+		<json.path.version>1.2.0</json.path.version>
+		<json.smart.version>2.1.1</json.smart.version>
+		<gson.version>2.3</gson.version>
+		<minidev.asm.version>1.0.2</minidev.asm.version>
+
+		<!-- javax -->
+		<servlet.version>2.4</servlet.version>
+		<servlet.jsp.version>2.0</servlet.jsp.version>
+
+		<!-- JCR -->
+		<jcr.version>2.0</jcr.version>
+
+		<!-- CQ5 Commerce -->
+		<cq.commerce.core.version>5.10.36</cq.commerce.core.version>
+		<cq.commerce.pim.version>5.9.26</cq.commerce.pim.version>
+		<cq.address.version>1.1.6</cq.address.version>
+		<!-- CQ5 -->
+		<cq.tagging.version>5.6.2</cq.tagging.version>
+		<cq.commons.version>5.6.4</cq.commons.version>
+		<cq.wcm.api.version>5.6.2</cq.wcm.api.version>
+		<cq.personalization.version>5.6.6</cq.personalization.version>
+		<cq.granite.xssprotection.version>5.5.4</cq.granite.xssprotection.version>
+		<cq.dam.version>5.5.0</cq.dam.version>
+		<cq.granite.crypto.version>0.0.6</cq.granite.crypto.version>
+		<cq.granite.security.user.version>0.0.26</cq.granite.security.user.version>
+		<cq.aem.api.version>6.0.0.1</cq.aem.api.version>
+
+		<!-- sling -->
+		<sling.api.version>2.7.0</sling.api.version>
+		<sling.jcr.resource.version>2.3.6</sling.jcr.resource.version>
+		<sling.commons.json.version>2.0.6</sling.commons.json.version>
+		<sling.commons.version>2.2.0</sling.commons.version>
+
+		<!-- jackrabbit -->
+		<jackrabbit.jcr.commons.version>2.7.2</jackrabbit.jcr.commons.version>
+
+		<!-- apache commons -->
+		<commons.lang.version>2.4</commons.lang.version>
+
+		<!-- testing -->
+		<junit.version>4.8.2</junit.version>
+		<mockito-core.version>1.9.5</mockito-core.version>
+		<powermock.version>1.5.4</powermock.version>
+		<assertj-core.version>1.7.1</assertj-core.version>
+		<!--Groovy-->
+		<groovy-eclipse-batch.version>2.1.8-01</groovy-eclipse-batch.version>
+		<groovy-eclipse-compiler.version>2.8.0-01</groovy-eclipse-compiler.version>
+		<groovy.version>2.4.0-beta-3</groovy.version>
+
+		<!-- other -->
+		<slf4j.version>1.7.8</slf4j.version>
+		<jackson.version>1.9.2</jackson.version>
+		<com.fasterxml.jackson.version>2.4.4</com.fasterxml.jackson.version>
+
+		<!-- author deploy defaults -->
+		<aem.author.user>admin</aem.author.user>
+		<aem.author.password>admin</aem.author.password>
+		<aem.author.host>localhost</aem.author.host>
+		<aem.author.port>4502</aem.author.port>
+
+		<!-- publish deploy defaults -->
+		<aem.publish.user>admin</aem.publish.user>
+		<aem.publish.password>admin</aem.publish.password>
+		<aem.publish.host>localhost</aem.publish.host>
+		<aem.publish.port>4503</aem.publish.port>
+
+		<!--Maven Plugin Versions-->
+		<compiler.version>1.6</compiler.version>
+		<compiler.plugin.version>3.1</compiler.plugin.version>
+		<exec.plugin.version>1.2</exec.plugin.version>
+		<release.plugin.version>2.2.2</release.plugin.version>
+		<deploy.plugin.version>2.4</deploy.plugin.version>
+
+		<!--Other Plugin Versions-->
+		<com.day.jcr.vault.content-package.version>0.0.20</com.day.jcr.vault.content-package.version>
+		<scr.plugin.version>1.7.0</scr.plugin.version>
+		<gmaven.version>1.4</gmaven.version>
+		<gmaven.provider.version>1.8</gmaven.provider.version>
+		<felix.bundle.plugin.version>2.3.6</felix.bundle.plugin.version>
+		<xml.plugin.version>1.0</xml.plugin.version>
+		<site.plugin.version>3.0</site.plugin.version>
+		<project.info.plugin.version>2.4</project.info.plugin.version>
+		<javadoc.plugin.version>2.8</javadoc.plugin.version>
+		<checkstyle.plugin.version>2.13</checkstyle.plugin.version>
+		<pmd.plugin.version>3.0.1</pmd.plugin.version>
+		<surefire.plugin.version>2.11</surefire.plugin.version>
+		<failsafe.plugin.version>2.11</failsafe.plugin.version>
+		<m2e.plugin.version>1.0.0</m2e.plugin.version>
+		<assembly.plugin.version>2.2.1</assembly.plugin.version>
+		<sling.plugin.version>2.1.0</sling.plugin.version>
+		<jaxws.plugin.version>2.1</jaxws.plugin.version>
+		<jacoco.plugin.version>0.7.1.201405082137</jacoco.plugin.version>
+
+		<!--PMD -->
+		<pmd.ruleset>rulesets/pmd-elasticpath-rules.xml</pmd.ruleset>
+
+		<!-- Check Style -->
+		<checkstyle.ruleset>rulesets/checkstyle-elasticpath-rules.xml</checkstyle.ruleset>
+		<checkstyle.suppressions.location>rulesets/checkstyle-elasticpath-junit-suppressions.xml</checkstyle.suppressions.location>
+
+		<!--Jacoco-->
+		<jacoco.instruction.covered-ratio>0.75</jacoco.instruction.covered-ratio>
+		<jacoco.branch.covered-ratio>0.50</jacoco.branch.covered-ratio>
+		<jacoco.line.covered-ratio>0.80</jacoco.line.covered-ratio>
+		<jacoco.complexity.covered-ratio>0.75</jacoco.complexity.covered-ratio>
+		<jacoco.method.covered-ratio>0.70</jacoco.method.covered-ratio>
+		<jacoco.class.covered-ratio>0.70</jacoco.class.covered-ratio>
+	</properties>
+
+	<!-- ======================================================================= -->
+	<!-- P R O J E C T D E S C R I P T I O N -->
+	<!-- ======================================================================= -->
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<sling.user>admin</sling.user>
+				<sling.install.skip>true</sling.install.skip>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>local-author</id>
+			<activation>
+				<property>
+					<name>local-author</name>
+				</property>
+			</activation>
+			<properties>
+				<resources.env>local-author</resources.env>
+				<skip>false</skip>
+				<sling.host>${aem.author.host}</sling.host>
+				<sling.port>${aem.author.port}</sling.port>
+				<sling.user>${aem.author.user}</sling.user>
+				<sling.password>${aem.author.password}</sling.password>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>local-publish</id>
+			<activation>
+				<property>
+					<name>local-publish</name>
+				</property>
+			</activation>
+			<properties>
+				<resources.env>local-publish</resources.env>
+				<skip>false</skip>
+				<sling.host>${aem.publish.host}</sling.host>
+				<sling.port>${aem.publish.port}</sling.port>
+				<sling.user>${aem.publish.user}</sling.user>
+				<sling.password>${aem.publish.password}</sling.password>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>deploy-author</id>
+			<properties>
+				<aem.author.targetUrl>http://${aem.author.host}:${aem.author.port}/crx/packmgr/service.jsp</aem.author.targetUrl>
+			</properties>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>com.day.jcr.vault</groupId>
+							<artifactId>content-package-maven-plugin</artifactId>
+							<executions>
+								<execution>
+									<phase>install</phase>
+									<goals>
+										<goal>install</goal>
+									</goals>
+									<configuration>
+										<userId>${aem.author.user}</userId>
+										<password>${aem.author.password}</password>
+										<targetURL>${aem.author.targetUrl}</targetURL>
+									</configuration>
+								</execution>
+							</executions>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+
+		<profile>
+			<id>deploy-publish</id>
+			<properties>
+				<aem.publish.targetUrl>http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp</aem.publish.targetUrl>
+			</properties>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>com.day.jcr.vault</groupId>
+							<artifactId>content-package-maven-plugin</artifactId>
+							<executions>
+								<execution>
+									<phase>install</phase>
+									<goals>
+										<goal>install</goal>
+									</goals>
+									<configuration>
+										<userId>${aem.publish.user}</userId>
+										<password>${aem.publish.password}</password>
+										<targetURL>${aem.publish.targetUrl}</targetURL>
+									</configuration>
+								</execution>
+							</executions>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+	</profiles>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--EP-->
+			<dependency>
+				<groupId>com.elasticpath.aem.commerce</groupId>
+				<artifactId>cq-config-elasticpath-impl</artifactId>
+				<version>${com.elasticpath.aem.commerce.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.elasticpath.aem.commerce</groupId>
+				<artifactId>cq-elasticpath-connectionfactory-api</artifactId>
+				<version>0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.elasticpath.rest</groupId>
+				<artifactId>cortex-jaxrs-client</artifactId>
+				<version>${java.cortex.jaxrs.client.version}</version>
+			</dependency>
+
+			<!--osgi-->
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.core</artifactId>
+				<version>4.3.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
+				<version>4.3.0</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--scr-->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.scr.annotations</artifactId>
+				<version>1.9.4</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- javax -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>${servlet.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.jcr</groupId>
+				<artifactId>jcr</artifactId>
+				<version>${jcr.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.ws.rs</groupId>
+				<artifactId>javax.ws.rs-api</artifactId>
+				<version>2.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geronimo.specs</groupId>
+				<artifactId>geronimo-jms_1.1_spec</artifactId>
+				<version>1.1.1</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- Adobe CQ -->
+			<dependency>
+				<groupId>com.adobe.cq.commerce</groupId>
+				<artifactId>cq-commerce-core</artifactId>
+				<version>${cq.commerce.core.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.cq.commerce</groupId>
+				<artifactId>cq-commerce-pim</artifactId>
+				<version>${cq.commerce.pim.version}</version>
+				<scope>provided</scope>
+				<exclusions>
+					<!--
+						Must be excluded due to to NoSuchFieldError occuring when using MockitoJUnitRunner
+						See https://stackoverflow.com/questions/7688395/nosuchfielderror-when-trying-to-run-a-junit-test-with-spring
+					-->
+					<exclusion>
+						<groupId>junit</groupId>
+						<artifactId>junit-dep</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.cq</groupId>
+				<artifactId>cq-address</artifactId>
+				<version>${cq.address.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-commons</artifactId>
+				<version>${cq.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.wcm</groupId>
+				<artifactId>cq-wcm-api</artifactId>
+				<version>${cq.wcm.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-tagging</artifactId>
+				<version>${cq.tagging.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq</groupId>
+				<artifactId>cq-personalization</artifactId>
+				<version>${cq.personalization.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.day.cq.dam</groupId>
+				<artifactId>cq-dam-api</artifactId>
+				<version>${cq.dam.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.xssprotection</artifactId>
+				<version>${cq.granite.xssprotection.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.crypto</artifactId>
+				<version>${cq.granite.crypto.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.aem</groupId>
+				<artifactId>aem-api</artifactId>
+				<version>${cq.aem.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.adobe.granite</groupId>
+				<artifactId>com.adobe.granite.security.user</artifactId>
+				<version>${cq.granite.security.user.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- sling -->
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.api</artifactId>
+				<version>${sling.api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.jcr.resource</artifactId>
+				<version>${sling.jcr.resource.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.json</artifactId>
+				<version>${sling.commons.json.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.osgi</artifactId>
+				<version>${sling.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- jackrabbit -->
+			<dependency>
+				<groupId>org.apache.jackrabbit</groupId>
+				<artifactId>jackrabbit-jcr-commons</artifactId>
+				<version>${jackrabbit.jcr.commons.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- logging -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- commons -->
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>${commons.lang.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--Jackson-->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-module-jaxb-annotations</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-base</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${com.fasterxml.jackson.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--Utility-->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>15.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-validator</groupId>
+				<artifactId>commons-validator</artifactId>
+				<version>1.4.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.3.2</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>jsr305</artifactId>
+				<version>2.0.3</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2.1</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!--Injection-->
+			<dependency>
+				<groupId>org.ops4j</groupId>
+				<artifactId>peaberry</artifactId>
+				<version>1.3</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.ops4j.peaberry.extensions</groupId>
+				<artifactId>peaberry.activation</artifactId>
+				<version>1.3</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.inject</groupId>
+				<artifactId>guice</artifactId>
+				<version>3.0</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<!-- Json Unmarshaller and dependencies -->
+			<dependency>
+				<groupId>com.elasticpath.json</groupId>
+				<artifactId>json-unmarshaller</artifactId>
+				<version>${java.json.unmarshaller.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jayway.jsonpath</groupId>
+				<artifactId>json-path</artifactId>
+				<version>${json.path.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.minidev</groupId>
+				<artifactId>json-smart</artifactId>
+				<version>${json.smart.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.minidev</groupId>
+				<artifactId>asm</artifactId>
+				<version>${minidev.asm.version}</version>
+			</dependency>
+
+			<!-- testing -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-core</artifactId>
+				<version>${mockito-core.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-module-junit4</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-mockito</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-core</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-support</artifactId>
+				<version>${powermock.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy-all</artifactId>
+				<version>${groovy.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.assertj</groupId>
+				<artifactId>assertj-core</artifactId>
+				<version>${assertj-core.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>adobe-public</id>
+			<name>Adobe Basel Public Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>adobe-public-releases</id>
+			<name>Adobe Basel Public Repository</name>
+			<url>http://repo.adobe.com/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>${release.repository.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>${snapshot.repository.url}</url>
+		</snapshotRepository>
+		<site>
+			<id>site</id>
+			<url>${site.url}</url>
+		</site>
+	</distributionManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-bundle-plugin</artifactId>
+					<version>2.5.3</version>
+					<extensions>true</extensions>
+					<configuration>
+						<instructions>
+							<Bundle-Category>com.elasticpath</Bundle-Category>
+							<Bundle-RequiredExecutionEnvironment>JavaSE-1.7</Bundle-RequiredExecutionEnvironment>
+						</instructions>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${compiler.plugin.version}</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+					<executions>
+						<execution>
+							<!-- Override only the testCompile execution, as javac is still the desired compiler for production code -->
+							<id>default-testCompile</id>
+							<configuration>
+								<!-- Groovy compilation doesn't seem to be compatible with -Werror and -Xlint:all -->
+								<compilerArgs combine.self="override"/>
+								<compilerId>groovy-eclipse-compiler</compilerId>
+							</configuration>
+						</execution>
+					</executions>
+					<dependencies>
+						<dependency>
+							<groupId>org.codehaus.groovy</groupId>
+							<artifactId>groovy-eclipse-compiler</artifactId>
+							<version>${groovy-eclipse-compiler.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.codehaus.groovy</groupId>
+							<artifactId>groovy-eclipse-batch</artifactId>
+							<version>${groovy-eclipse-batch.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+
+				<!-- Apache Felix SCR Plugin -->
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-scr-plugin</artifactId>
+					<version>1.20.0</version>
+					<executions>
+						<execution>
+							<id>generate-scr-scrdescriptor</id>
+							<goals>
+								<goal>scr</goal>
+							</goals>
+							<configuration>
+								<!-- Private service properties for all services. -->
+								<properties>
+									<service.vendor>Elastic Path Software, Inc.</service.vendor>
+								</properties>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- Set fixed version for dependency plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>2.8</version>
+				</plugin>
+
+				<!-- Set fixed version for jar plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+
+				<!-- Set fixed version for idea plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-idea-plugin</artifactId>
+					<version>2.2</version>
+				</plugin>
+
+				<!-- Set fixed version for surefire plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.13</version>
+				</plugin>
+
+				<!-- Set fixed version for war plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.3</version>
+				</plugin>
+
+				<!-- Set fixed version for failsafe plugin -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>2.13</version>
+				</plugin>
+
+				<!-- Set fixed version for install plugin  -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+
+				<!-- Set fixed version for deploy plugin  -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.7</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.4</version>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-checkstyle-plugin</artifactId>
+					<version>${checkstyle.plugin.version}</version>
+					<configuration>
+						<violationSeverity>warning</violationSeverity>
+						<logViolationsToConsole>true</logViolationsToConsole>
+						<configLocation>${checkstyle.ruleset}</configLocation>
+						<suppressionsLocation>${checkstyle.suppressions.location}</suppressionsLocation>
+						<suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
+						<includeTestSourceDirectory>true</includeTestSourceDirectory>
+					</configuration>
+					<executions>
+						<execution>
+							<id>compliance-checkstyle</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+					<dependencies>
+						<dependency>
+							<groupId>com.elasticpath</groupId>
+							<artifactId>code-checking-rules</artifactId>
+							<version>${com.elasticpath.code-checking-rules.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-pmd-plugin</artifactId>
+					<version>${pmd.plugin.version}</version>
+					<configuration>
+						<targetJdk>1.7</targetJdk>
+						<includeTests>true</includeTests>
+						<rulesets>
+							<ruleset>${pmd.ruleset}</ruleset>
+						</rulesets>
+						<linkXRef>false</linkXRef>
+					</configuration>
+					<executions>
+						<execution>
+							<id>compliance-pmd</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+					<dependencies>
+						<dependency>
+							<groupId>com.elasticpath</groupId>
+							<artifactId>code-checking-rules</artifactId>
+							<version>${com.elasticpath.code-checking-rules.version}</version>
+						</dependency>
+
+						<dependency>
+							<groupId>net.sourceforge.pmd</groupId>
+							<artifactId>pmd</artifactId>
+							<version>5.0.5</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>${jacoco.plugin.version}</version>
+					<configuration>
+						<append>true</append>
+					</configuration>
+					<executions>
+						<execution>
+							<id>agent</id>
+							<goals>
+								<goal>prepare-agent</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>default-check</id>
+							<goals>
+								<goal>check</goal>
+							</goals>
+							<configuration>
+								<rules>
+									<rule>
+										<element>BUNDLE</element>
+										<limits>
+											<limit>
+												<counter>INSTRUCTION</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>${jacoco.instruction.covered-ratio}</minimum>
+											</limit>
+											<limit>
+												<counter>BRANCH</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>${jacoco.branch.covered-ratio}</minimum>
+											</limit>
+											<limit>
+												<counter>LINE</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>${jacoco.line.covered-ratio}</minimum>
+											</limit>
+											<limit>
+												<counter>COMPLEXITY</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>${jacoco.complexity.covered-ratio}</minimum>
+											</limit>
+											<limit>
+												<counter>METHOD</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>${jacoco.method.covered-ratio}</minimum>
+											</limit>
+											<limit>
+												<counter>CLASS</counter>
+												<value>COVEREDRATIO</value>
+												<minimum>${jacoco.class.covered-ratio}</minimum>
+											</limit>
+										</limits>
+									</rule>
+								</rules>
+							</configuration>
+						</execution>
+						<execution>
+							<id>default-report</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>report</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>com.day.jcr.vault</groupId>
+					<artifactId>content-package-maven-plugin</artifactId>
+					<version>${com.day.jcr.vault.content-package.version}</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>package</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
