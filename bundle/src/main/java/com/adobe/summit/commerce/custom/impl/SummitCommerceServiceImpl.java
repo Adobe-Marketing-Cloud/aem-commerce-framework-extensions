@@ -36,7 +36,7 @@ public class SummitCommerceServiceImpl extends AbstractElasticPathCommerceServic
 		return new SummitCortexSdkServiceFactory(cortexClient, this);
 	}
 
-
+	/* Step 2 - Start
 	@Override
 	public Product getProduct(final String path) throws CommerceException {
 		Resource resource = resolver.getResource(path);
@@ -45,6 +45,9 @@ public class SummitCommerceServiceImpl extends AbstractElasticPathCommerceServic
 		}
 		return null;
 	}
-
+	
+	// Step 2 - End
+	  
+	*/
 
 }

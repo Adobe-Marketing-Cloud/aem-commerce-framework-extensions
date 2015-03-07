@@ -28,6 +28,7 @@ public class SummitProduct extends ElasticPathProductImpl {
 	 * 
 	 * @return description
 	 */
+	/* Step 1 - Start
 	@Override
 	public String getDescription() {
 		String description = getProperty(SUMMIT_DESCRIPTION, String.class);
@@ -36,4 +37,6 @@ public class SummitProduct extends ElasticPathProductImpl {
 		}
 		return description;
 	}
+	Step 1 - End
+	*/
 }

@@ -6,7 +6,7 @@
         cq:cartPage="/content/geometrixx-outdoors/en_US/user/cart"
         cq:catalogBlueprint="/content/catalogs/geometrixx-outdoors/elasticpath-base-catalog"
         cq:checkoutPage="/content/geometrixx-outdoors/en_US/user/checkout"
-        cq:commerceProvider="summit-commerce"
+        cq:commerceProvider="geometrixx-elasticpath"
         cq:commerceType="section"
         cq:composeMessagePage="/content/geometrixx-outdoors/en_US/user/mailbox/compose-message"
         cq:cortexBaseStore="geometrixx"
