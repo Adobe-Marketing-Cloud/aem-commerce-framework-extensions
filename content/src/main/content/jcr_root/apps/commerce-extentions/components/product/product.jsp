@@ -31,18 +31,21 @@
 %><%
     final I18n i18n = new I18n(slingRequest);
 
-    CommerceService commerceService = resource.adaptTo(CommerceService.class);
-    CommerceSession session = commerceService.login(slingRequest, slingResponse);
+    // CommerceService commerceService = resource.adaptTo(CommerceService.class);  // Step1
+    // CommerceSession session = commerceService.login(slingRequest, slingResponse); // Step2
 
     %><cq:include script="init.jsp"/><%
 
     String addToCartUrl = (String) request.getAttribute("cq.commerce.addToCartUrl");
     String redirect = (String) request.getAttribute("cq.commerce.redirect");
     String errorRedirect = (String) request.getAttribute("cq.commerce.errorRedirect");
+    /* 
+    //Step 3 - Start
     Node node = resource.adaptTo(Node.class);
     String productDataPath = node.getProperty("productData").getString();
     Product baseProduct = resourceResolver.resolve(productDataPath).adaptTo(Product.class);
-
+    // Step 3 - End
+    */
     Resource baseProductImage = baseProduct.getImage();
     
     

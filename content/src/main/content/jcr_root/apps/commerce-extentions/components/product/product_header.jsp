@@ -24,5 +24,5 @@
     <p class="product-brand" itemprop="brand"><%= xssAPI.encodeForHTML(product.getProperty("brand", String.class)) %></p>
     <h1 class="product-title" itemprop="name"><%= xssAPI.encodeForHTML(product.getTitle()) %></h1>
     <h2 class="product-description"><%= xssAPI.encodeForHTML(product.getDescription()) %></h2>
-    <%= product.getProperty("jcr:summit", String.class) %>
+    <!-- Step 5 <%= product.getProperty("jcr:summit", String.class) %> -->
 </header>

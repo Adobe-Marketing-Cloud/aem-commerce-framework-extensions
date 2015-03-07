@@ -11,10 +11,21 @@
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
+            <!-- Step 7 : Start -->
+            <!-- Comment Section Start -->
             <product
                 cq:commerceType="product"
                 jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce/components/product"/>
+            <!-- Comment Section End -->
+            <!-- UnComment Section Start -->
+            <!--  <product
+                cq:commerceType="product"
+                jcr:primaryType="nt:unstructured"
                 sling:resourceType="commerce-extentions/components/product"/>
+                 -->
+            <!-- UnComment Section End -->
+            <!-- Step 7 : End -->    
             <tabs
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
