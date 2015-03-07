@@ -31,4 +31,4 @@ curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/dam/Summ
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/dam/summit-geometrixx-outdoors
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/summit-geometrixx-outdoors
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/apps/commerce-extentions
-curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/geometrixx-outdoors
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/geometrixx-outdoors/en_US

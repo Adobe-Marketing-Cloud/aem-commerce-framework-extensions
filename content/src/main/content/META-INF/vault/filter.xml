@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/etc/commerce/products/summit-geometrixx-outdoors"/>
-    <filter root="/etc/scaffolding/summit-geometrixx-outdoors"/>
-    <filter root="/etc/tags/summit-geometrixx-outdoors"/>
-    <filter root="/content/catalogs/summit-geometrixx-outdoors"/>
-	<filter root="/content/dam/Summit2015"/>
-    <filter root="/content/dam/summit-geometrixx-outdoors"/>
-    <filter root="/content/summit-geometrixx-outdoors"/>
     <filter root="/apps/commerce-extentions"/>
-    <filter root="/content/geometrixx-outdoors"/>
+    <filter root="/content/geometrixx-outdoors/en_US"/>
 </workspaceFilter>

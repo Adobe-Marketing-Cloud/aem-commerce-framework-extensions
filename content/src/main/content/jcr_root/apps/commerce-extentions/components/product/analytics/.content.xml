@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    cq:purchaseIdEventBinding="{Boolean}true"
-    cq:trackevents="[cartAdd,prodView,cartOpen]"
-    cq:trackvars="[product.category,product.sku,product.quantity,product.price,product.evars.childSku]"
-    jcr:primaryType="nt:unstructured"/>
