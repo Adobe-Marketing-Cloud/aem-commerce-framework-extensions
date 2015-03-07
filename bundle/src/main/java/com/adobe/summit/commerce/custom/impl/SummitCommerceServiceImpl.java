@@ -41,11 +41,15 @@ public class SummitCommerceServiceImpl extends AbstractJcrCommerceService
 		this.resource = resource;
 	}
 
+	/* Step 3 - Uncomment 
+	
 	@Override
 	public CommerceSession login(SlingHttpServletRequest request,
 			SlingHttpServletResponse response) throws CommerceException {
 		return new SummitCommerceSessionImpl(this, request, response, resource);
-	}
+	} 
+	
+	*/
 
 	@Override
 	public boolean isAvailable(String serviceType) {
@@ -58,10 +62,14 @@ public class SummitCommerceServiceImpl extends AbstractJcrCommerceService
 
 	@Override
 	public Product getProduct(final String path) throws CommerceException {
+		/* Step 2 - Uncomment me
+		
 		Resource resource = resolver.getResource(path);
 		if (resource != null && SummitProduct.isAProductOrVariant(resource)) {
 			return new SummitProduct(resource);
-		}
+		} 
+		
+		*/
 		return null;
 	}
 
