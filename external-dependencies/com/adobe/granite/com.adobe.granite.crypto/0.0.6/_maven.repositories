@@ -1,0 +1,7 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Jan 22 22:44:02 EST 2015
+com.adobe.granite.crypto-0.0.6.pom>nexus=
+com.adobe.granite.crypto-0.0.6.jar>central=
+com.adobe.granite.crypto-0.0.6.pom>central=
+com.adobe.granite.crypto-0.0.6.jar>=
+com.adobe.granite.crypto-0.0.6.pom>internet-mirror=

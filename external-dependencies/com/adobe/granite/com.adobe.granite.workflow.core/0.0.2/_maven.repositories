@@ -1,0 +1,7 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:35:07 EST 2013
+com.adobe.granite.workflow.core-0.0.2-tests.jar>=
+com.adobe.granite.workflow.core-0.0.2.jar>=
+com.adobe.granite.workflow.core-0.0.2.jar>central=
+com.adobe.granite.workflow.core-0.0.2-tests.jar>central=
+com.adobe.granite.workflow.core-0.0.2.pom>central=

@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+    <!-- ====================================================================== -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>24</version>
+        <relativePath />
+    </parent>
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T D E S C R I P T I O N -->
+    <!-- ====================================================================== -->
+    <groupId>com.adobe.granite</groupId>
+    <artifactId>com.adobe.granite.testing.integration-testing</artifactId>
+    <version>1.0.28</version>
+    <packaging>jar</packaging>
+    <name>Adobe Granite Integration Testing Support</name>
+    <description>
+        Adobe Granite integration testing infrastructure.
+    </description>
+
+    <scm>
+        <connection>scm:git:git@fit.corp.adobe.com:Granite/granite.git</connection>
+        <developerConnection>scm:git:git@fit.corp.adobe.com:Granite/granite.git
+        </developerConnection>
+        <url>https://fit.corp.adobe.com/Granite/granite/tree/master/testing/integration-testing</url>
+      <tag>com.adobe.granite.testing.integration-testing-1.0.28</tag>
+  </scm>
+
+    <build>
+        <plugins>
+            <!-- ====================================================================== -->
+            <!-- C O M P I L E R   P L U G I N                                          -->
+            <!-- ====================================================================== -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <compilerVersion>1.5</compilerVersion>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                    <debug>true</debug>
+                    <showDeprecation>false</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                    <optimize>false</optimize>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.testing.tools</artifactId>
+            <version>0.1.1-Rev1080210</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.json</artifactId>
+            <version>2.0.4-incubator</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.testing</artifactId>
+            <version>2.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.xssprotection</artifactId>
+            <version>5.5.4</version>
+        </dependency>
+    </dependencies>
+</project>

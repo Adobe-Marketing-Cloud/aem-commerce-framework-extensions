@@ -1,0 +1,15 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Jan 23 15:44:35 EST 2015
+default-http\://repo2.maven.org/maven2/.lastUpdated=1420693804235
+http\://dev.cqblueprints.com/nexus/content/repositories/releases/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.workflow.core\:pom\:1.0.28 from/to cqblueprints.releases (http\://dev.cqblueprints.com/nexus/content/repositories/releases/)\: Connection to http\://dev.cqblueprints.com refused
+default-http\://repo1.maven.org/maven2/.lastUpdated=1420693804189
+http\://repo2.maven.org/maven2/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.workflow.core\:pom\:1.0.28 from/to fallback2 (http\://repo2.maven.org/maven2/)\: Connection to http\://repo2.maven.org refused
+http\://repo.adobe.com/nexus/content/groups/public/.lastUpdated=1421988275544
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.workflow.core\:pom\:1.0.28 from/to nexus-releases (http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories)\: nexus.bsl.eur.adobe.com
+default-http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.lastUpdated=1420693806136
+default-http\://dev.cqblueprints.com/nexus/content/repositories/releases/.lastUpdated=1420693806169
+default-http\://repository.apache.org/snapshots/.lastUpdated=1420693804080
+https\://maincfs-n-publicel-eztoiv7zf8rs-1301955151.ap-southeast-2.elb.amazonaws.com/nexus/content/groups/public/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.workflow.core\:pom\:1.0.28 from/to fallback3 (https\://maincfs-n-publicel-eztoiv7zf8rs-1301955151.ap-southeast-2.elb.amazonaws.com/nexus/content/groups/public)\: Connection to https\://maincfs-n-publicel-eztoiv7zf8rs-1301955151.ap-southeast-2.elb.amazonaws.com refused
+default-https\://maincfs-n-publicel-eztoiv7zf8rs-1301955151.ap-southeast-2.elb.amazonaws.com/nexus/content/groups/public/.lastUpdated=1420693806115
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.workflow.core\:pom\:1.0.28 from/to fallback1 (http\://repo1.maven.org/maven2/)\: Connection to http\://repo1.maven.org refused
+http\://repository.apache.org/snapshots/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.workflow.core\:pom\:1.0.28 from/to asf-snapshots (http\://repository.apache.org/snapshots/)\: Connection to http\://repository.apache.org refused

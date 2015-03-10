@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.day.cq</groupId>
+        <artifactId>parent</artifactId>
+        <version>31</version>
+    </parent>
+
+    <groupId>com.adobe.granite</groupId>
+    <artifactId>com.adobe.granite.testing.external-systems</artifactId>
+    <packaging>jar</packaging>
+    <version>0.0.8</version>
+    <name>Adobe Granite External Systems Testing Tools</name>
+
+    <scm>
+        <connection>scm:git:git@git.corp.adobe.com:Granite/granite.git</connection>
+        <developerConnection>scm:git:git@git.corp.adobe.com:Granite/granite.git</developerConnection>
+        <url>https://git.corp.adobe.com/Granite/granite/tree/master/testing/external-systems</url>
+      <tag>com.adobe.granite.testing.external-systems-0.0.8</tag>
+  </scm>
+
+    <properties>
+        <mock.port>4504</mock.port>
+        <mock.port.ssl>4505</mock.port.ssl>
+        <context_path />
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+        	<groupId>org.eclipse.jetty</groupId>
+        	<artifactId>jetty-server</artifactId>
+        	<version>7.5.4.v20111024</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.eclipse.jetty</groupId>
+        	<artifactId>jetty-servlet</artifactId>
+        	<version>7.5.4.v20111024</version>
+        </dependency>
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

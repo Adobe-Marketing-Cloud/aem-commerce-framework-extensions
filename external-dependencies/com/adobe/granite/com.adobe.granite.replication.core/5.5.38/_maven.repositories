@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Jul 14 13:23:33 EST 2014
+com.adobe.granite.replication.core-5.5.38.jar>=
+com.adobe.granite.replication.core-5.5.38.jar>central=
+com.adobe.granite.replication.core-5.5.38.pom>central=

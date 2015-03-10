@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Aug 25 16:17:29 EST 2014
+com.adobe.granite.crypto-1.2.2.jar>=
+com.adobe.granite.crypto-1.2.2.pom>nexus-releases=
+com.adobe.granite.crypto-1.2.2.jar>nexus-releases=

@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2012 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>32</version>
+        <relativePath />
+    </parent>
+
+    <artifactId>com.adobe.granite.crypto</artifactId>
+    <version>1.0.0</version>
+    <packaging>bundle</packaging>
+
+    <name>Adobe Granite Crypto Support</name>
+    <description>
+      The Crypto Support bundle provides a CryptoSupport services which
+      allows applications to encrypt and decrypt binary and String data.
+      Encryption is based on the symmetric AES/CBC/PKCS5Padding (AES algorithm,
+      CBC mode with PKCS5 padding) from the RSA JSafe libary.
+    </description>
+
+    <scm>
+        <connection>scm:git:git@git.corp.adobe.com:Granite/com.adobe.granite.crypto.git</connection>
+        <developerConnection>scm:git:git@git.corp.adobe.com:Granite/com.adobe.granite.crypto.git</developerConnection>
+        <url>https://git.corp.adobe.com/Granite/com.adobe.granite.crypto/tree/master/</url>
+      <tag>com.adobe.granite.crypto-1.0.0</tag>
+  </scm>
+
+    <properties>
+        <jsafe.lib.target>${project.build.directory}/lib</jsafe.lib.target>
+        <jsafe.lib.dir>META-INF/lib</jsafe.lib.dir>
+        <jsafe.support.lib>jSafeCryptoSupport.jar</jsafe.support.lib>
+        <jsafe.support.path>com/adobe/granite/crypto/internal/jsafe</jsafe.support.path>
+        <granite.java.version>6</granite.java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>maven-sling-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <phase>
+                            prepare-package
+                        </phase>
+                        <configuration>
+                            <target>
+                                <mkdir dir="${jsafe.lib.target}" />
+                                <jar destfile="${jsafe.lib.target}/${jsafe.support.lib}" basedir="${project.build.outputDirectory}" includes="${jsafe.support.path}/**" />
+                                <delete dir="${project.build.outputDirectory}/${jsafe.support.path}" />
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <phase>
+                            prepare-package
+                        </phase>
+                        <configuration>
+                            <includeArtifactIds>cryptojcommon,cryptojce,jcmFIPS</includeArtifactIds>
+                            <outputDirectory>${jsafe.lib.target}</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-Activator>
+                            com.adobe.granite.crypto.internal.Activator
+                        </Bundle-Activator>
+                        <Bundle-DocUrl>
+                            https://zerowing.corp.adobe.com/x/jplXGQ
+                        </Bundle-DocUrl>
+                        <Include-Resource>
+                            {maven-resources},
+                            ${jsafe.lib.dir}=${jsafe.lib.target}
+                        </Include-Resource>
+                        <Import-Package>
+                            !com.novell.ldap.*,
+                            !com.rsa.*,
+                            <!-- imports for BSAFE Crypto-J -->
+                            javax.crypto,
+                            javax.crypto.interfaces,
+                            javax.crypto.spec,
+                            javax.net.ssl,
+                            javax.security.auth.x500,
+
+                            <!-- default imports -->
+                            *
+                        </Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-jcr-commons</artifactId>
+            <version>2.7-r1513144</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-api</artifactId>
+            <version>2.7-r1513144</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.jcr.api</artifactId>
+            <version>2.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Encryption post processor -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+            <version>2.4.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.servlets.post</artifactId>
+            <version>2.3.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.osgi</artifactId>
+            <version>2.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.json</artifactId>
+            <version>2.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.webconsole</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.rsa.bsafe</groupId>
+            <artifactId>cryptojcommon</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.rsa.bsafe</groupId>
+            <artifactId>cryptojce</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.rsa.bsafe</groupId>
+            <artifactId>jcmFIPS</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+
+        <!-- testing dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.testing</artifactId>
+            <version>2.0.14</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.jackrabbit</groupId>
+                    <artifactId>jackrabbit-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>1.4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.test.tooling</artifactId>
+            <version>0.0.18</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.day.crx</groupId>
+            <artifactId>crx-core</artifactId>
+            <version>2.4.30</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

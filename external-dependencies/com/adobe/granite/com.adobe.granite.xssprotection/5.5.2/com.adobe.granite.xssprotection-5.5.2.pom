@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2011 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ======================================================================= -->
+    <!-- P A R E N T   P R O J E C T                                             -->
+    <!-- ======================================================================= -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>14</version>
+        <relativePath>../../parent</relativePath>
+    </parent>
+
+    <!-- ======================================================================= -->
+    <!-- P R O J E C T                                                           -->
+    <!-- ======================================================================= -->
+    <artifactId>com.adobe.granite.xssprotection</artifactId>
+    <packaging>bundle</packaging>
+    <version>5.5.2</version>
+
+    <name>Adobe Granite XSS Protection</name>
+    <description>
+        Adobe Granite bundle for providing XSS protection using the AntiSamy library.
+    </description>
+
+    <scm>
+        <connection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.xssprotection-5.5.2</connection>
+        <developerConnection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.xssprotection-5.5.2</developerConnection>
+        <url>http://svn.day.com/repos/granite/tags/com.adobe.granite.xssprotection-5.5.2</url>
+    </scm>
+
+    <!-- ======================================================================= -->
+    <!-- B U I L D                                                               -->
+    <!-- ======================================================================= -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>maven-sling-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            !org.apache.xml.resolver.*,
+                            !sun.io.*,
+                            *
+                        </Import-Package>
+                        <Private-Package>
+                            com.day.cq.xss.impl,
+                            com.adobe.granite.xss.impl,
+                            org.owasp.validator.*,
+                            javax.xml.*;-split-package:=merge-first,
+                            org.apache.batik.*,
+                            !org.apache.commons.logging.*,org.apache.commons.*,
+                            org.apache.html.*,
+                            org.apache.wml.*,
+                            org.apache.xerces.*,
+                            org.apache.xml.*,
+                            org.apache.xmlcommons.*,
+                            org.cyberneko.html.*,
+                            org.w3c.css.*;-split-package:=merge-first,
+                            org.w3c.dom.*;-split-package:=merge-first,
+                            org.xml.sax.*;-split-package:=merge-first,
+                            <!-- include AntiSamy resources; haven't found a better way to do so -->
+                            !META-INF.*,!org.*,!com.*,!javax.*,!license.*,*;-split-package:=first
+                        </Private-Package>
+                        <Sling-Initial-Content>
+                            SLING-INF/content;path:=/libs/cq/xssprotection;overwrite:=true;ignoreImportProviders:=xml
+                        </Sling-Initial-Content>
+                        <Bundle-SymbolicName>com.day.cq.cq-xssprotection</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- ======================================================================= -->
+    <!-- D E P E N D E N C I E S                                                 -->
+    <!-- ======================================================================= -->
+    <dependencies>
+        <dependency>
+            <groupId>org.owasp</groupId>
+            <artifactId>antisamy</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+            <version>2.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.jcr.api</artifactId>
+            <version>2.0.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.json</artifactId>
+            <version>2.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

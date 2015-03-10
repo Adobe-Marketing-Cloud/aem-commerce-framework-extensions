@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2012 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
+    <!-- ====================================================================== -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>30</version>
+        <relativePath />
+    </parent>
+
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T  D E S C R I P T I O N                                   -->
+    <!-- ====================================================================== -->
+    <artifactId>com.adobe.granite.quickstart</artifactId>
+    <version>2013.09a</version>
+    <packaging>quickstart</packaging>
+    <name>Adobe Granite Quickstart</name>
+    <description>The Granite Quickstart</description>
+
+    <scm>
+        <connection>scm:git:git@git.corp.adobe.com:Granite/quickstart.git</connection>
+        <developerConnection>scm:git:git@git.corp.adobe.com:Granite/quickstart.git</developerConnection>
+        <url>https://git.corp.adobe.com/Granite/quickstart</url>
+      <tag>com.adobe.granite.quickstart-2013.09</tag>
+  </scm>
+
+    <properties>
+        <crx.version>2.4.30</crx.version>
+        <jackrabbit.version>2.6.2</jackrabbit.version>
+        <oak.version>0.8</oak.version>
+        <tika.version>1.3-r1436209</tika.version>
+        <gibson.version>3.0.526742</gibson.version>
+        <afe.version>1.0.1326433.2</afe.version>
+        <agl.version>1.0.698416.2</agl.version>
+        <rideau.version>3.0.1349992</rideau.version>
+        <xmpcore.version>5.0.20</xmpcore.version>
+        <granite.java.version>6</granite.java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.adobe.granite.maven</groupId>
+                <artifactId>quickstart-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <quickstartId>crx</quickstartId>
+                    <productName>Adobe Granite</productName>
+                    <launchpadVersion>2.5.1-R1487419</launchpadVersion>
+                    <cleanWorkingDirectory>true</cleanWorkingDirectory>
+                    <jarWebSupport>
+                        <groupId>com.day.cqse</groupId>
+                        <artifactId>cqse-httpservice</artifactId>
+                        <version>4.1.52</version>
+                        <startLevel>5</startLevel>
+                    </jarWebSupport>
+                </configuration>
+            </plugin>
+
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.adobe.granite.maven</groupId>
+                    <artifactId>quickstart-maven-plugin</artifactId>
+                    <version>1.4.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.day.commons</groupId>
+            <artifactId>day-commons-cli</artifactId>
+            <version>2.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <!-- need junit-dep + hamcrest-core instead of junit, for json-path -->
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>4.8.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId> org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>0.8.1</version>
+            <scope>test</scope>
+        </dependency>
+       <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path-assert</artifactId>
+            <version>0.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>enforce-non-snapshots</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <configuration>
+                                    <rules>
+                                        <requireReleaseDeps>
+                                            <message>No Snapshots Allowed!</message>
+                                        </requireReleaseDeps>
+                                    </rules>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>it-testing</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <argLine>-Xmx256M</argLine>
+                            <systemPropertiesFile>${project.build.directory}/quickstart-runner.properties</systemPropertiesFile>
+                            <runOrder>alphabetical</runOrder>
+                            <classpathDependencyExcludes>
+                                <classpathDependencyExclude>org.apache.sling:org.apache.sling.commons.log</classpathDependencyExclude>
+                            </classpathDependencyExcludes>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.adobe.granite.maven</groupId>
+                        <artifactId>quickstart-maven-plugin</artifactId>
+                        <configuration>
+                            <quickstartVMOptions>-Xmx1200m -XX:MaxPermSize=300m -Djava.awt.headless=true</quickstartVMOptions>
+                            <quickstartConfigurations>
+                                <quickstartConfiguration>
+                                    <runmode>author</runmode>
+                                </quickstartConfiguration>
+                                <quickstartConfiguration>
+                                    <runmode>publish</runmode>
+                                </quickstartConfiguration>
+                            </quickstartConfigurations>
+                        </configuration>
+                        <executions>
+                    <!-- Start author and publish instances for integration tests -->
+                            <execution>
+                                <id>run-quickstart-author-and-publish</id>
+                                <goals>
+                                    <goal>start-multiple</goal>
+                                    <goal>stop-multiple</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>it-testing-crx3</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <argLine>-Xmx256M</argLine>
+                            <systemPropertiesFile>${project.build.directory}/quickstart-runner.properties</systemPropertiesFile>
+                            <runOrder>alphabetical</runOrder>
+                            <classpathDependencyExcludes>
+                                <classpathDependencyExclude>org.apache.sling:org.apache.sling.commons.log</classpathDependencyExclude>
+                            </classpathDependencyExcludes>
+                            <excludes>
+                                <exclude>com/adobe/granite/activitystreams/**</exclude>
+                                <exclude>com/adobe/granite/quickstart/it/AAALogFileIT.class</exclude>
+                                <exclude>com/adobe/granite/quickstart/it/RemoteJcrIT.class</exclude>
+                                <exclude>com/adobe/granite/quickstart/it/Server*IT.class</exclude>
+                                <exclude>com/adobe/granite/quickstart/it/UserBasicIT.class</exclude>
+                                <exclude>com/adobe/granite/quickstart/it/QuickstartIT.class</exclude>
+                                <exclude>com/adobe/granite/replication/**</exclude>
+                            </excludes>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.adobe.granite.maven</groupId>
+                        <artifactId>quickstart-maven-plugin</artifactId>
+                        <configuration>
+                            <quickstartVMOptions>-Xmx1200m -XX:MaxPermSize=300m -Djava.awt.headless=true</quickstartVMOptions>
+                            <quickstartOptions>-nobrowser -nofork -r crx3,crx3h2</quickstartOptions>
+                            <quickstartReadyTimeOutSec>7200</quickstartReadyTimeOutSec>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>run-quickstart</id>
+                                <goals>
+                                    <goal>start</goal>
+                                    <goal>stop</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+     </profiles>
+</project>
+

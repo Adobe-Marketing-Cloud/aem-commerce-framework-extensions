@@ -1,0 +1,7 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Jan 22 22:44:05 EST 2015
+com.adobe.granite.workflow.api-1.0.2.jar>=
+com.adobe.granite.workflow.api-1.0.2.pom>nexus=
+com.adobe.granite.workflow.api-1.0.2.pom>central=
+com.adobe.granite.workflow.api-1.0.2.jar>central=
+com.adobe.granite.workflow.api-1.0.2.pom>internet-mirror=

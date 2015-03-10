@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Sun Apr 13 10:13:29 EST 2014
+com.adobe.granite.microcore-12.02.2-bundlelistconfig.zip>nexus-releases=
+com.adobe.granite.microcore-12.02.2-bundlelist.xml>=
+com.adobe.granite.microcore-12.02.2.pom>nexus-releases=
+com.adobe.granite.microcore-12.02.2-bundlelist.xml>nexus-releases=

@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2011 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
+    <!-- ====================================================================== -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>17</version>
+        <relativePath />
+    </parent>
+
+
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T  D E S C R I P T I O N                                   -->
+    <!-- ====================================================================== -->
+    <artifactId>quickstart-base</artifactId>
+    <version>0.9.15</version>
+    <packaging>jar</packaging>
+
+    <name>Adobe Granite Quickstart Base Module</name>
+    <description>
+        The Quickstart base module is used by create runnable jars ("quickstarts")
+        for Day applications like CRX and CQ5. It creates a runnable jar which includes
+        the reusable parts of a Quickstart setup. This module can be reused and customized
+        (with additional webapps and graphics) to create the actual Quickstartable applications.
+        See the crx-quickstart module for an example.
+    </description>
+    <url>http://www.day.com</url>
+
+    <scm>
+        <connection>scm:svn:http://svn.day.com/repos/granite/tags/quickstart-base-0.9.15</connection>
+        <developerConnection>scm:svn:http://svn.day.com/repos/granite/tags/quickstart-base-0.9.15</developerConnection>
+        <url>http://svn.day.com/repos/granite/tags/quickstart-base-0.9.15</url>
+    </scm>
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D   D E S C R I P T I O N                                      -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <!-- generate a timestamp-based build number -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>buildnumber-maven-plugin</artifactId>
+                <configuration>
+                    <format>{0,date,yyyyMMdd-HHmmss}</format>
+                    <items>
+                        <item>timestamp</item>
+                    </items>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>create</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.adobe.granite.quickstart.base.impl.Main</mainClass>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                        <manifestEntries>
+                            <Implementation-Build>${buildNumber}</Implementation-Build>
+
+                            <!--
+                             This defines which quickstart-*.properties file is used
+                             to personalize the quickstart, and which GUI background
+                             images are used
+                            -->
+                            <Quickstart-Instance-Id>default</Quickstart-Instance-Id>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+
+                    <!-- Unpack the day-commons dependencies, we want to include those classes in our runnable jar -->
+                    <execution>
+                        <id>unpack-day-commons</id>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includeGroupIds>com.day.commons</includeGroupIds>
+                            <excludeTransitive>true</excludeTransitive>
+                            <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <includes>org/apache/**</includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- move ServerControl and GetProcessID class file to bin folder -->
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                    	<id>copy-classes</id>
+                    	<phase>compile</phase>
+                    	<goals>
+                    		<goal>copy-resources</goal>
+                    	</goals>
+                    	<configuration>
+	                    	<outputDirectory>${project.build.directory}/classes/static/bin</outputDirectory>
+                    		<resources>
+                    		  <resource>
+                    		    <directory>target/classes</directory>
+                    		    <include>ServerControl.class</include>
+                    		    <include>GetProcessID.class</include>
+                    		  </resource>
+                    		</resources>
+		                </configuration>
+		            </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- ====================================================================== -->
+    <!-- D E P E N D E N C I E S                                                -->
+    <!-- ====================================================================== -->
+    <dependencies>
+        <dependency>
+            <groupId>com.day.commons</groupId>
+            <artifactId>day-commons-cli</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+</project>

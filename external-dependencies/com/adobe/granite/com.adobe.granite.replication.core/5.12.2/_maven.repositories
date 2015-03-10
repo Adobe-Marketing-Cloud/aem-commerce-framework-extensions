@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jan 06 15:21:11 EST 2015
+com.adobe.granite.replication.core-5.12.2.jar>central=
+com.adobe.granite.replication.core-5.12.2.pom>central=
+com.adobe.granite.replication.core-5.12.2.pom>nexus=
+com.adobe.granite.replication.core-5.12.2.jar>=
