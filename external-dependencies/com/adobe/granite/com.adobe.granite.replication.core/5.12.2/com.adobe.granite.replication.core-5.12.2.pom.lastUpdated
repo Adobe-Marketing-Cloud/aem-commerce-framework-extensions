@@ -1,0 +1,14 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jan 06 15:21:11 EST 2015
+default-http\://repo2.maven.org/maven2/.lastUpdated=1389671517175
+http\://dev.cqblueprints.com/nexus/content/repositories/releases/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.replication.core\:pom\:5.12.2 from/to cqblueprints.releases (http\://dev.cqblueprints.com/nexus/content/repositories/releases/)\: dev.cqblueprints.com\: nodename nor servname provided, or not known
+default-http\://repo1.maven.org/maven2/.lastUpdated=1389671517167
+http\://repo2.maven.org/maven2/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.replication.core\:pom\:5.12.2 from/to fallback2 (http\://repo2.maven.org/maven2/)\: repo2.maven.org\: nodename nor servname provided, or not known
+http\://repo.adobe.com/nexus/content/groups/public/.lastUpdated=1393196284739
+https\://maincfs-n-publicel-eztoiv7zf8rs-1301955151.ap-southeast-2.elb.amazonaws.com/nexus/content/groups/public/.lastUpdated=1420518071561
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.replication.core\:pom\:5.12.2 from/to nexus-releases (http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories)\: nexus.bsl.eur.adobe.com\: nodename nor servname provided, or not known
+default-http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.lastUpdated=1389671517203
+default-http\://dev.cqblueprints.com/nexus/content/repositories/releases/.lastUpdated=1389671517256
+default-http\://repository.apache.org/snapshots/.lastUpdated=1389671517149
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.replication.core\:pom\:5.12.2 from/to fallback1 (http\://repo1.maven.org/maven2/)\: repo1.maven.org\: nodename nor servname provided, or not known
+http\://repository.apache.org/snapshots/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.replication.core\:pom\:5.12.2 from/to asf-snapshots (http\://repository.apache.org/snapshots/)\: repository.apache.org\: nodename nor servname provided, or not known

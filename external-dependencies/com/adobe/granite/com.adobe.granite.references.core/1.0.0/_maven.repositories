@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Feb 17 16:14:23 EST 2014
+com.adobe.granite.references.core-1.0.0.jar>=
+com.adobe.granite.references.core-1.0.0.pom>nexus-releases=
+com.adobe.granite.references.core-1.0.0.jar>nexus-releases=

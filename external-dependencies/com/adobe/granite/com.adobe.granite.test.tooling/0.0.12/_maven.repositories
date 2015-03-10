@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Feb 19 16:35:29 EST 2015
+com.adobe.granite.test.tooling-0.0.12.jar>=
+com.adobe.granite.test.tooling-0.0.12-sources.jar>nexus-releases=
+com.adobe.granite.test.tooling-0.0.12.jar>central=
+com.adobe.granite.test.tooling-0.0.12.pom>central=

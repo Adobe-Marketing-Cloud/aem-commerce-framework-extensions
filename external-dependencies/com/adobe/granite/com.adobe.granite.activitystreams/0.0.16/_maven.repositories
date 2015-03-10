@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:45:16 EST 2013
+com.adobe.granite.activitystreams-0.0.16.jar>=
+com.adobe.granite.activitystreams-0.0.16.jar>central=
+com.adobe.granite.activitystreams-0.0.16.pom>central=

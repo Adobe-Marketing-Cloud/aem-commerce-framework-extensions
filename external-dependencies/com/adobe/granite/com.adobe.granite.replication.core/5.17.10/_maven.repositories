@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Mar 02 21:49:14 EST 2015
+com.adobe.granite.replication.core-5.17.10.jar>nexus-releases=
+com.adobe.granite.replication.core-5.17.10.jar>=
+com.adobe.granite.replication.core-5.17.10.pom>nexus-releases=

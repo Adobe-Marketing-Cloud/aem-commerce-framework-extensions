@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2011 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ======================================================================= -->
+    <!-- P A R E N T   P R O J E C T                                             -->
+    <!-- ======================================================================= -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>14</version>
+        <relativePath>../../parent</relativePath>
+    </parent>
+
+    <!-- ======================================================================= -->
+    <!-- P R O J E C T                                                           -->
+    <!-- ======================================================================= -->
+    <artifactId>com.adobe.granite.xssprotection</artifactId>
+    <packaging>bundle</packaging>
+    <version>5.5.4</version>
+
+    <name>Adobe Granite XSS Protection</name>
+    <description>
+        Adobe Granite bundle for providing XSS protection based on the OWASP AntiSamy and ESAPI libraries.
+    </description>
+
+    <scm>
+        <connection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.xssprotection-5.5.4</connection>
+        <developerConnection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.xssprotection-5.5.4</developerConnection>
+        <url>http://svn.day.com/repos/granite/tags/com.adobe.granite.xssprotection-5.5.4</url>
+    </scm>
+
+    <!-- ======================================================================= -->
+    <!-- B U I L D                                                               -->
+    <!-- ======================================================================= -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>maven-sling-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            !bsh,
+                            !nu.xom,
+                            !org.apache.log4j.spi,
+                            !org.apache.log4j.xml,
+                            !org.w3c.dom.svg,
+                            !org.apache.avalon.framework.logger,
+                            !org.apache.commons.jxpath.*,
+                            !org.apache.commons.digester.*,
+                            !org.apache.tools.ant.taskdefs,
+                            !org.apache.xml.resolver,
+                            !org.apache.xml.resolver.readers,
+                            !org.apache.log,
+                            !sun.io,
+                            *
+                        </Import-Package>
+                        <Private-Package>
+                            com.day.cq.xss.impl,
+                            com.adobe.granite.xss.impl,
+                            org.apache.batik.*,
+                            org.w3c.css.sac,
+                            org.apache.xerces.*,
+                            org.apache.xml.serialize,
+                            org.apache.commons.beanutils.*;-split-package:=merge-first,
+                            org.apache.commons.configuration.*,
+                            org.apache.commons.logging.impl,
+                            org.cyberneko.html.*,
+                       </Private-Package>
+                        <Embed-Dependency>
+                            antisamy;inline=true,
+                            esapi;inline=true,
+                        </Embed-Dependency>
+                        <Sling-Initial-Content>
+                            SLING-INF/content;path:=/libs/cq/xssprotection;overwrite:=true;ignoreImportProviders:=xml
+                        </Sling-Initial-Content>
+                        <Bundle-SymbolicName>com.day.cq.cq-xssprotection</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- ======================================================================= -->
+    <!-- D E P E N D E N C I E S                                                 -->
+    <!-- ======================================================================= -->
+    <dependencies>
+        <dependency>
+            <groupId>org.owasp.antisamy</groupId>
+            <artifactId>antisamy</artifactId>
+            <version>1.4.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>nu.xom</groupId>
+                    <artifactId>com.springsource.nu.xom</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>bsh</groupId>
+                    <artifactId>bsh</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.axsl.org.w3c.dom.svg</groupId>
+                    <artifactId>svg-dom-java</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-jxpath</groupId>
+                    <artifactId>commons-jxpath</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-digester3</artifactId>
+               </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.owasp.esapi</groupId>
+            <artifactId>esapi</artifactId>
+            <version>2.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>nu.xom</groupId>
+                    <artifactId>com.springsource.nu.xom</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>bsh</groupId>
+                    <artifactId>bsh</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.axsl.org.w3c.dom.svg</groupId>
+                    <artifactId>svg-dom-java</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-jxpath</groupId>
+                    <artifactId>commons-jxpath</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-digester3</artifactId>
+                </exclusion>
+           </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+            <version>2.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.jcr.api</artifactId>
+            <version>2.0.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.commons.json</artifactId>
+            <version>2.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.8.4</version>
+            <type>jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

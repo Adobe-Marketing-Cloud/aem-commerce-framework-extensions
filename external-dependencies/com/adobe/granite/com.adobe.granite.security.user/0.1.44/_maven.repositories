@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Mar 02 21:49:14 EST 2015
+com.adobe.granite.security.user-0.1.44.jar>=
+com.adobe.granite.security.user-0.1.44.pom>nexus-releases=
+com.adobe.granite.security.user-0.1.44.jar>nexus-releases=

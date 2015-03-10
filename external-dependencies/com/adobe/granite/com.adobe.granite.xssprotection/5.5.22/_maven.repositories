@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jan 06 15:21:02 EST 2015
+com.adobe.granite.xssprotection-5.5.22.jar>central=
+com.adobe.granite.xssprotection-5.5.22.pom>central=
+com.adobe.granite.xssprotection-5.5.22.jar>=
+com.adobe.granite.xssprotection-5.5.22.pom>nexus=

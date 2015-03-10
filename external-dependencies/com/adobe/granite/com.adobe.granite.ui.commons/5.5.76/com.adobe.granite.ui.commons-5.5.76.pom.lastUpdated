@@ -1,0 +1,13 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Aug 07 16:29:20 EST 2014
+default-http\://repo2.maven.org/maven2/.lastUpdated=1407392242186
+http\://dev.cqblueprints.com/nexus/content/repositories/releases/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.ui.commons\:pom\:5.5.76 from/to cqblueprints.releases (http\://dev.cqblueprints.com/nexus/content/repositories/releases/)\: dev.cqblueprints.com\: nodename nor servname provided, or not known
+default-http\://repo1.maven.org/maven2/.lastUpdated=1407392242164
+http\://repo2.maven.org/maven2/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.ui.commons\:pom\:5.5.76 from/to fallback2 (http\://repo2.maven.org/maven2/)\: repo2.maven.org\: nodename nor servname provided, or not known
+http\://repo.adobe.com/nexus/content/groups/public/.lastUpdated=1407392960379
+http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.ui.commons\:pom\:5.5.76 from/to nexus-releases (http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories)\: nexus.bsl.eur.adobe.com\: nodename nor servname provided, or not known
+default-http\://nexus.bsl.eur.adobe.com/content/groups/development-repositories/.lastUpdated=1407392242225
+default-http\://dev.cqblueprints.com/nexus/content/repositories/releases/.lastUpdated=1407392242489
+default-http\://repository.apache.org/snapshots/.lastUpdated=1407392242146
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.ui.commons\:pom\:5.5.76 from/to fallback1 (http\://repo1.maven.org/maven2/)\: repo1.maven.org\: nodename nor servname provided, or not known
+http\://repository.apache.org/snapshots/.error=Could not transfer artifact com.adobe.granite\:com.adobe.granite.ui.commons\:pom\:5.5.76 from/to asf-snapshots (http\://repository.apache.org/snapshots/)\: repository.apache.org\: nodename nor servname provided, or not known

@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Fri Nov 28 20:41:43 EST 2014
+com.adobe.granite.ui.commons-5.5.138.jar>nexus-releases=
+com.adobe.granite.ui.commons-5.5.138.pom>nexus-releases=
+com.adobe.granite.ui.commons-5.5.138.jar>=

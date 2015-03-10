@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:28:08 EST 2013
+com.adobe.granite.crypto-0.0.22.jar>=
+com.adobe.granite.crypto-0.0.22.jar>central=
+com.adobe.granite.crypto-0.0.22.pom>central=
