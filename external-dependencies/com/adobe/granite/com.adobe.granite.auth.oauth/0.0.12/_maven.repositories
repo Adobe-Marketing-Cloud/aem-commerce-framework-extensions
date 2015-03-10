@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:47:56 EST 2013
+com.adobe.granite.auth.oauth-0.0.12.jar>central=
+com.adobe.granite.auth.oauth-0.0.12.jar>=
+com.adobe.granite.auth.oauth-0.0.12.pom>central=

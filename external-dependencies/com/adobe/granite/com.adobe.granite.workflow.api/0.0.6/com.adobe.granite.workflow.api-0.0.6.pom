@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2011 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ======================================================================= -->
+    <!-- P A R E N T   P R O J E C T                                             -->
+    <!-- ======================================================================= -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>21</version>
+        <relativePath />
+    </parent>
+
+    <!-- ======================================================================= -->
+    <!-- P R O J E C T                                                           -->
+    <!-- ======================================================================= -->
+    <groupId>com.adobe.granite</groupId>
+    <artifactId>com.adobe.granite.workflow.api</artifactId>
+    <version>0.0.6</version>
+    <packaging>bundle</packaging>
+
+    <name>Adobe Granite Workflow API</name>
+    <description>
+        The Granite Workflow API bundle provides public interfaces and
+        types for the granite workflow engine.
+    </description>
+
+    <scm>
+        <connection>scm:git:git@fit.corp.adobe.com:Granite/granite.git</connection>
+        <developerConnection>scm:git:git@fit.corp.adobe.com:Granite/granite.git</developerConnection>
+        <url>https://fit.corp.adobe.com/Granite/granite/tree/master/bundles/workflow/api</url>
+      <tag>com.adobe.granite.workflow.api-0.0.6</tag>
+  </scm>
+
+    <!-- ======================================================================= -->
+    <!-- B U I L D                                                               -->
+    <!-- ======================================================================= -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>maven-sling-plugin</artifactId>
+                <configuration>
+                    <slingUrlSuffix>/libs/granite/workflow/install/</slingUrlSuffix>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-Category>granite,workflow</Bundle-Category>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- ======================================================================= -->
+    <!-- R E P O R T I N G                                                       -->
+    <!-- ======================================================================= -->
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <groups>
+                        <group>
+                            <title>Core Packages</title>
+                            <packages>com.adobe.granite.workflow:com.adobe.granite.workflow.*</packages>
+                        </group>
+                    </groups>
+                    <tags>
+                        <tag>
+                            <name>todo</name>
+                            <placement>a</placement>
+                            <head>TODO:</head>
+                        </tag>
+                    </tags>
+                    <doctitle>${project.name} Documentation (Version: ${project.version})</doctitle>
+                    <windowtitle>${project.name} Documentation (Version: ${project.version})</windowtitle>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <!-- ======================================================================= -->
+    <!-- D E P E N D E N C I E S                                                 -->
+    <!-- ======================================================================= -->
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.api</artifactId>
+            <version>2.0.8</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.event</artifactId>
+            <version>2.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-jcr-commons</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-api</artifactId>
+            <version>2.4.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

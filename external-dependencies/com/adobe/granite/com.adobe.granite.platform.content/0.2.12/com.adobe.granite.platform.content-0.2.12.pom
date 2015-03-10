@@ -1,0 +1,139 @@
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2011 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ======================================================================= -->
+    <!-- P A R E N T   P R O J E C T                                             -->
+    <!-- ======================================================================= -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>17</version>
+        <relativePath />
+    </parent>
+
+    <!-- ======================================================================= -->
+    <!-- P R O J E C T                                                           -->
+    <!-- ======================================================================= -->
+    <artifactId>com.adobe.granite.platform.content</artifactId>
+    <version>0.2.12</version>
+    <packaging>content-package</packaging>
+
+    <name>Adobe Granite Platform Content Package</name>
+    <description>Contains the initial content of the platform.</description>
+
+    <scm>
+        <connection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.platform.content-0.2.12</connection>
+        <developerConnection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.platform.content-0.2.12</developerConnection>
+        <url>http://svn.day.com/repos/granite/tags/com.adobe.granite.platform.content-0.2.12</url>
+    </scm>
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D   D E S C R I P T I O N                                      -->
+    <!-- ====================================================================== -->
+    <build>
+        <resources>
+            <!-- define the resources that will go into the package -->
+            <resource>
+                <!--
+                    we want to keep some of the META-INF files and not configure
+                    everything in the plugin.
+                -->
+                <directory>${basedir}/src/main/content/META-INF</directory>
+                <targetPath>../vault-work/META-INF</targetPath>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/main/content/jcr_root</directory>
+                <excludes>
+                    <!-- exclude .vlt control files in the package -->
+                    <exclude>**/.vlt</exclude>
+                    <exclude>**/.vltignore</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <!-- we don't want the remote resources copied to target/classes
+                 (attached) this would add them below the jcr_root, too.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-remote-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>process</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/vault-work</outputDirectory>
+                            <attached>false</attached>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- ====================================================================== -->
+            <!-- V A U L T   P A C K A G E   P L U G I N                                -->
+            <!-- ====================================================================== -->
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>maven-vault-plugin</artifactId>
+                <version>0.0.10</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <group>adobe/granite</group>
+                    <requiresRoot>true</requiresRoot>
+                    <properties>
+                        <acHandling>merge_preserve</acHandling>
+                        <createdBy>Adobe Systems Incorporated</createdBy>
+                        <granite.suppressSnapshots>true</granite.suppressSnapshots>
+                    </properties>
+
+                    <embeddeds>
+                        <embedded>
+                            <excludeTransitive>true</excludeTransitive>
+                            <addFilter>true</addFilter>
+                            <groupId>com.day.crx.sling,com.adobe.granite</groupId>
+                            <target>/libs/system/install</target>
+                        </embedded>
+                    </embeddeds>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- ====================================================================== -->
+    <!-- D E P E N D E N C I E S                                                -->
+    <!-- ====================================================================== -->
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.crxde-lite</artifactId>
+            <version>1.0.12</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.crx-packagemgr</artifactId>
+            <version>1.0.12</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

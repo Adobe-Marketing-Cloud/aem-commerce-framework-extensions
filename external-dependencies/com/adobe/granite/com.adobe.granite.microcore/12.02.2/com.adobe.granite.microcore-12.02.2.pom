@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2011 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
+    <!-- ====================================================================== -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>16</version>
+        <relativePath />
+    </parent>
+
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T  D E S C R I P T I O N                                   -->
+    <!-- ====================================================================== -->
+    <artifactId>com.adobe.granite.microcore</artifactId>
+    <version>12.02.2</version>
+    <packaging>war</packaging>
+    <name>Adobe Granite MicroCore Quickstart</name>
+    <description>The Granite Micro Core Quickstart</description>
+
+    <scm>
+        <connection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.microcore-12.02.2</connection>
+        <developerConnection>scm:svn:http://svn.day.com/repos/granite/tags/com.adobe.granite.microcore-12.02.2</developerConnection>
+        <url>http://svn.day.com/repos/granite/tags/com.adobe.granite.microcore-12.02.2</url>
+    </scm>
+
+    <properties>
+        <crx.version>2.3.15</crx.version>
+        <jackrabbit.version>2.4.0</jackrabbit.version>
+        <tika.version>1.0</tika.version>
+        <pdfbox.version>1.6.0-r1199752</pdfbox.version>
+        <test.server.host>localhost</test.server.host>
+        <test.server.url>http://${test.server.host}:${test.author.port}</test.server.url>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <!-- Reserve a port for integration tests -->
+                    <execution>
+                        <id>reserve-network-port</id>
+                        <goals>
+                            <goal>reserve-network-port</goal>
+                        </goals>
+                        <phase>pre-integration-test</phase>
+                        <configuration>
+                            <portNames>
+                                <portName>test.author.port</portName>
+                            </portNames>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <executions>
+                    <!-- Make sure the integration tests start with a clean slate -->
+                    <execution>
+                        <id>pre-integration-test-clean</id>
+                        <phase>pre-integration-test</phase>
+                        <configuration>
+                            <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                            <filesets>
+                                <fileset>
+                                    <directory>${project.build.directory}/author</directory>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.adobe.granite.maven</groupId>
+                <artifactId>quickstart-maven-plugin</artifactId>
+                <configuration>
+                    <quickstartId>crx</quickstartId>
+                    <productName>Adobe Granite</productName>
+                </configuration>
+                <executions>
+                    <!-- Package up the quickstart -->
+                    <execution>
+                        <id>package-quickstart</id>
+                        <goals>
+                            <goal>prepare</goal>
+                            <goal>quickstart</goal>
+                        </goals>
+                    </execution>
+                    <!-- Start author instance for integration tests -->
+                    <execution>
+                        <id>run-quickstart-author</id>
+                        <goals>
+                            <goal>start</goal>
+                            <goal>stop</goal>
+                        </goals>
+                        <configuration>
+                            <quickstartVMOptions>
+-Xmx1200m -XX:MaxPermSize=300m -Djava.awt.headless=true
+                            </quickstartVMOptions>
+                            <quickstartRunmode>author</quickstartRunmode>
+                            <quickstartPort>${test.author.port}</quickstartPort>
+                            <quickstartFolder>${project.build.directory}/author</quickstartFolder>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>maven-launchpad-plugin</artifactId>
+                <version>2.1.1-R1220697</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <includeDefaultBundles>false</includeDefaultBundles>
+                    <bundlesDirectory>install</bundlesDirectory>
+                    <bootDirectory>bundles</bootDirectory>
+                    <jarWebSupport>
+                        <groupId>com.day.cqse</groupId>
+                        <artifactId>cqse-httpservice</artifactId>
+                        <version>4.1.28</version>
+                        <startLevel>5</startLevel>
+                    </jarWebSupport>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>prepare-package-war</id>
+                        <goals>
+                            <goal>prepare-package</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>prepare-package-jar</id>
+                        <goals>
+                            <goal>prepare-package</goal>
+                        </goals>
+                        <configuration>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>attach-partial-bundle-list</id>
+                        <goals>
+                            <goal>attach-partial-bundle-list</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>create-standalone-jar</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>standalone</classifier>
+                            <archive>
+                                <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                                <manifest>
+                                    <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                </manifest>
+                            </archive>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Include sling-webapp launcher classes and resources -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                    </archive>
+                    <packagingExcludes>WEB-INF/classes/resources/**,WEB-INF/classes/META-INF/**</packagingExcludes>
+                    <webResources>
+                        <!-- the configuration resources -->
+                        <resource>
+                            <directory>
+                                ${project.build.directory}/launchpad-bundles
+                            </directory>
+                            <targetPath>WEB-INF</targetPath>
+                        </resource>
+                        <!-- ensure the legalize stuff is in the war -->
+                        <webResource>
+                            <targetPath />
+                            <filtering>false</filtering>
+                            <directory>${project.build.directory}/maven-shared-archive-resources</directory>
+                        </webResource>
+                    </webResources>
+                    <webXml>src/main/war/web.xml</webXml>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <preparationGoals>
+                        launchpad:check-bundle-list-for-snapshots clean verify
+                    </preparationGoals>
+                </configuration>
+            </plugin>
+
+            <!-- Integration tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <argLine>-Xmx256M</argLine>
+                    <systemPropertyVariables>
+                        <test.server.url>${test.server.url}</test.server.url>
+                        <launchpad.http.server.url>${test.server.url}</launchpad.http.server.url>
+                        <launchpad.webdav.server.url>${test.server.url}</launchpad.webdav.server.url>
+                    </systemPropertyVariables>
+                    <runOrder>alphabetical</runOrder>
+                    <classpathDependencyExcludes>
+                        <classpathDependencyExclude>
+org.apache.sling:org.apache.sling.commons.log
+                        </classpathDependencyExclude>
+                    </classpathDependencyExcludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.adobe.granite.maven</groupId>
+                    <artifactId>quickstart-maven-plugin</artifactId>
+                    <version>0.8.2</version>
+                </plugin>
+                <!-- #36582 - RTC: Add m2e lifecycle mappings for Eclipse Indigo -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.sling</groupId>
+                                        <artifactId>maven-launchpad-plugin</artifactId>
+                                        <versionRange>[2.0.0,)</versionRange>
+                                        <goals>
+                                            <goal>prepare-package</goal>
+                                            <goal>attach-bundle-list</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.adobe.granite.maven</groupId>
+                                        <artifactId>quickstart-maven-plugin</artifactId>
+                                        <versionRange>[0.1.0,)</versionRange>
+                                        <goals>
+                                            <goal>prepare</goal>
+                                            <goal>quickstart</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.launchpad.base</artifactId>
+            <version>2.3.1-R1242720-B006</version>
+            <classifier>webapp</classifier>
+            <type>war</type>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.launchpad.base</artifactId>
+            <version>2.3.1-R1242720-B006</version>
+            <classifier>app</classifier>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>quickstart-base</artifactId>
+            <version>0.9.14</version>
+            <scope>provided</scope>
+        </dependency>
+
+      <!-- Integration test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+           <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.launchpad.integration-tests</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.jackrabbit</groupId>
+                    <artifactId>jackrabbit-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.0.1</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-vfs2</artifactId>
+            <version>2.0</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-jcr2dav</artifactId>
+            <version>${jackrabbit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Need to force many dependency versions... -->
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-api</artifactId>
+            <version>${jackrabbit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-jcr-commons</artifactId>
+            <version>${jackrabbit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

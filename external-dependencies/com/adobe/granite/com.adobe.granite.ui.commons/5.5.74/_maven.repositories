@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:50:07 EST 2013
+com.adobe.granite.ui.commons-5.5.74.jar>=
+com.adobe.granite.ui.commons-5.5.74.jar>central=
+com.adobe.granite.ui.commons-5.5.74.pom>central=

@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:54:17 EST 2013
+com.adobe.granite.asset.api-1.6.jar>=
+com.adobe.granite.asset.api-1.6.jar>central=
+com.adobe.granite.asset.api-1.6.pom>central=

@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Jan 22 22:43:17 EST 2015
+com.adobe.granite.xssprotection-5.5.4.jar>central=
+com.adobe.granite.xssprotection-5.5.4.pom>central=
+com.adobe.granite.xssprotection-5.5.4.jar>=
+com.adobe.granite.xssprotection-5.5.4.pom>internet-mirror=

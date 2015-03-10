@@ -1,0 +1,7 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Jan 06 16:17:45 EST 2015
+com.adobe.granite.jmx-0.2.14.jar>nexus=
+com.adobe.granite.jmx-0.2.14.pom>central=
+com.adobe.granite.jmx-0.2.14.jar>=
+com.adobe.granite.jmx-0.2.14.pom>nexus=
+com.adobe.granite.jmx-0.2.14.jar>central=

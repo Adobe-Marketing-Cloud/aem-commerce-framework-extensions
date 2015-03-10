@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ====================================================================== -->
+    <!-- P A R E N T   P R O J E C T   D E S C R I P T I O N                    -->
+    <!-- ====================================================================== -->
+    <parent>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>parent</artifactId>
+        <version>25</version>
+        <relativePath />
+    </parent>
+
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T   D E S C R I P T I O N                                  -->
+    <!-- ====================================================================== -->
+    <groupId>com.adobe.granite</groupId>
+    <artifactId>com.adobe.granite.taskmanagement.api</artifactId>
+    <version>1.0.0</version>
+    <packaging>bundle</packaging>
+    <name>Adobe Granite Taskmanagement API</name>
+    <description>
+    	The Granite Taskmanagement API bundle provides public interfaces and types.
+    </description>
+
+    <scm>
+        <connection>scm:git:git@git.corp.adobe.com:Granite/granite.git</connection>
+        <developerConnection>scm:git:git@git.corp.adobe.com:Granite/granite.git</developerConnection>
+        <url>https://git.corp.adobe.com/Granite/granite/tree/master/bundles/taskmanagement/api</url>
+        <tag>com.adobe.granite.taskmanagement.api-1.0.0</tag>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- server dependencies -->
+    </properties>
+
+    <!-- ====================================================================== -->
+    <!-- D E P E N D E N C I E S                                                -->
+    <!-- ====================================================================== -->
+    <dependencies>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <version>4.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.granite</groupId>
+            <artifactId>com.adobe.granite.workflow.api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D                                                              -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>maven-sling-plugin</artifactId>
+                <configuration>
+                    <slingUrlSuffix>/libs/granite/taskmanagement/install/</slingUrlSuffix>
+                    <slingUrl>http://localhost:4502/crx/repository/crx.default</slingUrl>
+                    <user>admin</user>
+                    <password>admin</password>
+                    <usePut>true</usePut>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <excludeDependencies>*;scope=provided|runtime</excludeDependencies>
+                    <instructions>
+                        <Export-Package>com.adobe.granite.taskmanagement.*</Export-Package>
+                        <Private-Package />
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

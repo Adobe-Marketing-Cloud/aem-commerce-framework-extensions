@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+<!--
+/*************************************************************************
+ *
+ * ADOBE CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright 2012 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ **************************************************************************/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ======================================================================= -->
+    <!-- P A R E N T                                                             -->
+    <!-- ======================================================================= -->
+    <parent>
+        <groupId>com.adobe</groupId>
+        <artifactId>adobe</artifactId>
+        <version>6</version>
+        <relativePath />
+    </parent>
+
+    <!-- ======================================================================= -->
+    <!-- P R O J E C T                                                           -->
+    <!-- ======================================================================= -->
+    <groupId>com.adobe.granite</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>32</version>
+
+    <name>Adobe Granite (Parent Project)</name>
+    <description>The parent project for Granite, the Open Web Stack</description>
+    <inceptionYear>2011</inceptionYear>
+
+    <properties>
+        <site.javadoc.exclude />
+        <granite.url.default>http://localhost:4502</granite.url.default>
+        <skip.checkstyle>false</skip.checkstyle>
+        
+        <!--
+            Java API and class file compliance. This property supports
+            one of two values:
+              - 5: Java 1.5 (default)
+              - 6: Java 6
+            Using anything else causes the set-bundle-required-execution-environment
+            to fail the build with an exception
+        -->
+        <granite.java.version>5</granite.java.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:git@git.corp.adobe.com:Granite/parent-pom.git</connection>
+        <developerConnection>scm:git:git@git.corp.adobe.com:Granite/parent-pom.git</developerConnection>
+        <url>https://git.corp.adobe.com/Granite/parent-pom/tree/master</url>
+      <tag>parent-32</tag>
+  </scm>
+
+    <!-- ======================================================================= -->
+    <!-- R E P O R T I N G                                                       -->
+    <!-- ======================================================================= -->
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <!-- ======================================================================= -->
+    <!-- B U I L D                                                               -->
+    <!-- ======================================================================= -->
+    <prerequisites>
+        <maven>3.0.5</maven>
+    </prerequisites>
+    <build>
+        <plugins>
+            <!-- Require Java 6 or higher for building -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-java</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <message>
+                                        Platform must be compiled with Java 6 or higher
+                                    </message>
+                                    <version>1.6.0</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>deploy</goals>
+                    <localCheckout>true</localCheckout>
+                    <releaseProfiles>release</releaseProfiles>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>animal-sniffer-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Checkstyle -->
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>granite/checkstyle.xml</configLocation>
+                    <headerLocation>granite/adobe.license.java</headerLocation>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <includes>**</includes>
+                    <skip>${skip.checkstyle}</skip>
+                    <consoleOutput>true</consoleOutput>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.adobe.granite</groupId>
+                        <artifactId>granite-checkstyle-rules</artifactId>
+                        <version>0.2.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>set-bundle-required-execution-environment</id>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <phase>initialize</phase>
+                        <configuration>
+                            <exportAntProperties>true</exportAntProperties>
+                            <target>
+                                <script language="javascript"> <![CDATA[
+                                    var System = java.lang.System;
+                                    var bree = "J2SE-1.5";
+                                    var graniteJavaVersion = System.getProperty("granite.java.version");
+                                    if (!graniteJavaVersion) {
+                                        graniteJavaVersion = project.getProperty("granite.java.version");
+                                    }
+                                    if (graniteJavaVersion == "6") {
+                                        bree = "JavaSE-1.6";
+                                    } else if (graniteJavaVersion != "5") {
+                                        System.out.println("Unsupported granite.java.version=" + graniteJavaVersion + "; must be 5 or 6");
+                                        throw "granite.java.version must be 5 or 6";
+                                    }
+                                    System.out.println("Setting Bundle-RequiredExecutionEnvironment=" + bree + " from granite.java.version=" + graniteJavaVersion);
+                                    project.setProperty("granite.bree", bree);
+                                ]]></script>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <!--This plugin's configuration is used to store Eclipse m2e
+                    settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.mojo.jspc
+                                        </groupId>
+                                        <artifactId>
+                                            jspc-maven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [2.0-alpha-3,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>compile</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-dependency-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [2.1,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>copy</goal>
+                                            <goal>copy-dependencies</goal>
+                                            <goal>unpack</goal>
+                                            <goal>unpack-dependencies</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.mojo
+                                        </groupId>
+                                        <artifactId>
+                                            build-helper-maven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.7,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>
+                                                reserve-network-port
+                                            </goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.sling
+                                        </groupId>
+                                        <artifactId>
+                                            maven-sling-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [2.1,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>
+                                                generate-adapter-metadata
+                                            </goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-antrun-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.7,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>
+                                                run
+                                            </goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+                <!--  Environmental constraint checking (Maven Version, JDK etc.) -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>1.3.1</version>
+                </plugin>
+
+                <!-- Apache Felix SCR Plugin -->
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-scr-plugin</artifactId>
+                    <version>1.14.0</version>
+                    <!-- As QDox is trying to inspect/load the classes
+                         we have to add a slf4j implementation to the
+                         class path of the plugin - we usually use
+                         a static field for the logger and during class
+                         loading this field requires an slf4j implementation!
+                     -->
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-simple</artifactId>
+                            <version>1.5.2</version>
+                        </dependency>
+                    </dependencies>
+                    <executions>
+                        <execution>
+                            <id>generate-scr-scrdescriptor</id>
+                            <goals>
+                                <goal>scr</goal>
+                            </goals>
+                            <configuration>
+                                <!-- Private service properties for all services. -->
+                                <properties>
+                                    <service.vendor>Adobe Systems Incorporated</service.vendor>
+                                </properties>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <!--
+                Apache Sling Plugin
+                This plugin can be used to deploy the bundles to the obr.
+                -->
+                <plugin>
+                    <groupId>org.apache.sling</groupId>
+                    <artifactId>maven-sling-plugin</artifactId>
+                    <version>2.1.0</version>
+                    <configuration>
+                        <!-- Use default granite quickstart URL -->
+                        <slingUrl>${granite.url.default}</slingUrl>
+                        <slingUrlSuffix>/libs/system/install</slingUrlSuffix>
+                        <usePut>true</usePut>
+                    </configuration>
+                </plugin>
+
+                <!-- Apache Felix Bundle Plugin -->
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>2.4.0</version>
+                    <inherited>true</inherited>
+                    <configuration>
+                        <outputDirectory>${basedir}/target/classes</outputDirectory>
+                        <obrRepository>NONE</obrRepository>
+                        <instructions>
+                            <Bundle-Category>granite</Bundle-Category>
+                            <Bundle-DocURL>
+                                https://zerowing.corp.adobe.com/display/granite
+                            </Bundle-DocURL>
+                            <Bundle-Vendor>Adobe Systems Incorporated</Bundle-Vendor>
+                            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                            <_provider-policy>[$(version;===;$(@)),$(version;=+;$(@)))</_provider-policy>
+                            <_consumer-policy>[$(version;===;$(@)),$(version;+;$(@)))</_consumer-policy>
+                            <_removeheaders>
+                                GraniteSiteRepository-Id,
+                                GraniteSiteRepository-URL,
+                                ReleaseRepository-Id,
+                                ReleaseRepository-Name,
+                                ReleaseRepository-URL,
+                                SnapshotRepository-Id,
+                                SnapshotRepository-Name,
+                                SnapshotRepository-URL
+                            </_removeheaders>
+                            <Bundle-RequiredExecutionEnvironment>
+                                ${granite.bree}
+                            </Bundle-RequiredExecutionEnvironment>
+                        </instructions>
+                    </configuration>
+                </plugin>
+                
+                <!-- Content Package generation -->
+                <plugin>
+                    <groupId>com.day.jcr.vault</groupId>
+                    <artifactId>content-package-maven-plugin</artifactId>
+                    <version>0.0.20</version>
+                    <inherited>true</inherited>
+                    <configuration>
+                        <group>adobe/granite</group>
+                        <properties>
+                            <acHandling>merge_preserve</acHandling>
+                            <createdBy>Adobe Systems Incorporated</createdBy>
+                            <granite.suppressSnapshots>true</granite.suppressSnapshots>
+                        </properties>
+                        <signature>
+                            <groupId>org.codehaus.mojo.signature</groupId>
+                            <artifactId>java1${granite.java.version}</artifactId>
+                            <version>1.0</version>
+                        </signature>
+                    </configuration>
+                </plugin>
+
+                <!-- Compile for Java 5 and higher -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>1.${granite.java.version}</source>
+                        <target>1.${granite.java.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>animal-sniffer-maven-plugin</artifactId>
+                    <version>1.9</version>
+                    <configuration>
+                        <signature>
+                            <groupId>org.codehaus.mojo.signature</groupId>
+                            <artifactId>java1${granite.java.version}</artifactId>
+                            <version>1.0</version>
+                        </signature>
+                    </configuration>
+                </plugin>
+
+                <!-- Maven Antrun Plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                    <dependencies>
+                        <!-- declare dependencies here rather than where needed to
+                             circumvent http://jira.codehaus.org/browse/MANTRUN-51
+                        -->
+                        <dependency>
+                            <groupId>org.apache.ant</groupId>
+                            <artifactId>ant-apache-regexp</artifactId>
+                            <version>1.7.1</version>
+                            <scope>runtime</scope>
+                        </dependency>
+                        <dependency>
+                            <groupId>jakarta-regexp</groupId>
+                            <artifactId>jakarta-regexp</artifactId>
+                            <version>1.4</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+
+                <!-- Maven Buildnumber Plugin -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>buildnumber-maven-plugin</artifactId>
+                    <version>1.2</version>
+                </plugin>
+
+                <!-- Set fix version for javadoc plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>2.9.1</version>
+                    <configuration>
+                        <stylesheet>maven</stylesheet>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <links>
+                            <link>http://download.oracle.com/javase/1.5.0/docs/api/</link>
+                            <link>http://java.sun.com/products/servlet/2.5/docs/servlet-2_5-mr2</link>
+                            <link>http://www.day.com/maven/jsr170/javadocs/jcr-2.0/</link>
+                            <link>http://sling.apache.org/apidocs/sling5</link>
+                            <link>http://dev.day.com/docs/en/cq/current/javadoc</link>
+                            <link>http://jackrabbit.apache.org/api/2.4</link>
+                            <link>http://www.osgi.org/javadoc/r4v42</link>
+                        </links>
+                        <excludePackageNames>*.impl:*.internal:${site.javadoc.exclude}</excludePackageNames>
+                    </configuration>
+                </plugin>
+
+                <!-- Set fix version for resources plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.6</version>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+
+                <!-- Set fix version for dependency plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.8</version>
+                </plugin>
+
+                <!-- Set fix version for jar plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+
+                <!-- Set fix version for idea plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-idea-plugin</artifactId>
+                    <version>2.2.1</version>
+                </plugin>
+
+                <!-- Set fix version for surefire plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.15</version>
+                    <configuration>
+                        <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                    </configuration>
+                </plugin>
+
+                <!-- Set fix version for war plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+
+                <!-- Set fix version for failsafe plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.15</version>
+                    <configuration>
+                        <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                    </configuration>
+                </plugin>
+
+                <!-- Set fix version for the checkstyle plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>2.10</version>
+                </plugin>
+
+                <!-- Set fix version for the clean plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>2.5</version>
+                </plugin>
+
+                <!-- Set fix version for the deploy plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.7</version>
+                </plugin>
+
+                <!-- Set fix version for the install plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+             <!-- Maven Site Plugin -->
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.3</version>
+                </plugin>
+             <!-- FindBugs -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <!-- ======================================================================= -->
+    <!-- P R O F I L E S                                                         -->
+    <!-- ======================================================================= -->
+    <profiles>
+
+        <profile>
+            <!-- This is the release profile. -->
+            <id>release</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>findbugs</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>findbugs-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <!-- ======================================================================= -->
+    <!-- D E P E N D E N C Y   M A N A G E M E N T                               -->
+    <!-- ======================================================================= -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Servlet API -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- JSP API -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jsp-api</artifactId>
+                <version>2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- JSTL Dependencies -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>1.1.2</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- OSGi -->
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.core</artifactId>
+                <version>4.1.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.compendium</artifactId>
+                <version>4.1.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.enterprise</artifactId>
+                <version>4.2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- JCR -->
+            <dependency>
+                <groupId>javax.jcr</groupId>
+                <artifactId>jcr</artifactId>
+                <version>2.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- Logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.5.2</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- Testing -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.8.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jmock</groupId>
+                <artifactId>jmock-junit4</artifactId>
+                <version>2.5.1</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>1.9.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>1.9.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.5.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>1.5.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.13</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr.annotations</artifactId>
+            <version>1.9.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>biz.aQute</groupId>
+            <artifactId>bndlib</artifactId>
+            <version>1.43.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+  <!-- Continous Integration -->
+    <ciManagement>
+    	<system>Jenkins</system>
+    	<url>http://jenkins.bsl.eur.adobe.com</url>
+    </ciManagement>
+  <!-- Distribution Management -->
+    <distributionManagement>
+        <repository>
+            <id>${releaseRepository-Id}</id>
+            <name>${releaseRepository-Name}</name>
+            <url>${releaseRepository-URL}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${snapshotRepository-Id}</id>
+            <name>${snapshotRepository-Name}</name>
+            <url>${snapshotRepository-URL}</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+        <site>
+            <id>${graniteSiteRepository-Id}</id>
+            <url>${graniteSiteRepository-URL}</url>
+        </site>
+    </distributionManagement>
+</project>

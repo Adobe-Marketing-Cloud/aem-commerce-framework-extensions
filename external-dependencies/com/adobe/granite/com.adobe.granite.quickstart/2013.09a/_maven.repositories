@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed Oct 30 10:12:40 EST 2013
+com.adobe.granite.quickstart-2013.09a-base.jar>nexus-releases=
+com.adobe.granite.quickstart-2013.09a.properties>nexus-releases=
+com.adobe.granite.quickstart-2013.09a.pom>nexus-releases=
