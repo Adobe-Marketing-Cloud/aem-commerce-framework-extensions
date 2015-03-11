@@ -9,4 +9,5 @@
  
 # Host that CQ runs on
 git pull
+git checkout exercise1-solutions
 mvn clean install -PautoInstallPackage 
