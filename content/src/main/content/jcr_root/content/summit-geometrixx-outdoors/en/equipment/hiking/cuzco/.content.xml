@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:17.896+11:00"
+        cq:lastModified="{Date}2015-03-12T14:30:08.806+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:17.933+11:00"
+        cq:lastRolledout="{Date}2015-03-12T14:30:08.858+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmcz"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,37 +13,37 @@
         jcr:title="Cuzco"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:17.909+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:08.823+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:17.915+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.833+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:16.616+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmcz">
                 <eqsmcz_1
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:17.920+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:08.843+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmcz/cuzcoblue">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:17.924+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:08.847+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lake Titicaca Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:17.924+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:08.848+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,49 +51,49 @@
                 </eqsmcz_1>
                 <eqsmcz_2
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:17.925+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:08.849+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmcz/cuzcoorange">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:17.928+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:08.852+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lake Titicaca Orange.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:17.929+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:08.853+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqsmcz_2>
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:17.929+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:08.854+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/equipment/Lake Titicaca Blue.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:17.930+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:08.854+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:17.930+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.855+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:17.932+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:08.857+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -101,7 +101,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:17.932+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.858+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -111,7 +111,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:17.933+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:08.858+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"

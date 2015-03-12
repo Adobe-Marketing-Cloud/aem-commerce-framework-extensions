@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:20.471+11:00"
+        cq:lastModified="{Date}2015-03-12T14:30:11.522+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:20.927+11:00"
+        cq:lastRolledout="{Date}2015-03-12T14:30:11.804+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,37 +13,37 @@
         jcr:title="Nairobi Runners"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:20.508+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:11.556+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:20.526+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:11.564+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:16.955+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr">
                 <eqsmnr_b-7_5-7_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.606+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.615+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/7.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.613+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.620+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.614+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.621+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </eqsmnr_b-7_5-7_5>
                 <eqsmnr_b-11-11
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.615+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.621+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/11">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.620+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.625+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.621+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.625+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,21 +73,21 @@
                 </eqsmnr_b-11-11>
                 <eqsmnr_b-10-10
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.621+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.626+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/10">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.626+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.629+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.626+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.630+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -95,21 +95,21 @@
                 </eqsmnr_b-10-10>
                 <eqsmnr_b-9-9
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.627+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.631+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/9">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.632+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.634+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.632+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.635+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -117,21 +117,21 @@
                 </eqsmnr_b-9-9>
                 <eqsmnr_b-8-8
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.633+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.635+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/8">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.639+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.638+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.640+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.639+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -139,21 +139,21 @@
                 </eqsmnr_b-8-8>
                 <eqsmnr_b-7-7
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.640+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.639+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/7">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.645+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.643+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.646+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.643+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -161,21 +161,21 @@
                 </eqsmnr_b-7-7>
                 <eqsmnr_b-12-12
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.647+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.644+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/12">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.661+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.648+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.662+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.648+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -183,21 +183,21 @@
                 </eqsmnr_b-12-12>
                 <eqsmnr_b-13-13
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.663+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.649+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/13">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.667+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.653+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.668+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.653+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -205,21 +205,21 @@
                 </eqsmnr_b-13-13>
                 <eqsmnr_b-8_5-8_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.669+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.654+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/8.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.673+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.657+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.673+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.658+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -227,21 +227,21 @@
                 </eqsmnr_b-8_5-8_5>
                 <eqsmnr_b-9_5-9_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.675+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.658+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/9.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.680+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.661+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.681+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.662+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -249,21 +249,21 @@
                 </eqsmnr_b-9_5-9_5>
                 <eqsmnr_b-11_5-115
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.681+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.663+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/11.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.687+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.666+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.687+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.666+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -271,21 +271,21 @@
                 </eqsmnr_b-11_5-115>
                 <eqsmnr_b-10_5-105
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.688+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.667+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/blue/10.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.692+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.670+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.693+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.671+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -293,21 +293,21 @@
                 </eqsmnr_b-10_5-105>
                 <eqsmnr_p-5_5-5_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.694+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.671+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/5.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.698+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.686+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.699+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.687+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -315,21 +315,21 @@
                 </eqsmnr_p-5_5-5_5>
                 <eqsmnr_p-10_5-105
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.700+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.687+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/10.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.704+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.691+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.705+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.691+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -337,21 +337,21 @@
                 </eqsmnr_p-10_5-105>
                 <eqsmnr_p-6_5-6_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.706+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.692+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/6.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.710+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.695+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.711+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.696+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -359,21 +359,21 @@
                 </eqsmnr_p-6_5-6_5>
                 <eqsmnr_p-9-9
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.722+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.696+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/9">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.727+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.700+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.728+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.701+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -381,21 +381,21 @@
                 </eqsmnr_p-9-9>
                 <eqsmnr_p-7_5-7_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.728+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.702+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/7.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.733+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.705+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.734+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.706+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -403,21 +403,21 @@
                 </eqsmnr_p-7_5-7_5>
                 <eqsmnr_p-8_5-8_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.735+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.706+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/8.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.740+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.710+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.741+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.710+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -425,21 +425,21 @@
                 </eqsmnr_p-8_5-8_5>
                 <eqsmnr_p-5-geo-5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.741+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.711+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/geo-5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.746+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.714+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.747+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.715+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -447,21 +447,21 @@
                 </eqsmnr_p-5-geo-5>
                 <eqsmnr_p-6-6
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.748+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.715+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/6">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.755+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.719+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.755+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.719+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -469,21 +469,21 @@
                 </eqsmnr_p-6-6>
                 <eqsmnr_p-7-7
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.756+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.720+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/7">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.771+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.723+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.771+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.724+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -491,21 +491,21 @@
                 </eqsmnr_p-7-7>
                 <eqsmnr_p-8-8
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.772+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.724+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/8">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.776+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.728+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.777+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.728+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -513,21 +513,21 @@
                 </eqsmnr_p-8-8>
                 <eqsmnr_p-10-10
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.778+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.729+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/10">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.782+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.732+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.784+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.733+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -535,21 +535,21 @@
                 </eqsmnr_p-10-10>
                 <eqsmnr_p-11-11
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.785+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.733+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/11">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.789+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.737+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.790+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.737+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -557,21 +557,21 @@
                 </eqsmnr_p-11-11>
                 <eqsmnr_p-9_5-9_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.791+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.738+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/pink/9.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.795+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.741+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Pink.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.795+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.741+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -579,21 +579,21 @@
                 </eqsmnr_p-9_5-9_5>
                 <eqsmnr_g-9_5-9_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.796+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.742+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/9.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.800+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.745+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.801+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.746+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -601,21 +601,21 @@
                 </eqsmnr_g-9_5-9_5>
                 <eqsmnr_g-11-11
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.801+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.747+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/11">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.815+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.750+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.816+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.751+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -623,21 +623,21 @@
                 </eqsmnr_g-11-11>
                 <eqsmnr_g-12-12
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.817+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.751+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/12">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.823+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.755+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.823+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.755+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -645,21 +645,21 @@
                 </eqsmnr_g-12-12>
                 <eqsmnr_g-10-10
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.824+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.756+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/10">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.830+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.759+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.831+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.760+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -667,21 +667,21 @@
                 </eqsmnr_g-10-10>
                 <eqsmnr_g-8_5-8_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.831+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.760+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/8.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.838+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.764+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.839+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.764+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -689,21 +689,21 @@
                 </eqsmnr_g-8_5-8_5>
                 <eqsmnr_g-8-8
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.839+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.765+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/8">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.844+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.769+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.845+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.769+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -711,21 +711,21 @@
                 </eqsmnr_g-8-8>
                 <eqsmnr_g-9-9
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.846+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.770+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/9">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.850+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.773+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.851+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.774+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -733,21 +733,21 @@
                 </eqsmnr_g-9-9>
                 <eqsmnr_g-13-13
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.852+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.774+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/13">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.866+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.778+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.867+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.778+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -755,21 +755,21 @@
                 </eqsmnr_g-13-13>
                 <eqsmnr_g-7-7
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.869+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.779+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/7">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.877+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.783+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.879+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.784+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -777,21 +777,21 @@
                 </eqsmnr_g-7-7>
                 <eqsmnr_g-10_5-105
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.880+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.784+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/10.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.887+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.788+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.888+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.789+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -799,21 +799,21 @@
                 </eqsmnr_g-10_5-105>
                 <eqsmnr_g-11_5-115
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.890+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.790+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/11.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.898+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.793+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.899+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.794+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -821,50 +821,50 @@
                 </eqsmnr_g-11_5-115>
                 <eqsmnr_g-7_5-7_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.900+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.794+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/running/eqsmnr/geo-green/7.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.908+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.798+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Green.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:20.909+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:11.798+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqsmnr_g-7_5-7_5>
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.909+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.799+11:00"
                     cq:lastRolledoutBy="admin"
-                    jcr:lastModified="{Date}2015-02-22T20:52:27.352+11:00"
+                    jcr:lastModified="{Date}2015-02-23T16:58:36.524+11:00"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Nairobi Blue.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.910+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.800+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:20.911+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:11.800+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:20.925+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:11.802+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -872,7 +872,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:20.926+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:11.803+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -882,7 +882,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:20.927+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:11.803+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"

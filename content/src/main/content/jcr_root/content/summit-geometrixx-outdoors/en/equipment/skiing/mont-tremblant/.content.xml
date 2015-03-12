@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:30.294+11:00"
+        cq:lastModified="{Date}2015-03-12T14:30:16.065+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:30.354+11:00"
+        cq:lastRolledout="{Date}2015-03-12T14:30:16.109+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnmt"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,37 +13,37 @@
         jcr:title="Mont Tremblant"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:30.321+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:16.078+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:30.327+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:16.085+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:17.289+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnmt">
                 <eqwnmt-s-s
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:30.335+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:16.092+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnmt/S">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:30.340+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:16.095+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:30.340+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:16.096+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </eqwnmt-s-s>
                 <eqwnmt-m-m
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:30.341+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:16.096+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnmt/M">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:30.344+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:16.100+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:30.345+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:16.101+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,49 +73,49 @@
                 </eqwnmt-m-m>
                 <eqwnmt-l-l
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:30.345+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:16.101+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/skiing/eqwnmt/L">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:30.348+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:16.104+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:30.349+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:16.105+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqwnmt-l-l>
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:30.350+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:16.105+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/gloves/Mont Tremblant.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:30.350+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:16.106+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:30.350+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:16.106+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:30.353+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:16.108+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -123,7 +123,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:30.353+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:16.109+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -133,7 +133,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:30.354+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:16.109+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"

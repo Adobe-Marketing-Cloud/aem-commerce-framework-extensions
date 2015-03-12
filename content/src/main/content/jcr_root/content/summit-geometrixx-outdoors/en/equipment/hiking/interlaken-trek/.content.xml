@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2015-02-23T16:57:18.233+11:00"
+        cq:lastModified="{Date}2015-03-12T14:30:09.182+11:00"
         cq:lastModifiedBy="admin"
-        cq:lastRolledout="{Date}2015-02-23T16:57:18.344+11:00"
+        cq:lastRolledout="{Date}2015-03-12T14:30:09.323+11:00"
         cq:lastRolledoutBy="admin"
         cq:productMaster="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit"
         cq:template="/apps/geometrixx-outdoors/templates/page_product"
@@ -13,37 +13,37 @@
         jcr:title="Interlaken Trek"
         sling:resourceType="geometrixx-outdoors/components/page_product">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:18.250+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:09.213+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <product
                 cq:commerceType="product"
-                cq:lastRolledout="{Date}2015-02-23T16:57:18.256+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:09.227+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:lastModified="{Date}2015-02-09T22:02:16.652+11:00"
                 jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce/components/product"
+                sling:resourceType="commerce-extentions/components/product"
                 productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit">
                 <eqsmit-11-11
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.274+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.257+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/11">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.277+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.261+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.278+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.261+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -51,21 +51,21 @@
                 </eqsmit-11-11>
                 <eqsmit-12-12
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.278+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.262+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/12">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.281+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.266+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.282+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.267+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -73,21 +73,21 @@
                 </eqsmit-12-12>
                 <eqsmit-13-13
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.282+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.267+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/13">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.286+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.271+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.286+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.272+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -95,21 +95,21 @@
                 </eqsmit-13-13>
                 <eqsmit-11_5-11_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.287+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.272+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/11.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.290+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.276+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.291+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.277+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -117,21 +117,21 @@
                 </eqsmit-11_5-11_5>
                 <eqsmit-8_5-8_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.291+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.277+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/8.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.294+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.281+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.295+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.282+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -139,21 +139,21 @@
                 </eqsmit-8_5-8_5>
                 <eqsmit-10-10
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.295+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.282+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/10">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.298+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.287+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.299+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.288+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -161,21 +161,21 @@
                 </eqsmit-10-10>
                 <eqsmit-10_5-10_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.299+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.289+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/10.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.303+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.293+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.303+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.293+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -183,21 +183,21 @@
                 </eqsmit-10_5-10_5>
                 <eqsmit-7-7
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.304+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.294+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/7">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.320+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.297+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.321+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.298+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -205,21 +205,21 @@
                 </eqsmit-7-7>
                 <eqsmit-8-8
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.321+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.299+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/8">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.324+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.302+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.325+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.303+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -227,21 +227,21 @@
                 </eqsmit-8-8>
                 <eqsmit-9-9
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.326+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.303+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/9">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.329+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.307+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.330+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.308+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -249,21 +249,21 @@
                 </eqsmit-9-9>
                 <eqsmit-7_5-7_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.330+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.308+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/7.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.334+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.312+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.335+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.313+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
@@ -271,49 +271,49 @@
                 </eqsmit-7_5-7_5>
                 <eqsmit-9_5-9_5
                     cq:commerceType="variant"
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.336+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.313+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product"
                     productData="/etc/commerce/products/summit-geometrixx-outdoors/equipment/hiking/eqsmit/9.5">
                     <image
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.339+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.317+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/image"
                         fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                     <assets
-                        cq:lastRolledout="{Date}2015-02-23T16:57:18.339+11:00"
+                        cq:lastRolledout="{Date}2015-03-12T14:30:09.318+11:00"
                         cq:lastRolledoutBy="admin"
                         jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="commerce/components/product/assets"/>
                 </eqsmit-9_5-9_5>
                 <image
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.340+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.318+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="commerce/components/product/image"
                     fileReference="/content/dam/summit-geometrixx-outdoors/products/footwear/Interlaken.jpg"/>
                 <assets
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.340+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.319+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:CatalogSyncAction,cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce/components/product/assets"/>
+                    sling:resourceType="commerce-extentions/components/product/assets"/>
             </product>
             <tabs
-                cq:lastRolledout="{Date}2015-02-23T16:57:18.341+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:09.319+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/product_tabs"
                 tabs="[summary=Product Summary,features=Features]">
                 <ratings
-                    cq:lastRolledout="{Date}2015-02-23T16:57:18.343+11:00"
+                    cq:lastRolledout="{Date}2015-03-12T14:30:09.321+11:00"
                     cq:lastRolledoutBy="admin"
                     jcr:mixinTypes="[cq:LiveRelationship]"
                     jcr:primaryType="nt:unstructured"
@@ -321,7 +321,7 @@
                     displayOnly="true"/>
             </tabs>
             <similar-products
-                cq:lastRolledout="{Date}2015-02-23T16:57:18.343+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:09.322+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -331,7 +331,7 @@
                 relationshipType="relatedproducts:info.geometrixx.similar-to-current"/>
         </par>
         <facebook_like
-            cq:lastRolledout="{Date}2015-02-23T16:57:18.344+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:09.322+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"

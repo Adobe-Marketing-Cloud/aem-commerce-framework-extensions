@@ -4,10 +4,10 @@
     <jcr:content
         cq:catalogBlueprint="/content/catalogs/summit-geometrixx-outdoors/base-catalog/equipment"
         cq:commerceType="section"
-        cq:lastModified="{Date}2015-02-23T16:57:15.936+11:00"
+        cq:lastModified="{Date}2015-03-12T14:30:07.996+11:00"
         cq:lastModifiedBy="admin"
         cq:lastPropertyRollout="{Date}2015-02-09T22:02:16.361+11:00"
-        cq:lastRolledout="{Date}2015-02-23T16:57:16.351+11:00"
+        cq:lastRolledout="{Date}2015-03-12T14:30:08.019+11:00"
         cq:lastRolledoutBy="admin"
         cq:template="/apps/geometrixx-outdoors/templates/page_sidebar"
         jcr:mixinTypes="[cq:LiveSync]"
@@ -15,22 +15,22 @@
         jcr:title="Equipment"
         sling:resourceType="geometrixx-outdoors/components/page_sidebar">
         <par
-            cq:lastRolledout="{Date}2015-02-23T16:57:15.953+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:08.007+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <banner
-                cq:lastRolledout="{Date}2015-02-23T16:57:15.959+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.013+11:00"
                 cq:lastRolledoutBy="admin"
-                jcr:lastModified="{Date}2015-02-23T16:57:15.898+11:00"
+                jcr:lastModified="{Date}2015-03-12T14:30:07.972+11:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/image"
                 fileReference="/content/dam/Summit2015/summit.png"/>
             <nav_products
-                cq:lastRolledout="{Date}2015-02-23T16:57:15.960+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.013+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -39,11 +39,11 @@
                 listFrom="descendants"
                 orderBy="jcr:title"/>
             <recentlyviewed_6275
-                cq:lastRolledout="{Date}2015-02-23T16:57:15.961+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.014+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:created="{Date}2015-02-09T22:21:20.520+11:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2015-02-23T16:57:15.908+11:00"
+                jcr:lastModified="{Date}2015-03-12T14:30:07.981+11:00"
                 jcr:lastModifiedBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
@@ -52,19 +52,19 @@
                 max="3"/>
         </par>
         <sidebar
-            cq:lastRolledout="{Date}2015-02-23T16:57:16.343+11:00"
+            cq:lastRolledout="{Date}2015-03-12T14:30:08.014+11:00"
             cq:lastRolledoutBy="admin"
             jcr:mixinTypes="[cq:LiveRelationship]"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <title
-                cq:lastRolledout="{Date}2015-02-23T16:57:16.349+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.018+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="geometrixx-outdoors/components/title"/>
             <list
-                cq:lastRolledout="{Date}2015-02-23T16:57:16.350+11:00"
+                cq:lastRolledout="{Date}2015-03-12T14:30:08.018+11:00"
                 cq:lastRolledoutBy="admin"
                 jcr:mixinTypes="[cq:LiveRelationship]"
                 jcr:primaryType="nt:unstructured"
