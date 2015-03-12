@@ -13,6 +13,6 @@ git stash
 git pull
 sh cleanup.sh
 git checkout exercise3-task1
-sh pre_dependencies.sh
+sh prep_dependencies.sh
 mvn eclipse:clean eclipse:eclipse
 mvn clean install -PautoInstallPackage 
