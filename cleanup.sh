@@ -23,6 +23,16 @@ CQ_USER_PASSWORD=admin
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.adobe.cq.commerce/aem-commerce-framework-extensions-content-1.0-SNAPSHOT.zip?cmd=uninstall
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.adobe.cq.commerce/aem-commerce-framework-extensions-content-1.0-SNAPSHOT.zip?cmd=replicate
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.adobe.cq.commerce/aem-commerce-framework-extensions-content-1.0-SNAPSHOT.zip?cmd=delete
+
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.elasticpath.aem.geometrixx/ep-geometrixx-content-0-SNAPSHOT.zip?cmd=uninstall
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.elasticpath.aem.geometrixx/ep-geometrixx-content-0-SNAPSHOT.zip?cmd=replicate
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.elasticpath.aem.geometrixx/ep-geometrixx-content-0-SNAPSHOT.zip?cmd=delete
+
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.elasticpath.aem.commerce/ep-commerce-api-0-SNAPSHOT.zip?cmd=uninstall
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.elasticpath.aem.commerce/ep-commerce-api-0-SNAPSHOT.zip?cmd=replicate
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X POST http://$HOST:$PORT/crx/packmgr/service/.json/etc/packages/com.elasticpath.aem.commerce/ep-commerce-api-0-SNAPSHOT.zip?cmd=delete
+
+
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/etc/commerce/products/summit-geometrixx-outdoors
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/etc/scaffolding/summit-geometrixx-outdoors
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/etc/tags/summit-geometrixx-outdoors
@@ -30,3 +40,5 @@ curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/catalogs
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/dam/Summit2015
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/dam/summit-geometrixx-outdoors
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/summit-geometrixx-outdoors
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/apps/commerce-extentions
+curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/geometrixx-outdoors/en_US
