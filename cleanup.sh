@@ -30,4 +30,3 @@ curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/catalogs
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/dam/Summit2015
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/dam/summit-geometrixx-outdoors
 curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/content/summit-geometrixx-outdoors
-curl -u $CQ_USER:$CQ_USER_PASSWORD -X DELETE http://$HOST:$PORT/apps/commerce-extentions
