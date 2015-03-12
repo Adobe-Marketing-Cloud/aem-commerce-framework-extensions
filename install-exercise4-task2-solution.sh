@@ -7,11 +7,10 @@
 # Last updated : March 01, 2015
  
  
-# Host that CQ runs on
 git add *
 git stash
 git pull
-git checkout exercise3-task1-solutions
+git checkout exercise4-task2-solutions
 sh cleanup.sh
 sh prep_dependencies.sh
 mvn eclipse:clean eclipse:eclipse

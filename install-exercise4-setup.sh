@@ -7,12 +7,12 @@
 # Last updated : March 01, 2015
  
  
-# Host that CQ runs on
 git add *
 git stash
 git pull
-git checkout exercise3-task1-solutions
+git checkout exercise4
 sh cleanup.sh
 sh prep_dependencies.sh
+sh install_ep_and_ref_impl_on_aem.sh
 mvn eclipse:clean eclipse:eclipse
 mvn clean install -PautoInstallPackage 
