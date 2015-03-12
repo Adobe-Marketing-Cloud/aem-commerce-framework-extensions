@@ -8,7 +8,7 @@
  
  
 # Host that CQ runs on
-git add
+git add *
 git stash
 git pull
 sh cleanup.sh
