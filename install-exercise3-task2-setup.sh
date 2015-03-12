@@ -8,11 +8,10 @@
  
  
 # Host that CQ runs on
-git add
+git add *
 git stash
 git pull
 sh cleanup.sh
 git checkout exercise3-task2
 sh prep_dependencies.sh
 mvn eclipse:clean eclipse:eclipse
-mvn clean install -PautoInstallPackage 
