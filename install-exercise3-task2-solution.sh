@@ -1,6 +1,7 @@
 #!/bin/bash
  
-# Bash script to install solutions
+# Bash script to automate git and maven commands
+
  
 # Author : Varun Venkataraman (Adobe Global Services)
 # Version : 0.1
@@ -11,8 +12,8 @@
 git add *
 git stash
 git pull
-sh cleanup.sh
 git checkout exercise3-task2-solutions
+sh cleanup.sh
 sh prep_dependencies.sh
 mvn eclipse:clean eclipse:eclipse
 mvn clean install -PautoInstallPackage 
